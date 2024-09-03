@@ -1,0 +1,42 @@
+Name: ChartTest
+Type: FolderType
+Children:
+- Name: 1
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: VariablesSimulator
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Sine
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 10
+  - Name: Cosine
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 30
+  - Name: Ramp
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 20
+  - Name: RunSimulation
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: ns=4;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "433da0e8a0cf026566eefa86cef75613",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }

@@ -1,0 +1,11 @@
+Name: 'Lazos man-auto'
+Type: FolderType
+Children:
+- Name: Lazos auto
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 8
+- Name: Lazos man
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 2

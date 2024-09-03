@@ -1,0 +1,36 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: Prueba/Prueba.yaml
+- File: BarChart_Lazos/BarChart_Lazos.yaml
+- File: PopupState/PopupState.yaml
+- File: 'Lazos_man-auto/Lazos_man-auto.yaml'
+- File: _PieChart_Variables/_PieChart_Variables.yaml
+- Name: BCPS_ResultInstance
+  Type: BCPS_Result
+  Children:
+  - Name: manual_percent
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+- Name: DesignTimeNetLogic1
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: InsertBaseData
+- Name: BCPS_Result
+  Id: g=1fc4133d1b24be707b91063121843360
+  Supertype: BaseObjectType
+  Children:
+  - Name: manual_percent
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32

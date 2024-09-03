@@ -1,0 +1,6 @@
+Name: Métricas
+Type: FolderType
+Children:
+- File: Mensuales/Mensuales.yaml
+- File: Lazos/Lazos.yaml
+- File: Actuales/Actuales.yaml

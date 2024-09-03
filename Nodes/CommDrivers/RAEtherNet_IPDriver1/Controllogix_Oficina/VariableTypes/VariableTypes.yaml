@@ -1,0 +1,57 @@
+Name: VariableTypes
+Type: FolderType
+Children:
+- Name: SIM_PID
+  Id: g=214cfc35f5797d6ec7c1ee93492dad28
+  Supertype: TagStructure
+  DataType: SIM_PID
+  ValueRank: Any
+  Children:
+  - Name: CV
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "CV"
+  - Name: LCG
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "LCG"
+  - Name: Mode
+    Type: RAEtherNetIPTag
+    DataType: Boolean
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Mode"
+  - Name: PV
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "PV"
+  - Name: SP
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "SP"
+  - Name: UCG
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "UCG"

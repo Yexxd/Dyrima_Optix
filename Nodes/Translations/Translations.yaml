@@ -1,0 +1,63 @@
+Name: Translations
+Type: TranslationsCategoryFolder
+Children:
+- Name: LocalizationDictionary1
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [48,2],
+    "Body": [
+     "","en-US",
+     "Acked","Acked",
+     "SourceName","Source Variable",
+     "Timestamp","Timestamp",
+     "Confirmed","Confirmed",
+     "Name","Name",
+     "Message","Message",
+     "Active","Active",
+     "Severity","Severity",
+     "RuntimeUI","Runtime UI",
+     "RuntimeWidgetGeneration","Runtime widgets generation",
+     "OOP","Object-oriented Programming",
+     "ControlType","Control Type",
+     "Confirm","Confirm",
+     "AlternativePlc","Alternative PLC",
+     "Aliases","Aliases",
+     "InstancesCnt","Instances n.",
+     "DeleteAlarm","Delete Alarm",
+     "RuntimeAlarms","Runtime Alarms",
+     "SourceTag","Source Tag",
+     "RuntimeObjectsGeneration","Runtime objects generation",
+     "AcknowledgeAll","Ack All",
+     "Image","Image",
+     "Variable2","Variable 2",
+     "LeftMargin","Left Margin",
+     "Label","Label",
+     "CreateAlarm","Create Alarm",
+     "TopMargin","Top Margin",
+     "ZeroEqualsRandom","0: Random coordinates",
+     "Button","Button",
+     "Variable4","Variable 4",
+     "HelloWorld","Hello World!",
+     "Generate","Generate",
+     "Variable1","Variable 1",
+     "Acknowledge","Ack",
+     "NewAlarm","New Alarm",
+     "CreateNewAlarm","Create a new alarm",
+     "Variable3","Variable 3",
+     "TestNewAlarms","Test new alarms",
+     "AliasAccess","Data Access via Aliases",
+     "MyMotorInstances","MyMotor Instances",
+     "Description","Description",
+     "MotorSettings","Motor settings",
+     "GenerateObjects","Generated objects",
+     "GeneratedWidgets","Generated widgets",
+     "ConfirmAll","Confirm All",
+     "OffOn","Off/On",
+     "ManAuto","Man/Auto"
+    ]
+   }

@@ -1,0 +1,77 @@
+Name: Lazos
+Type: FolderType
+Children:
+- Name: 'LP-001'
+  Type: BaseObjectType
+  Children:
+  - Name: SP
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 60
+  - Name: Down GC
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 70
+  - Name: CV
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 30
+  - Name: Auto
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: PV
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 61
+  - Name: Up GC
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 50
+- Name: 'LP-003'
+  Type: BaseObjectType
+  Children:
+  - Name: Auto
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: PV
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: SP
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Down GC
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: CV
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: Up GC
+    Type: BaseDataVariableType
+    DataType: Int32
+- Name: 'LP-002'
+  Type: BaseObjectType
+  Children:
+  - Name: Up GC
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 38
+  - Name: Auto
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Down GC
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 18
+  - Name: SP
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 28
+  - Name: PV
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 30
+  - Name: CV
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 15

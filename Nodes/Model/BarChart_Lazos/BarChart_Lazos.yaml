@@ -1,0 +1,13 @@
+Name: BarChart Lazos
+Id: g=95e049c1b231c359d28a0e2cfcd3df0f
+Type: FolderType
+Children:
+- Name: LOOP_002
+  Id: g=3900c1066e29bcf3c4e9faa3d80b70b5
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 230
+- Name: LOOP_001
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 530

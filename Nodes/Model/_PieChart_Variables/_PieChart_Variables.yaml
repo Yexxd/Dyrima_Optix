@@ -1,0 +1,15 @@
+Name: ' PieChart Variables'
+Type: FolderType
+Children:
+- Name: Día
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 800
+- Name: 10Min
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 15
+- Name: Hora
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 100

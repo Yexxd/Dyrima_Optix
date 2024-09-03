@@ -1,0 +1,57 @@
+Name: Capas
+Id: g=949db66901bea187459414602575fc35
+Type: FolderType
+Children:
+- Name: Object1
+  Id: g=a6133986a0ca26272154fdba35965911
+  Type: BaseObjectType
+  Children:
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 2
+  - Name: Variable2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 4
+  - Name: Variable3
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 5
+  - Name: Variable4
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 6
+  - Name: Variable5
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 8
+  - Name: Variable6
+    Type: BaseDataVariableType
+    DataType: Int32
+- Name: Object3
+  Type: BaseObjectType
+  Children:
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 2
+  - Name: Variable2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 4
+  - Name: Variable3
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 5
+  - Name: Variable4
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 6
+  - Name: Variable5
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 8
+  - Name: Variable6
+    Type: BaseDataVariableType
+    DataType: Int32

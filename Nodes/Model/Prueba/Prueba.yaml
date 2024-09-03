@@ -1,0 +1,18 @@
+Name: Prueba
+Type: FolderType
+Children:
+- File: _PieChart_Variables/_PieChart_Variables.yaml
+- File: ChartTest/ChartTest.yaml
+- File: Capas/Capas.yaml
+- Name: Lazo1
+  Id: g=070572a54d7458f6d14bdba2ad9181ee
+  Type: BaseObjectType
+  Children:
+  - Name: SetPoint
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 2
+  - Name: valor21
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 4

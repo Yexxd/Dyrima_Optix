@@ -1,0 +1,12 @@
+Name: Screens
+Type: ScreensCategoryFolder
+Children:
+- File: HomePage/HomePage.yaml
+- File: BPCS/BPCS.yaml
+- File: Alarmas/Alarmas.yaml
+- File: SIS/SIS.yaml
+- File: Fire&Gas/Fire&Gas.yaml
+- File: Active_Protection/Active_Protection.yaml
+- File: Operation_Windows/Operation_Windows.yaml
+- File: Asset_Manager/Asset_Manager.yaml
+- File: Test_screens/Test_screens.yaml
