@@ -3430,7 +3430,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"hola mundo"}
+        Value: {"LocaleId":"en-US","Text":"hola mundo Hola developer"}
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -3441,6 +3441,14 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 160.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
   - Name: HitTestVisible
     Type: BaseDataVariableType
     DataType: Boolean
@@ -3472,7 +3480,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 258.0
+      Value: 248.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
