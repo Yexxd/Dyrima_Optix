@@ -3830,7 +3830,7 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 45.0
-  - Name: Rectangle2
+  - Name: porcentualgauge
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -3908,6 +3908,17 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         Value: -71.43000030517578
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/porcentualgauge"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Float
@@ -4027,13 +4038,16 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"-71.43"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/porcentualgauge"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 60.0
+        Value: 4.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -4044,6 +4058,25 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 25.0
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextVerticalAlignment
+        Type: BaseVariableType
+        DataType: TextVerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
     - Name: PolyLine1
       Type: PolyLine
       Children:
@@ -4302,7 +4335,7 @@ Children:
         Type: BaseDataVariableType
         DataType: SortOrderEnum
         ModellingRule: Optional
-  - Name: Rectangle11
+  - Name: SIL
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -4383,8 +4416,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"4"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/SIL"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4485,7 +4521,7 @@ Children:
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 700
-  - Name: Rectangle12
+  - Name: countactivated
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -4566,8 +4602,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"0"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/countactivated"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4668,7 +4707,7 @@ Children:
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 700
-  - Name: Rectangle13
+  - Name: countactivatedyear
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -4749,8 +4788,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"|"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/countactivatedyear"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4851,7 +4893,7 @@ Children:
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 700
-  - Name: Rectangle14
+  - Name: countactivatedespuria
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -4932,8 +4974,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"0"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/countactivatedespuria"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -5034,7 +5079,7 @@ Children:
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 700
-  - Name: Rectangle15
+  - Name: countactivatedespuriayea
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -5115,8 +5160,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"3"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/countactivatedespuriayear"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -5236,7 +5284,7 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 635.0
-  - Name: Rectangle3
+  - Name: pfdavg
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -5317,8 +5365,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"1.61e-2"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/pfdavg"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -5418,7 +5469,7 @@ Children:
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 700
-  - Name: Rectangle9
+  - Name: processvalue
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -5499,8 +5550,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"20"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/processvalue"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -5601,7 +5655,7 @@ Children:
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 700
-  - Name: Rectangle16
+  - Name: setpoint
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -5682,8 +5736,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"70"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/setpoint"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -5784,7 +5841,7 @@ Children:
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 700
-  - Name: Rectangle7
+  - Name: isforced
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -5952,8 +6009,31 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"No"}
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/isforced"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Si"}
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"No"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -6021,7 +6101,7 @@ Children:
         DataType: Color
         ModellingRule: Optional
         Value: "#b3b3b3"
-  - Name: Rectangle5
+  - Name: pfdmax
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -6102,8 +6182,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"3.17e-2"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/pfdmax"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -6203,7 +6286,7 @@ Children:
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 700
-  - Name: Rectangle6
+  - Name: sensorhealtGood
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -6301,8 +6384,31 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Deficiente"}
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/sensorhealtGood"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Optimo"}
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Deficiente"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -6368,8 +6474,32 @@ Children:
       - Name: TextColor
         Type: BaseDataVariableType
         DataType: Color
-        ModellingRule: Optional
         Value: "#eb001b"
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/sensorhealtGood"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: Color
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "#18f547fb"
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: Color
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "#eb001b"
     - Name: Label2
       Type: Label
       Children:
@@ -6440,7 +6570,7 @@ Children:
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 800
-  - Name: Rectangle8
+  - Name: actuatorhealtGood
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -6608,8 +6738,31 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Deficiente"}
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/actuatorhealtGood"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Optimo"}
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Deficiente"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -6675,9 +6828,33 @@ Children:
       - Name: TextColor
         Type: BaseDataVariableType
         DataType: Color
-        ModellingRule: Optional
         Value: "#eb001b"
-  - Name: Rectangle4
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/actuatorhealtGood"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: Color
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "#18f547fb"
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: Color
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "#eb001b"
+  - Name: isinhibited
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -6775,8 +6952,31 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Sí"}
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/isinhibited"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Si"}
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"No"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -6842,8 +7042,32 @@ Children:
       - Name: TextColor
         Type: BaseDataVariableType
         DataType: Color
-        ModellingRule: Optional
         Value: "#eb001b"
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/isinhibited"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: Color
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "#eb001b"
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: Color
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "#18f547fb"
     - Name: Label2
       Type: Label
       Children:
@@ -7908,7 +8132,7 @@ Children:
         DataType: Color
         ModellingRule: Optional
         Value: "#b3b3b3"
-  - Name: Rectangle19
+  - Name: correctiveMainteinance
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -8006,8 +8230,31 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Sí"}
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/correctiveMainteinance"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Si"}
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"No"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -8073,8 +8320,32 @@ Children:
       - Name: TextColor
         Type: BaseDataVariableType
         DataType: Color
-        ModellingRule: Optional
         Value: "#eb001b"
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/correctiveMainteinance"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: Color
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "#eb001b"
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: Color
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "#18f547fb"
     - Name: Label2
       Type: Label
       Children:
@@ -8306,3 +8577,79 @@ Children:
       DataType: Color
       ModellingRule: Optional
       Value: "#ffffff"
+- Name: SIS1
+  Type: SIS
+  Children:
+  - Name: SIL
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+  - Name: countactivated
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: countactivatedyear
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 2
+  - Name: countactivatedespuria
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: countactivatedespuriayear
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: maintenancestatus
+    Type: BaseDataVariableType
+    DataType: Int32
+    ValueRank: 2
+    ArrayDimensions: [2,2]
+  - Name: proofteststatus
+    Type: BaseDataVariableType
+    DataType: Int32
+    ValueRank: 2
+    ArrayDimensions: [2,2]
+  - Name: isinhibited
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: isforced
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: correctiveMainteinance
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: sensorhealtGood
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: actuatorhealtGood
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: setpoint
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1650
+  - Name: processvalue
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1350
+  - Name: porcentualgauge
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 23
+  - Name: graficPFD
+    Type: BaseDataVariableType
+    DataType: Int32
+    ValueRank: 2
+    ArrayDimensions: [2,30]
+  - Name: actualPFD
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.2199999988079071
+  - Name: pfdmax
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.4000000059604645
+  - Name: pfdavg
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.25

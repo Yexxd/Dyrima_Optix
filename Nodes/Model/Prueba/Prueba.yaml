@@ -5,7 +5,6 @@ Children:
 - File: ChartTest/ChartTest.yaml
 - File: Capas/Capas.yaml
 - Name: Lazo1
-  Id: g=070572a54d7458f6d14bdba2ad9181ee
   Type: BaseObjectType
   Children:
   - Name: SetPoint
@@ -16,3 +15,5 @@ Children:
     Type: BaseDataVariableType
     DataType: Int32
     Value: 4
+- File: BarChart_Lazos/BarChart_Lazos.yaml
+- File: 'Lazos_man-auto/Lazos_man-auto.yaml'

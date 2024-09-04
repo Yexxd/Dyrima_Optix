@@ -461,19 +461,33 @@ Children:
       Type: DynamicLink
       DataType: NodePath
       Value: "/Objects/Dyrima@BrowseName"
-  - Name: Panel1
-    Type: Panel
+  - Name: FullScreen
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+  - Name: AlwaysOnTop
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: ScaleLayout1
+    Type: ScaleLayout
     Children:
-    - Name: Width
-      Type: BaseVariableType
+    - Name: OriginalWidth
+      Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 300.0
-    - Name: Height
-      Type: BaseVariableType
+      Value: 1366.0
+    - Name: OriginalHeight
+      Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 300.0
+      Value: 635.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
     - Name: sidebar
       Type: PanelLoader
       Children:
@@ -589,24 +603,15 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 3
     - Name: VerticalAlignment
       Type: BaseVariableType
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
-  - Name: FullScreen
-    Type: BaseDataVariableType
-    DataType: Boolean
-    ModellingRule: Optional
-  - Name: AlwaysOnTop
-    Type: BaseDataVariableType
-    DataType: Boolean
-    ModellingRule: Optional
-    Value: true
+    - Name: FontScaling
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
 - File: Screens/Screens.yaml
 - File: Components/Components.yaml

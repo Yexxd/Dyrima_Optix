@@ -1073,6 +1073,1096 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 475.0
+  - Name: Rectangle10
+    Type: Rectangle
+    Children:
+    - Name: ns=3;BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: ns=3;Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1095.0
+    - Name: ns=3;Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 620.0
+    - Name: ns=3;LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: ns=3;TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: ns=3;BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#dcdddf"
+    - Name: ns=3;CornerRadius
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: PolyLine1
+      Type: PolyLine
+      Children:
+      - Name: ns=3;LineThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1.0
+      - Name: ns=3;Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1075.0
+      - Name: ns=3;Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: ns=3;LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: ns=3;TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 45.0
+      - Name: ns=3;Path
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "M 0.000000 5.000000 L 800.000000 0.000000"
+    - Name: Label1
+      Type: Label
+      Children:
+      - Name: ns=3;Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Vista general de la planta"}
+      - Name: ns=3;LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 25.0
+      - Name: ns=3;TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: ns=3;Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1070.0
+      - Name: ns=3;Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: ns=3;FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 24.0
+      - Name: ns=3;FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 700
+      - Name: ns=3;TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+    - Name: ovimg
+      Type: Image
+      Children:
+      - Name: ns=3;Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/PiaMangos.jpg"
+      - Name: ns=3;Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1075.0
+      - Name: ns=3;Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 385.0
+      - Name: ns=3;LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: ns=3;TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 60.0
+      - Name: ns=3;HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: ns=3;RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: ns=3;BorderThickness
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 2.0
+        - Name: ns=3;Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: ns=3;Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 125.0
+        - Name: ns=3;LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 600.0
+        - Name: ns=3;TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 90.0
+        - Name: ns=3;FillColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+        - Name: ns=3;BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+        - Name: Button1
+          Type: Button
+          Children:
+          - Name: ns=3;Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Button1"}
+          - Name: ns=3;LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: ns=3;TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: ns=3;Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 100.0
+          - Name: ns=3;Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 125.0
+          - Name: ns=3;Opacity
+            Type: BaseVariableType
+            DataType: Float
+            ModellingRule: Optional
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ns=2;ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: ns=2;MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=2;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/Commands/UICommands"
+                  Children:
+                  - Name: ns=1;Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: ns=2;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "OpenDialog"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: Dialog
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Description: {"NamespaceIndex":3,"TextId":"OpenDialogDialogDescription"}
+                    Value: "/Objects/Dyrima/UI/Screens/Test_screens/Area_test"
+                  - Name: AliasNode
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Description: {"NamespaceIndex":3,"TextId":"OpenDialogAliasNodeDescription"}
+                    ValueRank: ScalarOrOneDimension
+                  - Name: ParentItem
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Description: {"NamespaceIndex":3,"TextId":"OpenDialogParentItemDescription"}
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../..@NodeId"
+                - Name: OutputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: DialogNodeId
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Description: {"NamespaceIndex":3,"TextId":"OpenDialogDialogNodeIdDescription"}
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: ns=0;EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: ns=0;EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: ns=0;Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: ns=0;Severity
+                Type: PropertyType
+                DataType: UInt16
+      - Name: Label1
+        Type: Label
+        Children:
+        - Name: ns=3;Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Zona 1"}
+        - Name: ns=3;LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 580.0
+        - Name: ns=3;TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 45.0
+        - Name: ns=3;TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+    - Name: Panel1
+      Type: ESCENARIO_HEAD
+      Children:
+      - Name: Rectangle1
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle2
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle3
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle4
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle5
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle7
+        Type: Rectangle
+        Children:
+        - Name: Button1
+          Type: Button
+      - Name: Rectangle6
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: ns=3;RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: ns=3;TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 445.0
+    - Name: Panel2
+      Type: escenario_content
+      Children:
+      - Name: Rectangle8
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle9
+        Type: Rectangle
+        Children:
+        - Name: Button1
+          Type: Button
+          Children:
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ns=2;ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: ns=2;MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=2;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/Commands/UICommands"
+                  Children:
+                  - Name: ns=1;Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: ns=2;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "OpenDialog"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: Dialog
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Value: {"IdType":2,"Id":"621877a19467995007f7b7cc15902eea","Namespace":7}
+                  - Name: AliasNode
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    ValueRank: ScalarOrOneDimension
+                  - Name: ParentItem
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../..@NodeId"
+                - Name: OutputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: DialogNodeId
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: ns=0;EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: ns=0;EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: ns=0;Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: ns=0;Severity
+                Type: PropertyType
+                DataType: UInt16
+      - Name: Rectangle10
+        Type: Rectangle
+        Children:
+        - Name: Button1
+          Type: Button
+          Children:
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ns=2;ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: ns=2;MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=2;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/Commands/UICommands"
+                  Children:
+                  - Name: ns=1;Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: ns=2;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "OpenDialog"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: Dialog
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Value: "/Objects/Dyrima/UI/Components/Gestion_riesgo"
+                  - Name: AliasNode
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    ValueRank: ScalarOrOneDimension
+                  - Name: ParentItem
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../..@NodeId"
+                - Name: OutputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: DialogNodeId
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: ns=0;EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: ns=0;EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: ns=0;Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: ns=0;Severity
+                Type: PropertyType
+                DataType: UInt16
+      - Name: Rectangle11
+        Type: Rectangle
+        Children:
+        - Name: Button1
+          Type: Button
+          Children:
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ns=2;ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: ns=2;MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=2;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/Commands/UICommands"
+                  Children:
+                  - Name: ns=1;Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: ns=2;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "OpenDialog"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: Dialog
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Value: "/Objects/Dyrima/UI/Screens/HomePage/Risk_guide"
+                  - Name: AliasNode
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    ValueRank: ScalarOrOneDimension
+                  - Name: ParentItem
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../..@NodeId"
+                - Name: OutputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: DialogNodeId
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: ns=0;EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: ns=0;EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: ns=0;Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: ns=0;Severity
+                Type: PropertyType
+                DataType: UInt16
+      - Name: Rectangle12
+        Type: Rectangle
+        Children:
+        - Name: Button1
+          Type: Button
+          Children:
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ns=2;ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: ns=2;MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=2;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/Commands/UICommands"
+                  Children:
+                  - Name: ns=1;Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: ns=2;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "OpenDialog"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: Dialog
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Value: "/Objects/Dyrima/UI/Screens/HomePage/Risk_guide"
+                  - Name: AliasNode
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    ValueRank: ScalarOrOneDimension
+                  - Name: ParentItem
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../..@NodeId"
+                - Name: OutputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: DialogNodeId
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: ns=0;EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: ns=0;EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: ns=0;Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: ns=0;Severity
+                Type: PropertyType
+                DataType: UInt16
+      - Name: Rectangle13
+        Type: Rectangle
+        Children:
+        - Name: Label1
+          Type: Label
+      - Name: Rectangle14
+        Type: Rectangle
+        Children:
+        - Name: Button1
+          Type: Button
+          Children:
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ns=2;ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: ns=2;MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=2;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Children:
+                  - Name: ns=1;Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{PanelLoader1}@NodeId"
+                - Name: ns=2;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "ChangePanel"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: NewPanel
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                  - Name: AliasNode
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    ValueRank: ScalarOrOneDimension
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: ns=0;EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: ns=0;EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: ns=0;Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: ns=0;Severity
+                Type: PropertyType
+                DataType: UInt16
+        - Name: Button2
+          Type: Button
+          Children:
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ns=2;ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: ns=2;MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=2;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Children:
+                  - Name: ns=1;Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{PanelLoader1}@NodeId"
+                - Name: ns=2;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "ChangePanel"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: NewPanel
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Value: "/Objects/Dyrima/UI/Screens/SIS/SIS_Individual"
+                  - Name: AliasNode
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    ValueRank: ScalarOrOneDimension
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: ns=0;EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: ns=0;EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: ns=0;Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: ns=0;Severity
+                Type: PropertyType
+                DataType: UInt16
+        - Name: Button3
+          Type: Button
+          Children:
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ns=2;ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: ns=2;MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=2;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/Commands/UICommands"
+                  Children:
+                  - Name: ns=1;Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: ns=2;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "OpenDialog"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: Dialog
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Value: "/Objects/Dyrima/UI/Screens/HomePage/Risk_guide"
+                  - Name: AliasNode
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    ValueRank: ScalarOrOneDimension
+                  - Name: ParentItem
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../..@NodeId"
+                - Name: OutputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: DialogNodeId
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: ns=0;EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: ns=0;EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: ns=0;Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: ns=0;Severity
+                Type: PropertyType
+                DataType: UInt16
+        - Name: Button4
+          Type: Button
+          Children:
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ns=2;ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: ns=2;MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=2;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Children:
+                  - Name: ns=1;Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{PanelLoader1}@NodeId"
+                - Name: ns=2;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "ChangePanel"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: NewPanel
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Value: "/Objects/Dyrima/UI/Screens/Fire&&Gas/F_G_General_alterno"
+                  - Name: AliasNode
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    ValueRank: ScalarOrOneDimension
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: ns=0;EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: ns=0;EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: ns=0;Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: ns=0;Severity
+                Type: PropertyType
+                DataType: UInt16
+        - Name: Button5
+          Type: Button
+          Children:
+          - Name: MouseClickEventHandler1
+            Type: EventHandler
+            Children:
+            - Name: ns=2;ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+            - Name: ns=2;MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=2;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Children:
+                  - Name: ns=1;Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{PanelLoader1}@NodeId"
+                - Name: ns=2;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "ChangePanel"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: NewPanel
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    Value: "/Objects/Dyrima/UI/Screens/Alarmas/Alarms_Individual"
+                  - Name: AliasNode
+                    Type: BaseDataVariableType
+                    DataType: NodeId
+                    ValueRank: ScalarOrOneDimension
+            - Name: EventArguments
+              Type: MouseClickEvent
+              Children:
+              - Name: ns=0;EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: ns=0;EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: ns=0;SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: ns=0;Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ns=0;Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: ns=0;Severity
+                Type: PropertyType
+                DataType: UInt16
+      - Name: ns=3;RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 6.0
+      - Name: ns=3;TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 475.0
 - Name: Risk_guide
   Id: g=0703cd3e41feb03af2c4f1d9383bd854
   Supertype: Dialog

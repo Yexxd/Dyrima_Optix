@@ -128,15 +128,15 @@ Project:
    Module: FTOptix.Alarm.Net
    Version: 1.2
  Statistics:
-  TotalNodeCount: 17122
-  Objects: 2555
-  ObjectTypes: 47
-  Variables: 14509
+  TotalNodeCount: 16953
+  Objects: 2593
+  ObjectTypes: 50
+  Variables: 14299
   VariableTypes: 1
   DataTypes: 1
   Methods: 9
-  References: 169
+  References: 158
   ReferenceTypes: 0
-  Files: 50
+  Files: 49
  Nodes:
  - File: Nodes/Dyrima.yaml

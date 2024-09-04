@@ -5323,7 +5323,7 @@ Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-  - Name: Rectangle2
+  - Name: corrective_maintenance
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -5492,8 +5492,31 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"No"}
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/Alarmas/Alarms1/corrective_maintenance"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Si"}
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"No"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -6811,7 +6834,7 @@ Children:
     Type: BaseDataVariableType
     DataType: Size
     ModellingRule: Optional
-  - Name: Rectangle3
+  - Name: chattering_times
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -6892,8 +6915,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"0"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/Alarmas/Alarms1/chattering_times"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -6998,7 +7024,7 @@ Children:
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 700
-  - Name: Rectangle4
+  - Name: is_permanent
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -7149,8 +7175,31 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"No"}
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/Alarmas/Alarms1/is_permanent"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Si"}
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"No"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -7200,7 +7249,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-  - Name: Rectangle5
+  - Name: delayed
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -7281,8 +7330,31 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Sí"}
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/Alarmas/Alarms1/delayed"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Si"}
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"No"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -7317,7 +7389,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 156.0
+        Value: 144.0
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
@@ -7864,7 +7936,7 @@ Children:
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 700
-  - Name: Rectangle17
+  - Name: permanency_times
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -8015,8 +8087,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"0"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/Alarmas/Alarms1/permanency_times"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -8046,7 +8121,7 @@ Children:
         DataType: TextHorizontalAlignment
         ModellingRule: Optional
         Value: 1
-  - Name: Rectangle18
+  - Name: is_top_10
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -8127,8 +8202,31 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"SÍ"}
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/Alarmas/Alarms1/is_top_10"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Si"}
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"No"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -8238,7 +8336,7 @@ Children:
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 700
-  - Name: Rectangle19
+  - Name: is_flood_part
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -8319,8 +8417,31 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Sí"}
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/Alarmas/Alarms1/is_flood_part"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Si"}
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"No"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -8366,7 +8487,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 50.0
+        Value: 52.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -8420,7 +8541,7 @@ Children:
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 700
-  - Name: Rectangle20
+  - Name: is_in_flood
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -8501,8 +8622,31 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"No"}
+        Children:
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/Alarmas/Alarms1/is_in_flood"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Si"}
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"No"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -8607,3 +8751,38 @@ Children:
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 700
+- Name: Alarms1
+  Type: Alarms
+  Children:
+  - Name: permanency_times
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: is_top_10
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: is_flood_part
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: is_in_flood
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: chattering_times
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 2
+  - Name: is_permanent
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: delayed
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: PFD
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.014999999664723873
+  - Name: corrective_maintenance
+    Type: BaseDataVariableType
+    DataType: Boolean

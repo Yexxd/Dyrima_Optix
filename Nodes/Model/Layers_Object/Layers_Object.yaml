@@ -1,0 +1,274 @@
+Name: Layers_Object
+Type: FolderType
+Children:
+- Name: BPCS
+  Id: g=85c6e6cdf62b98e0ee2ecc3ae33f707d
+  Supertype: BaseObjectType
+  Children:
+  - Name: manual_percent
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: 2
+    ArrayDimensions: [1,2]
+    Value: 
+     {
+      "Type": 10,
+      "Dimensions": [1,2],
+      "Body": [
+       50.0,50.0
+      ]
+     }
+  - Name: tuning_required
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: opeator_interventions
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 3
+  - Name: times_outside_guide
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+  - Name: max_pv
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1820.74560546875
+  - Name: min_pv
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1495.5904541015625
+  - Name: max_cv
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 67
+  - Name: min_cv
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 57.71402359008789
+  - Name: maint_date
+    Type: BaseDataVariableType
+    DataType: DateString
+    Value: "2024-09-07"
+  - Name: days_to_maint
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 3
+  - Name: pv_standard_deviation
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 18.04379653930664
+  - Name: cv_standard_deviation
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.653176486492157
+  - Name: pv_media
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1818.997314453125
+  - Name: cv_media
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 57.77709197998047
+  - Name: timeseries
+    Type: BaseDataVariableType
+    DataType: Int32
+    ValueRank: 2
+    ArrayDimensions: [2,10]
+  - Name: correlation
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: -0.5385761857032776
+  - Name: covariance
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: -6.351986885070801
+  - Name: is_saturated
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: PFD
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1.0
+- Name: Alarms
+  Id: g=ee0f8b73d549be412846f1747096c77a
+  Supertype: BaseObjectType
+  Children:
+  - Name: permanency_times
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: is_top_10
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: is_flood_part
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: is_in_flood
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: chattering_times
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 2
+  - Name: is_permanent
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: delayed
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: PFD
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.014999999664723873
+  - Name: corrective_maintenance
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: SIS
+  Id: g=5f4d8378394efc33f5359d85acfcb825
+  Supertype: BaseObjectType
+  Children:
+  - Name: SIL
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+  - Name: countactivated
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: countactivatedyear
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 2
+  - Name: countactivatedespuria
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: countactivatedespuriayear
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: maintenancestatus
+    Type: BaseDataVariableType
+    DataType: Int32
+    ValueRank: 2
+    ArrayDimensions: [2,2]
+  - Name: proofteststatus
+    Type: BaseDataVariableType
+    DataType: Int32
+    ValueRank: 2
+    ArrayDimensions: [2,2]
+  - Name: isinhibited
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: isforced
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: correctiveMainteinance
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: sensorhealtGood
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: actuatorhealtGood
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: setpoint
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1650
+  - Name: processvalue
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1350
+  - Name: porcentualgauge
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 23
+  - Name: graficPFD
+    Type: BaseDataVariableType
+    DataType: Int32
+    ValueRank: 2
+    ArrayDimensions: [2,30]
+  - Name: actualPFD
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.2199999988079071
+  - Name: pfdmax
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.4000000059604645
+  - Name: pfdavg
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.25
+- Name: FYG
+  Id: g=8205b24f35142b37f0b7b33c1ebbe560
+  Supertype: BaseObjectType
+  Children:
+  - Name: year_activations
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 20
+  - Name: month_activations
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 2
+  - Name: need_corrective_maintenance
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: days_to_maintenance
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 20
+  - Name: testing_detector
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: days_to_functional_test
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 20
+  - Name: percentage_difference_setpoint_pv
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.30000001192092896
+  - Name: average_PFD
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.009999999776482582
+- Name: AP
+  Id: g=f9f3dc2e215bbcc39e1cc27c0c4ff3f7
+  Supertype: BaseObjectType
+  Children:
+  - Name: year_activations
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 6
+  - Name: month_activations
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: day_activations
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: mean_activation_time
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: active_time
+    Type: BaseDataVariableType
+    DataType: TimeString
+    Value: "0:0"
+  - Name: historic_activations
+    Type: BaseDataVariableType
+    DataType: Int32
+    ValueRank: 2
+    ArrayDimensions: [2,30]
+  - Name: days_to_maintenance
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 3
+  - Name: PFD
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.054794520139694214

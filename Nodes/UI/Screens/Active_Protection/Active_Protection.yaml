@@ -3312,7 +3312,7 @@ Children:
         DataType: Color
         ModellingRule: Optional
         Value: "#b3b3b3"
-  - Name: Rectangle8
+  - Name: mean_activation_time
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -3393,8 +3393,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"20.0h"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/Active_Protection/AP1/mean_activation_time"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -3515,7 +3518,7 @@ Children:
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 700
-  - Name: Rectangle1
+  - Name: active_time
     Type: Rectangle
     Children:
     - Name: BorderThickness
@@ -3596,8 +3599,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"0.0h"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/Active_Protection/AP1/active_time"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4128,3 +4134,36 @@ Children:
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 700
+- Name: AP1
+  Type: AP
+  Children:
+  - Name: year_activations
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 6
+  - Name: month_activations
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: day_activations
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: mean_activation_time
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: active_time
+    Type: BaseDataVariableType
+    DataType: TimeString
+    Value: "0:0"
+  - Name: historic_activations
+    Type: BaseDataVariableType
+    DataType: Int32
+    ValueRank: 2
+    ArrayDimensions: [2,30]
+  - Name: days_to_maintenance
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 3
+  - Name: PFD
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.054794520139694214

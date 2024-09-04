@@ -1,6 +1,0 @@
-Name: PopupState
-Type: FolderType
-Children:
-- Name: Popupstate1
-  Type: BaseDataVariableType
-  DataType: Boolean
