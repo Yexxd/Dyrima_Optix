@@ -8,16 +8,7 @@ Children:
   - Name: manual_percent
     Type: BaseDataVariableType
     DataType: Float
-    ValueRank: 2
-    ArrayDimensions: [1,2]
-    Value: 
-     {
-      "Type": 10,
-      "Dimensions": [1,2],
-      "Body": [
-       50.0,50.0
-      ]
-     }
+    Value: 0.006296620704233646
   - Name: tuning_required
     Type: BaseDataVariableType
     DataType: Boolean
@@ -149,14 +140,30 @@ Children:
     DataType: Int32
   - Name: maintenancestatus
     Type: BaseDataVariableType
-    DataType: Int32
+    DataType: String
     ValueRank: 2
-    ArrayDimensions: [2,2]
+    ArrayDimensions: [1,2]
+    Value: 
+     {
+      "Type": 12,
+      "Dimensions": [1,2],
+      "Body": [
+       "0","0"
+      ]
+     }
   - Name: proofteststatus
     Type: BaseDataVariableType
-    DataType: Int32
+    DataType: String
     ValueRank: 2
-    ArrayDimensions: [2,2]
+    ArrayDimensions: [1,2]
+    Value: 
+     {
+      "Type": 12,
+      "Dimensions": [1,2],
+      "Body": [
+       "0","0"
+      ]
+     }
   - Name: isinhibited
     Type: BaseDataVariableType
     DataType: Boolean

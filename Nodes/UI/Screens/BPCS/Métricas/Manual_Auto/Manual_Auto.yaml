@@ -1,0 +1,49 @@
+Name: Manual_Auto
+Id: g=3095abea9ca7a80a63f9bf53b275541c
+Type: FolderType
+Children:
+- Name: Auto
+  Id: g=b3e23da6b600716748241590f293648b
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 20.0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "100-{0}"
+    - Name: ns=2;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Man"
+- Name: Man
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 50.0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0}*100"
+    - Name: ns=2;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../BPCS1/manual_percent"

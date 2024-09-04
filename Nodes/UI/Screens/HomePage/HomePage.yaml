@@ -1076,37 +1076,37 @@ Children:
   - Name: Rectangle10
     Type: Rectangle
     Children:
-    - Name: ns=3;BorderThickness
+    - Name: BorderThickness
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 1.0
-    - Name: ns=3;Width
+    - Name: Width
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 1095.0
-    - Name: ns=3;Height
+    - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 620.0
-    - Name: ns=3;LeftMargin
+    - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 10.0
-    - Name: ns=3;TopMargin
+    - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 10.0
-    - Name: ns=3;BorderColor
+    - Name: BorderColor
       Type: BaseDataVariableType
       DataType: Color
       ModellingRule: Optional
       Value: "#dcdddf"
-    - Name: ns=3;CornerRadius
+    - Name: CornerRadius
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
@@ -1114,31 +1114,31 @@ Children:
     - Name: PolyLine1
       Type: PolyLine
       Children:
-      - Name: ns=3;LineThickness
+      - Name: LineThickness
         Type: BaseDataVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 1.0
-      - Name: ns=3;Width
+      - Name: Width
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 1075.0
-      - Name: ns=3;Height
+      - Name: Height
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-      - Name: ns=3;LeftMargin
+      - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 10.0
-      - Name: ns=3;TopMargin
+      - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 45.0
-      - Name: ns=3;Path
+      - Name: Path
         Type: BaseDataVariableType
         DataType: String
         ModellingRule: Optional
@@ -1146,42 +1146,42 @@ Children:
     - Name: Label1
       Type: Label
       Children:
-      - Name: ns=3;Text
+      - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
         Value: {"LocaleId":"en-US","Text":"Vista general de la planta"}
-      - Name: ns=3;LeftMargin
+      - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 25.0
-      - Name: ns=3;TopMargin
+      - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 10.0
-      - Name: ns=3;Width
+      - Name: Width
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 1070.0
-      - Name: ns=3;Height
+      - Name: Height
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 30.0
-      - Name: ns=3;FontSize
+      - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 24.0
-      - Name: ns=3;FontWeight
+      - Name: FontWeight
         Type: BaseDataVariableType
         DataType: FontWeightEnum
         ModellingRule: Optional
         Value: 700
-      - Name: ns=3;TextHorizontalAlignment
+      - Name: TextHorizontalAlignment
         Type: BaseVariableType
         DataType: TextHorizontalAlignment
         ModellingRule: Optional
@@ -1189,71 +1189,71 @@ Children:
     - Name: ovimg
       Type: Image
       Children:
-      - Name: ns=3;Path
+      - Name: Path
         Type: BaseDataVariableType
         DataType: ResourceUri
         Value: "ns=7;%PROJECTDIR%/PiaMangos.jpg"
-      - Name: ns=3;Width
+      - Name: Width
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 1075.0
-      - Name: ns=3;Height
+      - Name: Height
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 385.0
-      - Name: ns=3;LeftMargin
+      - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-      - Name: ns=3;TopMargin
+      - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 60.0
-      - Name: ns=3;HorizontalAlignment
+      - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
         ModellingRule: Optional
         Value: 2
-      - Name: ns=3;RightMargin
+      - Name: RightMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
       - Name: Rectangle1
         Type: Rectangle
         Children:
-        - Name: ns=3;BorderThickness
+        - Name: BorderThickness
           Type: BaseDataVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 2.0
-        - Name: ns=3;Width
+        - Name: Width
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 100.0
-        - Name: ns=3;Height
+        - Name: Height
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 125.0
-        - Name: ns=3;LeftMargin
+        - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 600.0
-        - Name: ns=3;TopMargin
+        - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 90.0
-        - Name: ns=3;FillColor
+        - Name: FillColor
           Type: BaseDataVariableType
           DataType: Color
           ModellingRule: Optional
-        - Name: ns=3;BorderColor
+        - Name: BorderColor
           Type: BaseDataVariableType
           DataType: Color
           ModellingRule: Optional
@@ -1261,37 +1261,37 @@ Children:
         - Name: Button1
           Type: Button
           Children:
-          - Name: ns=3;Text
+          - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
             ModellingRule: Optional
             Value: {"LocaleId":"en-US","Text":"Button1"}
-          - Name: ns=3;LeftMargin
+          - Name: LeftMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-          - Name: ns=3;TopMargin
+          - Name: TopMargin
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-          - Name: ns=3;Width
+          - Name: Width
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
             Value: 100.0
-          - Name: ns=3;Height
+          - Name: Height
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
             Value: 125.0
-          - Name: ns=3;Opacity
+          - Name: Opacity
             Type: BaseVariableType
             DataType: Float
             ModellingRule: Optional
           - Name: MouseClickEventHandler1
             Type: EventHandler
             Children:
-            - Name: ns=2;ListenEventType
+            - Name: ListenEventType
               Type: PropertyType
               DataType: NodeId
               Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
@@ -1306,7 +1306,7 @@ Children:
                   DataType: NodeId
                   Value: "/Objects/Commands/UICommands"
                   Children:
-                  - Name: ns=1;Kind
+                  - Name: Kind
                     Type: PropertyType
                     DataType: NodeId
                     Value: "/Types/ObjectTypes/BaseObjectType"
@@ -1346,49 +1346,49 @@ Children:
             - Name: EventArguments
               Type: MouseClickEvent
               Children:
-              - Name: ns=0;EventId
+              - Name: EventId
                 Type: PropertyType
                 DataType: ByteString
-              - Name: ns=0;EventType
+              - Name: EventType
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceNode
+              - Name: SourceNode
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceName
+              - Name: SourceName
                 Type: PropertyType
                 DataType: String
-              - Name: ns=0;Time
+              - Name: Time
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;ReceiveTime
+              - Name: ReceiveTime
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;Message
+              - Name: Message
                 Type: PropertyType
                 DataType: LocalizedText
-              - Name: ns=0;Severity
+              - Name: Severity
                 Type: PropertyType
                 DataType: UInt16
       - Name: Label1
         Type: Label
         Children:
-        - Name: ns=3;Text
+        - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
           Value: {"LocaleId":"en-US","Text":"Zona 1"}
-        - Name: ns=3;LeftMargin
+        - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 580.0
-        - Name: ns=3;TopMargin
+        - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
           Value: 45.0
-        - Name: ns=3;TextColor
+        - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
           ModellingRule: Optional
@@ -1431,12 +1431,12 @@ Children:
         Children:
         - Name: Label1
           Type: Label
-      - Name: ns=3;RightMargin
+      - Name: RightMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 10.0
-      - Name: ns=3;TopMargin
+      - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
@@ -1458,7 +1458,7 @@ Children:
           - Name: MouseClickEventHandler1
             Type: EventHandler
             Children:
-            - Name: ns=2;ListenEventType
+            - Name: ListenEventType
               Type: PropertyType
               DataType: NodeId
               Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
@@ -1473,7 +1473,7 @@ Children:
                   DataType: NodeId
                   Value: "/Objects/Commands/UICommands"
                   Children:
-                  - Name: ns=1;Kind
+                  - Name: Kind
                     Type: PropertyType
                     DataType: NodeId
                     Value: "/Types/ObjectTypes/BaseObjectType"
@@ -1509,28 +1509,28 @@ Children:
             - Name: EventArguments
               Type: MouseClickEvent
               Children:
-              - Name: ns=0;EventId
+              - Name: EventId
                 Type: PropertyType
                 DataType: ByteString
-              - Name: ns=0;EventType
+              - Name: EventType
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceNode
+              - Name: SourceNode
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceName
+              - Name: SourceName
                 Type: PropertyType
                 DataType: String
-              - Name: ns=0;Time
+              - Name: Time
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;ReceiveTime
+              - Name: ReceiveTime
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;Message
+              - Name: Message
                 Type: PropertyType
                 DataType: LocalizedText
-              - Name: ns=0;Severity
+              - Name: Severity
                 Type: PropertyType
                 DataType: UInt16
       - Name: Rectangle10
@@ -1542,7 +1542,7 @@ Children:
           - Name: MouseClickEventHandler1
             Type: EventHandler
             Children:
-            - Name: ns=2;ListenEventType
+            - Name: ListenEventType
               Type: PropertyType
               DataType: NodeId
               Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
@@ -1557,7 +1557,7 @@ Children:
                   DataType: NodeId
                   Value: "/Objects/Commands/UICommands"
                   Children:
-                  - Name: ns=1;Kind
+                  - Name: Kind
                     Type: PropertyType
                     DataType: NodeId
                     Value: "/Types/ObjectTypes/BaseObjectType"
@@ -1593,28 +1593,28 @@ Children:
             - Name: EventArguments
               Type: MouseClickEvent
               Children:
-              - Name: ns=0;EventId
+              - Name: EventId
                 Type: PropertyType
                 DataType: ByteString
-              - Name: ns=0;EventType
+              - Name: EventType
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceNode
+              - Name: SourceNode
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceName
+              - Name: SourceName
                 Type: PropertyType
                 DataType: String
-              - Name: ns=0;Time
+              - Name: Time
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;ReceiveTime
+              - Name: ReceiveTime
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;Message
+              - Name: Message
                 Type: PropertyType
                 DataType: LocalizedText
-              - Name: ns=0;Severity
+              - Name: Severity
                 Type: PropertyType
                 DataType: UInt16
       - Name: Rectangle11
@@ -1626,7 +1626,7 @@ Children:
           - Name: MouseClickEventHandler1
             Type: EventHandler
             Children:
-            - Name: ns=2;ListenEventType
+            - Name: ListenEventType
               Type: PropertyType
               DataType: NodeId
               Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
@@ -1641,7 +1641,7 @@ Children:
                   DataType: NodeId
                   Value: "/Objects/Commands/UICommands"
                   Children:
-                  - Name: ns=1;Kind
+                  - Name: Kind
                     Type: PropertyType
                     DataType: NodeId
                     Value: "/Types/ObjectTypes/BaseObjectType"
@@ -1677,28 +1677,28 @@ Children:
             - Name: EventArguments
               Type: MouseClickEvent
               Children:
-              - Name: ns=0;EventId
+              - Name: EventId
                 Type: PropertyType
                 DataType: ByteString
-              - Name: ns=0;EventType
+              - Name: EventType
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceNode
+              - Name: SourceNode
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceName
+              - Name: SourceName
                 Type: PropertyType
                 DataType: String
-              - Name: ns=0;Time
+              - Name: Time
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;ReceiveTime
+              - Name: ReceiveTime
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;Message
+              - Name: Message
                 Type: PropertyType
                 DataType: LocalizedText
-              - Name: ns=0;Severity
+              - Name: Severity
                 Type: PropertyType
                 DataType: UInt16
       - Name: Rectangle12
@@ -1710,7 +1710,7 @@ Children:
           - Name: MouseClickEventHandler1
             Type: EventHandler
             Children:
-            - Name: ns=2;ListenEventType
+            - Name: ListenEventType
               Type: PropertyType
               DataType: NodeId
               Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
@@ -1725,7 +1725,7 @@ Children:
                   DataType: NodeId
                   Value: "/Objects/Commands/UICommands"
                   Children:
-                  - Name: ns=1;Kind
+                  - Name: Kind
                     Type: PropertyType
                     DataType: NodeId
                     Value: "/Types/ObjectTypes/BaseObjectType"
@@ -1761,28 +1761,28 @@ Children:
             - Name: EventArguments
               Type: MouseClickEvent
               Children:
-              - Name: ns=0;EventId
+              - Name: EventId
                 Type: PropertyType
                 DataType: ByteString
-              - Name: ns=0;EventType
+              - Name: EventType
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceNode
+              - Name: SourceNode
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceName
+              - Name: SourceName
                 Type: PropertyType
                 DataType: String
-              - Name: ns=0;Time
+              - Name: Time
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;ReceiveTime
+              - Name: ReceiveTime
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;Message
+              - Name: Message
                 Type: PropertyType
                 DataType: LocalizedText
-              - Name: ns=0;Severity
+              - Name: Severity
                 Type: PropertyType
                 DataType: UInt16
       - Name: Rectangle13
@@ -1799,7 +1799,7 @@ Children:
           - Name: MouseClickEventHandler1
             Type: EventHandler
             Children:
-            - Name: ns=2;ListenEventType
+            - Name: ListenEventType
               Type: PropertyType
               DataType: NodeId
               Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
@@ -1813,7 +1813,7 @@ Children:
                   Type: NodePointer
                   DataType: NodeId
                   Children:
-                  - Name: ns=1;Kind
+                  - Name: Kind
                     Type: PropertyType
                     DataType: NodeId
                     Value: "/Types/ObjectTypes/BaseObjectType"
@@ -1838,28 +1838,28 @@ Children:
             - Name: EventArguments
               Type: MouseClickEvent
               Children:
-              - Name: ns=0;EventId
+              - Name: EventId
                 Type: PropertyType
                 DataType: ByteString
-              - Name: ns=0;EventType
+              - Name: EventType
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceNode
+              - Name: SourceNode
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceName
+              - Name: SourceName
                 Type: PropertyType
                 DataType: String
-              - Name: ns=0;Time
+              - Name: Time
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;ReceiveTime
+              - Name: ReceiveTime
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;Message
+              - Name: Message
                 Type: PropertyType
                 DataType: LocalizedText
-              - Name: ns=0;Severity
+              - Name: Severity
                 Type: PropertyType
                 DataType: UInt16
         - Name: Button2
@@ -1868,7 +1868,7 @@ Children:
           - Name: MouseClickEventHandler1
             Type: EventHandler
             Children:
-            - Name: ns=2;ListenEventType
+            - Name: ListenEventType
               Type: PropertyType
               DataType: NodeId
               Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
@@ -1882,7 +1882,7 @@ Children:
                   Type: NodePointer
                   DataType: NodeId
                   Children:
-                  - Name: ns=1;Kind
+                  - Name: Kind
                     Type: PropertyType
                     DataType: NodeId
                     Value: "/Types/ObjectTypes/BaseObjectType"
@@ -1908,28 +1908,28 @@ Children:
             - Name: EventArguments
               Type: MouseClickEvent
               Children:
-              - Name: ns=0;EventId
+              - Name: EventId
                 Type: PropertyType
                 DataType: ByteString
-              - Name: ns=0;EventType
+              - Name: EventType
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceNode
+              - Name: SourceNode
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceName
+              - Name: SourceName
                 Type: PropertyType
                 DataType: String
-              - Name: ns=0;Time
+              - Name: Time
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;ReceiveTime
+              - Name: ReceiveTime
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;Message
+              - Name: Message
                 Type: PropertyType
                 DataType: LocalizedText
-              - Name: ns=0;Severity
+              - Name: Severity
                 Type: PropertyType
                 DataType: UInt16
         - Name: Button3
@@ -1938,7 +1938,7 @@ Children:
           - Name: MouseClickEventHandler1
             Type: EventHandler
             Children:
-            - Name: ns=2;ListenEventType
+            - Name: ListenEventType
               Type: PropertyType
               DataType: NodeId
               Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
@@ -1953,7 +1953,7 @@ Children:
                   DataType: NodeId
                   Value: "/Objects/Commands/UICommands"
                   Children:
-                  - Name: ns=1;Kind
+                  - Name: Kind
                     Type: PropertyType
                     DataType: NodeId
                     Value: "/Types/ObjectTypes/BaseObjectType"
@@ -1989,28 +1989,28 @@ Children:
             - Name: EventArguments
               Type: MouseClickEvent
               Children:
-              - Name: ns=0;EventId
+              - Name: EventId
                 Type: PropertyType
                 DataType: ByteString
-              - Name: ns=0;EventType
+              - Name: EventType
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceNode
+              - Name: SourceNode
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceName
+              - Name: SourceName
                 Type: PropertyType
                 DataType: String
-              - Name: ns=0;Time
+              - Name: Time
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;ReceiveTime
+              - Name: ReceiveTime
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;Message
+              - Name: Message
                 Type: PropertyType
                 DataType: LocalizedText
-              - Name: ns=0;Severity
+              - Name: Severity
                 Type: PropertyType
                 DataType: UInt16
         - Name: Button4
@@ -2019,7 +2019,7 @@ Children:
           - Name: MouseClickEventHandler1
             Type: EventHandler
             Children:
-            - Name: ns=2;ListenEventType
+            - Name: ListenEventType
               Type: PropertyType
               DataType: NodeId
               Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
@@ -2033,7 +2033,7 @@ Children:
                   Type: NodePointer
                   DataType: NodeId
                   Children:
-                  - Name: ns=1;Kind
+                  - Name: Kind
                     Type: PropertyType
                     DataType: NodeId
                     Value: "/Types/ObjectTypes/BaseObjectType"
@@ -2059,28 +2059,28 @@ Children:
             - Name: EventArguments
               Type: MouseClickEvent
               Children:
-              - Name: ns=0;EventId
+              - Name: EventId
                 Type: PropertyType
                 DataType: ByteString
-              - Name: ns=0;EventType
+              - Name: EventType
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceNode
+              - Name: SourceNode
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceName
+              - Name: SourceName
                 Type: PropertyType
                 DataType: String
-              - Name: ns=0;Time
+              - Name: Time
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;ReceiveTime
+              - Name: ReceiveTime
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;Message
+              - Name: Message
                 Type: PropertyType
                 DataType: LocalizedText
-              - Name: ns=0;Severity
+              - Name: Severity
                 Type: PropertyType
                 DataType: UInt16
         - Name: Button5
@@ -2089,7 +2089,7 @@ Children:
           - Name: MouseClickEventHandler1
             Type: EventHandler
             Children:
-            - Name: ns=2;ListenEventType
+            - Name: ListenEventType
               Type: PropertyType
               DataType: NodeId
               Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
@@ -2103,7 +2103,7 @@ Children:
                   Type: NodePointer
                   DataType: NodeId
                   Children:
-                  - Name: ns=1;Kind
+                  - Name: Kind
                     Type: PropertyType
                     DataType: NodeId
                     Value: "/Types/ObjectTypes/BaseObjectType"
@@ -2129,36 +2129,36 @@ Children:
             - Name: EventArguments
               Type: MouseClickEvent
               Children:
-              - Name: ns=0;EventId
+              - Name: EventId
                 Type: PropertyType
                 DataType: ByteString
-              - Name: ns=0;EventType
+              - Name: EventType
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceNode
+              - Name: SourceNode
                 Type: PropertyType
                 DataType: NodeId
-              - Name: ns=0;SourceName
+              - Name: SourceName
                 Type: PropertyType
                 DataType: String
-              - Name: ns=0;Time
+              - Name: Time
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;ReceiveTime
+              - Name: ReceiveTime
                 Type: PropertyType
                 DataType: UtcTime
-              - Name: ns=0;Message
+              - Name: Message
                 Type: PropertyType
                 DataType: LocalizedText
-              - Name: ns=0;Severity
+              - Name: Severity
                 Type: PropertyType
                 DataType: UInt16
-      - Name: ns=3;RightMargin
+      - Name: RightMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 6.0
-      - Name: ns=3;TopMargin
+      - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional

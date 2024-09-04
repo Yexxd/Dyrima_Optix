@@ -239,6 +239,7 @@ Children:
       - Name: TextColor
         Type: BaseDataVariableType
         DataType: Color
+        Value: "#18f547fb"
   - Name: HistogramChartStyles
     Type: BaseObjectType
     Children:

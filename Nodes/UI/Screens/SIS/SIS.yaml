@@ -3728,6 +3728,16 @@ Children:
             DataType: LocalizedText
             ModellingRule: Optional
             Value: {"LocaleId":"en-US","Text":"ProcessValue"}
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/processvalue"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: TrendPen2
           Type: TrendPen
           DataType: BaseDataType
@@ -3752,6 +3762,16 @@ Children:
             DataType: LocalizedText
             ModellingRule: Optional
             Value: {"LocaleId":"en-US","Text":"Setpoint"}
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/setpoint"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
       - Class: Reference
         Target: ns=3;i=1129
         Direction: Forward
@@ -3785,7 +3805,7 @@ Children:
         - Name: MaxValue
           Type: BaseDataVariableType
           DataType: Size
-          Value: 100.0
+          Value: 2000.0
         - Name: AutoScale
           Type: BaseDataVariableType
           DataType: Boolean
@@ -7489,8 +7509,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"23/06/2024"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/maintenancestatus[0,0]"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -7565,8 +7588,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"135"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/maintenancestatus[0,1]"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -7986,8 +8012,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"23/06/2024"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/proofteststatus[0,0]"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -8062,8 +8091,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"140"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/maintenancestatus[0,1]"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -8599,14 +8631,30 @@ Children:
     DataType: Int32
   - Name: maintenancestatus
     Type: BaseDataVariableType
-    DataType: Int32
+    DataType: String
     ValueRank: 2
-    ArrayDimensions: [2,2]
+    ArrayDimensions: [1,2]
+    Value: 
+     {
+      "Type": 12,
+      "Dimensions": [1,2],
+      "Body": [
+       "0","0"
+      ]
+     }
   - Name: proofteststatus
     Type: BaseDataVariableType
-    DataType: Int32
+    DataType: String
     ValueRank: 2
-    ArrayDimensions: [2,2]
+    ArrayDimensions: [1,2]
+    Value: 
+     {
+      "Type": 12,
+      "Dimensions": [1,2],
+      "Body": [
+       "0","0"
+      ]
+     }
   - Name: isinhibited
     Type: BaseDataVariableType
     DataType: Boolean

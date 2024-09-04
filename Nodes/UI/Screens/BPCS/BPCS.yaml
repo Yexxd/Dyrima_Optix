@@ -4227,7 +4227,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables/Día"
+          Value: "/Objects/Dyrima/UI/Screens/BPCS/Métricas/Manual_Auto/Auto"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4263,7 +4263,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables/10Min"
+          Value: "/Objects/Dyrima/UI/Screens/BPCS/Métricas/Manual_Auto/Man"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4289,33 +4289,40 @@ Children:
         DataType: TextVerticalAlignment
         ModellingRule: Optional
         Value: 1
-    - Name: PieChart1
+    - Name: PieChart
       Type: PieChart
       Children:
-      - Class: Reference
-        Target: ns=3;i=1104
-        Direction: Forward
       - Name: Model
         Type: NodePointer
         DataType: NodeId
+        Value: "/Objects/Dyrima/UI/Screens/BPCS/Métricas/Manual_Auto"
         Children:
         - Name: ItemKind
           Type: PropertyType
           DataType: NodeId
+          Value: "/Objects/Dyrima/UI/Screens/BPCS/Métricas/Manual_Auto/Auto"
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-        - Name: NodeClass
-          Type: PropertyType
-          DataType: NodePointerNodeClass
-          ModellingRule: Optional
-          Value: 2
       - Name: Label
         Type: BaseDataVariableType
         DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}@BrowseName"
       - Name: Value
         Type: BaseDataVariableType
         DataType: Double
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}@Value"
+      - Class: Reference
+        Target: ns=3;i=1104
+        Direction: Forward
       - Name: Item
         Type: Alias
         DataType: NodeId
@@ -4323,39 +4330,47 @@ Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 195.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 60.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 260.0
-      - Name: Style
-        Type: BaseDataVariableType
-        DataType: String
-        ModellingRule: Optional
-        Value: "PieChartStyle1"
+          Value: "/Objects/Dyrima/UI/Screens/BPCS/Métricas/Manual_Auto/Auto"
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
         ModellingRule: Optional
-      - Name: Query
-        Type: BaseDataVariableType
-        DataType: String
+        Value: 2
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
         ModellingRule: Optional
+        Value: 45.0
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 60.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 65.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 135.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 275.0
   - Name: Variable de control
     Type: Rectangle
     Children:
@@ -6042,16 +6057,7 @@ Children:
   - Name: manual_percent
     Type: BaseDataVariableType
     DataType: Float
-    ValueRank: 2
-    ArrayDimensions: [1,2]
-    Value: 
-     {
-      "Type": 10,
-      "Dimensions": [1,2],
-      "Body": [
-       50.0,50.0
-      ]
-     }
+    Value: 0.006296620704233646
   - Name: tuning_required
     Type: BaseDataVariableType
     DataType: Boolean
