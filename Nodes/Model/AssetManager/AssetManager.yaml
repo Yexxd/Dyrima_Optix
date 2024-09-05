@@ -1,0 +1,110 @@
+Name: AssetManager
+Type: FolderType
+Children:
+- Name: Asset
+  Type: BaseObjectType
+  Children:
+  - Name: Nombre
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Descripcion
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Assetpadre
+    Type: BaseDataVariableType
+    DataType: String
+- Name: Asset_info1
+  Type: Asset_info
+  Children:
+  - Name: Descripcion
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "None"
+  - Name: Location
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "None"
+  - Name: Nombre
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Asset_Example"
+  - Name: Eventos
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: 2
+    ArrayDimensions: [2,2]
+    Value: 
+     {
+      "Type": 12,
+      "Dimensions": [2,2],
+      "Body": [
+       "0","0",
+       "0","0"
+      ]
+     }
+  - Name: Variables
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: 2
+    ArrayDimensions: [4,4]
+    Value: 
+     {
+      "Type": 12,
+      "Dimensions": [4,4],
+      "Body": [
+       "0","0","0","0",
+       "0","0","0","0",
+       "0","0","0","0",
+       "0","0","0","0"
+      ]
+     }
+- Name: Asset_info
+  Id: g=8ad66035bd56704ba343df581ee329ec
+  Supertype: BaseObjectType
+  Children:
+  - Name: Descripcion
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "None"
+  - Name: Location
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "None"
+  - Name: Nombre
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Asset_Example"
+  - Name: Eventos
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: 2
+    ArrayDimensions: [2,2]
+    Value: 
+     {
+      "Type": 12,
+      "Dimensions": [2,2],
+      "Body": [
+       "0","0",
+       "0","0"
+      ]
+     }
+  - Name: Variables
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: 2
+    ArrayDimensions: [4,4]
+    Value: 
+     {
+      "Type": 12,
+      "Dimensions": [4,4],
+      "Body": [
+       "0","0","0","0",
+       "0","0","0","0",
+       "0","0","0","0",
+       "0","0","0","0"
+      ]
+     }
+- Name: SelectedAsset
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"

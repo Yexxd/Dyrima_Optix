@@ -1,7 +1,7 @@
 Name: DataStores
 Type: DataStoresCategoryFolder
 Children:
-- Name: EmbeddedDatabase1
+- Name: AssetManager
   Id: g=461777eb1440fd39a3b08ab79eece604
   Type: SQLiteStore
   Children:
@@ -38,6 +38,33 @@ Children:
         - Name: Sine
           Type: StoreColumn
           DataType: Int32
+    - Name: Assets
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=22;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Nombre
+          Type: StoreColumn
+          DataType: String
+        - Name: Descripcion
+          Type: StoreColumn
+          DataType: String
+        - Name: Assetpadre
+          Type: StoreColumn
+          DataType: String
   - Class: Reference
     Target: ns=24;i=30
     Direction: Forward

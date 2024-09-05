@@ -12,7 +12,7 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/Dyrima/DataStores/EmbeddedDatabase1"
+    Value: "/Objects/Dyrima/DataStores/AssetManager"
     Children:
     - Name: Kind
       Type: PropertyType

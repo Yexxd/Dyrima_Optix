@@ -12,3 +12,4 @@ Children:
     Value: 180
   - Class: Method
     Name: Method1
+- File: AssetManager/AssetManager.yaml
