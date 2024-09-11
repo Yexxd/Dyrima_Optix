@@ -18,6 +18,7 @@ using FTOptix.EventLogger;
 using FTOptix.Alarm;
 using FTOptix.Core;
 using FTOptix.AuditSigning;
+using FTOptix.Report;
 #endregion
 
 public class AssetManger : BaseNetLogic

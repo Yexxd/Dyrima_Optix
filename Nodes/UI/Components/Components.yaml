@@ -3038,7 +3038,7 @@ Children:
                     Type: BaseDataVariableType
                     DataType: NodeId
                     Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
-                    Value: "/Objects/Dyrima/UI/Screens/Test_screens/OOP/RuntimeAlarms"
+                    Value: "/Objects/Dyrima/UI/Screens/Test_screens/REPORTS"
                   - Name: AliasNode
                     Type: BaseDataVariableType
                     DataType: NodeId
@@ -7587,3 +7587,49 @@ Children:
       ModellingRule: Optional
       Value: true
 - File: Testcomponents/Testcomponents.yaml
+- Name: REPORTVIWE
+  Id: g=db25aef210b63fd9295fba10e6698611
+  Supertype: Dialog
+  ReferenceType: HasComponent
+  Children:
+  - Class: Reference
+    Target: ns=3;i=519
+    Direction: Forward
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: PDFViewer1
+    Type: PdfViewer
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "file:///C:/Users/USER/Downloads/test.pdf"
+    - Name: CurrentPage
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional

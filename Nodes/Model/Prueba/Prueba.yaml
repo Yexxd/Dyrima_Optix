@@ -9,3 +9,14 @@ Children:
 - Name: ASSETSET
   Type: BaseDataVariableType
   DataType: String
+- Name: report
+  Type: BaseObjectType
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "NosoyJulian"
+  - Name: TEXT
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "EXXA"

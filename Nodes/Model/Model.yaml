@@ -2,14 +2,5 @@ Name: Model
 Type: ModelCategoryFolder
 Children:
 - File: Layers_Object/Layers_Object.yaml
-- File: Prueba/Prueba.yaml
-- Name: DesignTimeNetLogic1
-  Type: NetLogic
-  Children:
-  - Name: BehaviourStartPriority
-    Type: BehaviourStartPriorityVariableType
-    DataType: Byte
-    Value: 180
-  - Class: Method
-    Name: Method1
 - File: AssetManager/AssetManager.yaml
+- File: Prueba/Prueba.yaml

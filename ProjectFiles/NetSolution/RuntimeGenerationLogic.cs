@@ -7,6 +7,7 @@ using FTOptix.NetLogic;
 using FTOptix.UI;
 using UAManagedCore;
 using FTOptix.Alarm;
+using FTOptix.Report;
 #endregion
 
 public class RuntimeGenerationLogic : BaseNetLogic
@@ -89,10 +90,10 @@ public class RuntimeGenerationLogic : BaseNetLogic
             for (int i = childNodes; i < instCount; i++)
             {
                 // Create new motor to link the widget
-                var newMotor = InformationModel.Make<CustomMotor>("RuntimeMotor" + (i + 1).ToString());
-                motorsContainer.Add(newMotor);
+                //var newMotor = InformationModel.Make<CustomMotor>("RuntimeMotor" + (i + 1).ToString());
+                //motorsContainer.Add(newMotor);
                 // Create widget instance
-                var newWidget = InformationModel.Make<Escenarios_riesg>("MyMotorWidget" + i.ToString());
+                var newWidget = InformationModel.Make<Escenarios_riesg>("Escenario" + i.ToString());
                 //newWidget.VerticalAlignment = VerticalAlignment.Stretch;
                 //newWidget.HorizontalAlignment = HorizontalAlignment.Left;
                 //newWidget.TopMargin = 8;

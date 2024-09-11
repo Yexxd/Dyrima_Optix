@@ -127,15 +127,23 @@ Project:
    Uri: 'urn:FTOptix:Alarm:Net'
    Module: FTOptix.Alarm.Net
    Version: 1.2
+  36:
+   Uri: 'urn:FTOptix:Report'
+   Module: FTOptix.Report
+   Version: 3.0
+  37:
+   Uri: 'urn:FTOptix:Report:Net'
+   Module: FTOptix.Report.Net
+   Version: 2.0
  Statistics:
-  TotalNodeCount: 17147
-  Objects: 2622
-  ObjectTypes: 51
-  Variables: 14461
+  TotalNodeCount: 17510
+  Objects: 2685
+  ObjectTypes: 53
+  Variables: 14761
   VariableTypes: 1
   DataTypes: 1
-  Methods: 11
-  References: 163
+  Methods: 9
+  References: 165
   ReferenceTypes: 0
   Files: 51
  Nodes:

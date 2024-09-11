@@ -17,6 +17,7 @@ using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
 using FTOptix.Alarm;
 using FTOptix.WebUI;
+using FTOptix.Report;
 #endregion
 
 public class VariablesSimulator : BaseNetLogic

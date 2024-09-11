@@ -17,6 +17,7 @@ using FTOptix.EventLogger;
 using FTOptix.Alarm;
 using FTOptix.Core;
 using FTOptix.WebUI;
+using FTOptix.Report;
 #endregion
 
 public class ImageRefresher : BaseNetLogic
