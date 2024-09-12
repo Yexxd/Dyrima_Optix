@@ -65,6 +65,31 @@ Children:
         - Name: Assetpadre
           Type: StoreColumn
           DataType: String
+    - Name: Escenario
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=22;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: fecha
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: escenario
+          Type: StoreColumn
+          DataType: String
   - Class: Reference
     Target: ns=24;i=30
     Direction: Forward

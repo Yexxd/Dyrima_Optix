@@ -55,3 +55,43 @@ Children:
   - Name: Variable6
     Type: BaseDataVariableType
     DataType: Int32
+- Name: Escenario_res
+  Id: g=df02b25ddffae00317ff537b95e2df9c
+  Supertype: BaseObjectType
+  Children:
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "None"
+  - Name: Escenario
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "None"
+  - Name: Area
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Asset_Example"
+  - Name: Riesgo
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Nivel
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: BCSP
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AS
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: SIS
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: F_G
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AP
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: PFD
+    Type: BaseDataVariableType
+    DataType: Float

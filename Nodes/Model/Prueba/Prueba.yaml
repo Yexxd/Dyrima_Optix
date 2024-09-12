@@ -20,3 +20,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "EXXA"
+- Name: testasset
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "none"

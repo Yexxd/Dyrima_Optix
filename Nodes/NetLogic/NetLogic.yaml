@@ -9,3 +9,5 @@ Children:
     Name: CreateAsset
   - Class: Method
     Name: DeleteAll
+- Name: Escenario_Add
+  Type: NetLogic

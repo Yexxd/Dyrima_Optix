@@ -82,7 +82,7 @@ public class RuntimeGenerationLogic : BaseNetLogic
     public void GenerateInstances(int instCount)
     {
         var targetContainer = Owner.Get<ColumnLayout>("WorkspaceArea/RuntimeGeneratedObjects/VerticalLayout/UI_Widgets/UiWidgetsArea/ScrollView/VerticalLayout");
-        var motorsContainer = Owner.Get<Panel>("WorkspaceArea/RuntimeGeneratedObjects/VerticalLayout/UI_Widgets/MotorsContainer");
+        //var motorsContainer = Owner.Get<Panel>("WorkspaceArea/RuntimeGeneratedObjects/VerticalLayout/UI_Widgets/MotorsContainer");
         int childNodes = targetContainer.Children.OfType<Escenarios_riesg>().Count();
         Log.Debug("childNodes: " + childNodes.ToString() + " - instCount: " + instCount.ToString());
         if (instCount > childNodes)
@@ -93,11 +93,15 @@ public class RuntimeGenerationLogic : BaseNetLogic
                 //var newMotor = InformationModel.Make<CustomMotor>("RuntimeMotor" + (i + 1).ToString());
                 //motorsContainer.Add(newMotor);
                 // Create widget instance
+                //var motorName = "RuntimeMotor" + (i + 1).ToString();
                 var newWidget = InformationModel.Make<Escenarios_riesg>("Escenario" + i.ToString());
                 //newWidget.VerticalAlignment = VerticalAlignment.Stretch;
                 //newWidget.HorizontalAlignment = HorizontalAlignment.Left;
                 //newWidget.TopMargin = 8;
-                //newWidget.GetVariable("MotorWidgetAlias").Value = motorsContainer.Get("RuntimeMotor" + (i + 1).ToString()).NodeId;
+                //Project.Current.GetVariable("Model/Prueba/testasset").Value = motorName;
+                newWidget.GetVariable("Date").Value = "Date" + (i + 1).ToString();
+                newWidget.GetVariable("Escenario").Value = "Escenario" + (i + 1).ToString();
+                newWidget.GetVariable("Area").Value ="Escenario" + (i + 1).ToString();
                 targetContainer.Add(newWidget);
             }
         }
@@ -106,7 +110,7 @@ public class RuntimeGenerationLogic : BaseNetLogic
             for (int i = instCount; i < childNodes; i++)
             {
                 targetContainer.Get("MyMotorWidget" + i.ToString()).Delete();
-                motorsContainer.Get("RuntimeMotor" + (i + 1).ToString()).Delete();
+                //motorsContainer.Get("RuntimeMotor" + (i + 1).ToString()).Delete();
             }
         }
     }
