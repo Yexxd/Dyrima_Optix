@@ -3,8 +3,7 @@ Type: FolderType
 Children:
 - Name: currentDate
   Type: BaseDataVariableType
-  DataType: String
-  Value: "loquesea"
+  DataType: DateTime
 - Name: BPCS
   Type: BaseObjectType
   Children:
@@ -146,3 +145,11 @@ Children:
     Type: BaseDataVariableType
     DataType: Int32
     Value: 6000
+- Name: FechaInicio
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2024-01-01T00:00:00.0000000"
+- Name: FechaFin
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2024-01-01T00:00:00.0000000"

@@ -7652,7 +7652,7 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 1000.0
+    Value: 960.0
   - Name: PDFViewer1
     Type: PdfViewer
     Children:
@@ -7687,3 +7687,4 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
+- File: CalendarPicker/CalendarPicker.yaml
