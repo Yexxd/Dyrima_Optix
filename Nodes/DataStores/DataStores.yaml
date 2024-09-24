@@ -86,7 +86,6 @@ Children:
         - Name: fecha
           Type: StoreColumn
           DataType: Int32
-          Value: 0
         - Name: escenario
           Type: StoreColumn
           DataType: String

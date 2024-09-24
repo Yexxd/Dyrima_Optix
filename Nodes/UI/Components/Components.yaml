@@ -969,10 +969,12 @@ Children:
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
+                Value: 10.0
               - Name: TopMargin
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
+                Value: -121.0
               - Name: Width
                 Type: BaseVariableType
                 DataType: Size
@@ -7599,12 +7601,12 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 300.0
+    Value: 520.0
   - Name: Height
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 300.0
+    Value: 720.0
   - Name: PDFViewer1
     Type: PdfViewer
     Children:
@@ -7619,12 +7621,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 300.0
+      Value: 520.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 300.0
+      Value: 720.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -7633,3 +7635,56 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+- Name: reporte_view_2
+  Id: g=2b9aa559d98893f33ab2a0fcd08f5b47
+  Supertype: Dialog
+  ReferenceType: HasComponent
+  Children:
+  - Class: Reference
+    Target: ns=3;i=519
+    Direction: Forward
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 660.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 960.0
+  - Name: PDFViewer1
+    Type: PdfViewer
+    Children:
+    - Name: Path
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      Value: "file:///C:/Users/User/Downloads/report.PDF"
+    - Name: CurrentPage
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 470.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 500.0
+    - Name: ZoomMode
+      Type: BaseDataVariableType
+      DataType: PdfViewerZoomMode
+      ModellingRule: Optional
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+- File: CalendarPicker/CalendarPicker.yaml

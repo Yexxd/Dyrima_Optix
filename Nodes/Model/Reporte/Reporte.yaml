@@ -1,0 +1,155 @@
+Name: Reporte
+Type: FolderType
+Children:
+- Name: currentDate
+  Type: BaseDataVariableType
+  DataType: DateTime
+- Name: BPCS
+  Type: BaseObjectType
+  Children:
+  - Name: LazosManualMes
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+  - Name: LazosResintonizadosMes
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 4
+  - Name: LazosSaturadosMes
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 5
+  - Name: LazosManualAct
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: LazosFGCAct
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+  - Name: LazosSatAct
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+- Name: Alarmas
+  Type: BaseObjectType
+  Children:
+  - Name: MaxAlarmas
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 15
+  - Name: DiasMenores300
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 5
+  - Name: DiaMenores150
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 14
+  - Name: AlarmasInundadas
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 6
+  - Name: ALM1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Alta Presión en TK01"
+  - Name: ALM2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Baja Temperatura en Intercambiador"
+  - Name: ALM3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Fuga de Gas en Zona 3"
+  - Name: ALM4
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Falla en Bomba Principal"
+  - Name: ALM5
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Nivel Crítico en Tanque de Almacenamiento"
+- Name: SIS
+  Type: BaseObjectType
+  Children:
+  - Name: PruebasFuncionales
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 95
+  - Name: MantPreventivo
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 80
+  - Name: SIL
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 2
+  - Name: SIF1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Cierre Automático de Válvula de Emergencia"
+  - Name: SIF2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Activación de Sistema de Extinción por Gas"
+  - Name: SIF3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Detención de Reactor por Alta Presión"
+  - Name: SIF4
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Despresurización de Tanque en Caso de Emergencia"
+  - Name: SIF5
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Aislamiento Automático de Flujo de Gas"
+  - Name: SIF6
+    Type: BaseDataVariableType
+    DataType: Int32
+- Name: F&G
+  Type: BaseObjectType
+  Children:
+  - Name: DetectInhibidos
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 3
+  - Name: DetectPrueba
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+  - Name: ActMesZ1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 2
+  - Name: ActMesZ2
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 1
+- Name: AP
+  Type: BaseObjectType
+  Children:
+  - Name: NumActMes
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 15
+  - Name: TiempoPromedio
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1.2000000476837158
+  - Name: TiempoAcumulado
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 20.799999237060547
+  - Name: FreqAct
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 6000
+- Name: FechaInicio
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2024-01-01T00:00:00.0000000"
+- Name: FechaFin
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2024-01-01T00:00:00.0000000"

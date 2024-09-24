@@ -136,15 +136,15 @@ Project:
    Module: FTOptix.Report.Net
    Version: 2.0
  Statistics:
-  TotalNodeCount: 17546
-  Objects: 2689
-  ObjectTypes: 54
-  Variables: 14792
+  TotalNodeCount: 23022
+  Objects: 3652
+  ObjectTypes: 58
+  Variables: 19298
   VariableTypes: 1
   DataTypes: 1
-  Methods: 9
-  References: 169
+  Methods: 12
+  References: 171
   ReferenceTypes: 0
-  Files: 51
+  Files: 54
  Nodes:
  - File: Nodes/Dyrima.yaml
