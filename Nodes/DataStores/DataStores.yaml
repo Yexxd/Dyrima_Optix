@@ -1,43 +1,13 @@
 Name: DataStores
 Type: DataStoresCategoryFolder
 Children:
-- Name: AssetManager
+- Name: MainDatabase
   Id: g=461777eb1440fd39a3b08ab79eece604
   Type: SQLiteStore
   Children:
   - Name: Tables
     Type: BaseObjectType
     Children:
-    - Name: DataLogger1
-      Type: SQLiteStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=22;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=22;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=22;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=22;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-        Children:
-        - Name: Timestamp
-          Type: StoreColumn
-          DataType: UtcTime
-        - Name: LocalTimestamp
-          Type: StoreColumn
-          DataType: DateTime
-        - Name: 1
-          Type: StoreColumn
-          DataType: Boolean
-        - Name: Sine
-          Type: StoreColumn
-          DataType: Int32
     - Name: Assets
       Type: SQLiteStoreTable
       Children:
@@ -56,16 +26,28 @@ Children:
       - Name: Columns
         Type: BaseObjectType
         Children:
-        - Name: Nombre
+        - Name: Name
           Type: StoreColumn
           DataType: String
-        - Name: Descripcion
+        - Name: Description
           Type: StoreColumn
           DataType: String
-        - Name: Assetpadre
+        - Name: Parent
           Type: StoreColumn
           DataType: String
-    - Name: Escenario
+        - Name: AssetType
+          Type: StoreColumn
+          DataType: String
+        - Name: pos_x
+          Type: StoreColumn
+          DataType: Int16
+        - Name: pos_y
+          Type: StoreColumn
+          DataType: Int16
+        - Name: image
+          Type: StoreColumn
+          DataType: String
+    - Name: Scenarios
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
@@ -83,10 +65,310 @@ Children:
       - Name: Columns
         Type: BaseObjectType
         Children:
-        - Name: fecha
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+        - Name: threat
+          Type: StoreColumn
+          DataType: String
+        - Name: consequence
+          Type: StoreColumn
+          DataType: String
+        - Name: limit_event
+          Type: StoreColumn
+          DataType: String
+        - Name: frequency
+          Type: StoreColumn
+          DataType: Int16
+        - Name: severity
+          Type: StoreColumn
+          DataType: Int16
+        - Name: final_risk
+          Type: StoreColumn
+          DataType: Int16
+        - Name: design_pfd
+          Type: StoreColumn
+          DataType: Float
+        - Name: actual_pfd
+          Type: StoreColumn
+          DataType: Float
+    - Name: BPCS_Layers
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=22;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LoopID
+          Type: StoreColumn
+          DataType: String
+        - Name: UpperControlGuide
+          Type: StoreColumn
+          DataType: Float
+        - Name: LowerControlGuide
+          Type: StoreColumn
+          DataType: Float
+        - Name: maintenance
+          Type: StoreColumn
+          DataType: String
+        - Name: maintenance_done
+          Type: StoreColumn
+          DataType: String
+        - Name: KP
+          Type: StoreColumn
+          DataType: Float
+        - Name: KI
+          Type: StoreColumn
+          DataType: Float
+        - Name: KD
+          Type: StoreColumn
+          DataType: Float
+        - Name: Scenario
+          Type: StoreColumn
+          DataType: String
+    - Name: SIS_Layers
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=22;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: SIFID
+          Type: StoreColumn
+          DataType: String
+        - Name: SIL
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Transmitter
+          Type: StoreColumn
+          DataType: String
+          Value: "0"
+        - Name: LogicSolver
+          Type: StoreColumn
+          DataType: String
+          Value: "0"
+        - Name: FinalElement
+          Type: StoreColumn
+          DataType: String
+          Value: "0"
+        - Name: lmbs
+          Type: StoreColumn
+          DataType: Float
+        - Name: lmbl
+          Type: StoreColumn
+          DataType: Float
+        - Name: lmbe
+          Type: StoreColumn
+          DataType: Float
+        - Name: maintenance
+          Type: StoreColumn
+          DataType: String
+        - Name: maintenance_done
+          Type: StoreColumn
+          DataType: String
+        - Name: corrective_maintenance
+          Type: StoreColumn
+          DataType: String
+        - Name: proofTest
+          Type: StoreColumn
+          DataType: String
+        - Name: Scenario
+          Type: StoreColumn
+          DataType: String
+    - Name: FYG_Layers
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=22;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: category
+          Type: StoreColumn
+          DataType: String
+        - Name: coverage
+          Type: StoreColumn
+          DataType: Int16
+        - Name: redundant
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: Transmitter
+          Type: StoreColumn
+          DataType: String
+          Value: "0"
+        - Name: LogicSolver
+          Type: StoreColumn
+          DataType: String
+          Value: "0"
+        - Name: FinalElement
+          Type: StoreColumn
+          DataType: String
+          Value: "0"
+        - Name: lmbs
+          Type: StoreColumn
+          DataType: Float
+        - Name: lmbl
+          Type: StoreColumn
+          DataType: Float
+        - Name: lmbe
+          Type: StoreColumn
+          DataType: Float
+        - Name: sysfire
+          Type: StoreColumn
+          DataType: String
+        - Name: setpoint
+          Type: StoreColumn
+          DataType: String
+        - Name: maintenance
+          Type: StoreColumn
+          DataType: String
+        - Name: maintenance_done
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: proofTest
+          Type: StoreColumn
+          DataType: String
+    - Name: AP_Layers
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=22;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: APID
+          Type: StoreColumn
+          DataType: String
+        - Name: Setpoint
           Type: StoreColumn
           DataType: Int32
-        - Name: escenario
+        - Name: SIL
+          Type: StoreColumn
+          DataType: Int16
+    - Name: Datasource
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=22;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+        - Name: Path
+          Type: StoreColumn
+          DataType: String
+        - Name: Username
+          Type: StoreColumn
+          DataType: String
+        - Name: Password
+          Type: StoreColumn
+          DataType: String
+    - Name: Datapoint
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=22;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Path
+          Type: StoreColumn
+          DataType: String
+        - Name: Type
+          Type: StoreColumn
+          DataType: String
+    - Name: Datammaping
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=22;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Datasource
+          Type: StoreColumn
+          DataType: String
+        - Name: Datapoint
+          Type: StoreColumn
+          DataType: String
+        - Name: Asset
+          Type: StoreColumn
+          DataType: String
+        - Name: Variable
           Type: StoreColumn
           DataType: String
   - Class: Reference
@@ -147,53 +429,14 @@ Children:
   - Class: Reference
     Target: ns=22;i=59
     Direction: Forward
-- Name: MainDb
+  - Name: Filename
+    Type: BaseDataVariableType
+    DataType: String
+- Name: Historics
   Type: SQLiteStore
   Children:
   - Name: Tables
     Type: BaseObjectType
-    Children:
-    - Name: layers
-      Type: SQLiteStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=22;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=22;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=22;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=22;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-    - Name: loops
-      Type: SQLiteStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=22;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=22;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=22;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=22;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-        Children:
-        - Name: Name
-          Type: StoreColumn
-          DataType: String
-        - Name: LoopId
-          Type: StoreColumn
-          DataType: String
   - Class: Reference
     Target: ns=24;i=30
     Direction: Forward

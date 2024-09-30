@@ -1,4 +1,2 @@
 Name: RAEtherNet_IPDriver1
 Type: RAEtherNetIPDriver
-Children:
-- File: Controllogix_Oficina/Controllogix_Oficina.yaml

@@ -65,14 +65,6 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 3.0
-  20:
-   Uri: 'urn:FTOptix:DataLogger'
-   Module: FTOptix.DataLogger
-   Version: 1.0
-  21:
-   Uri: 'urn:FTOptix:DataLogger:Net'
-   Module: FTOptix.DataLogger.Net
-   Version: 1.0
   22:
    Uri: 'urn:FTOptix:Store'
    Module: FTOptix.Store
@@ -95,14 +87,6 @@ Project:
   27:
    Uri: 'c261ccf40c5457d357838aead26a313e#Dyrima'
    ServerUri: c261ccf40c5457d357838aead26a313e
-  28:
-   Uri: 'urn:FTOptix:CommunicationDriver'
-   Module: FTOptix.CommunicationDriver
-   Version: 2.1
-  29:
-   Uri: 'urn:FTOptix:CommunicationDriver:Net'
-   Module: FTOptix.CommunicationDriver.Net
-   Version: 2.1
   30:
    Uri: 'urn:FTOptix:RAEtherNetIP'
    Module: FTOptix.RAEtherNetIP
@@ -136,15 +120,15 @@ Project:
    Module: FTOptix.Report.Net
    Version: 2.0
  Statistics:
-  TotalNodeCount: 23022
-  Objects: 3652
-  ObjectTypes: 58
-  Variables: 19298
-  VariableTypes: 1
-  DataTypes: 1
-  Methods: 12
-  References: 171
+  TotalNodeCount: 23578
+  Objects: 3723
+  ObjectTypes: 65
+  Variables: 19776
+  VariableTypes: 0
+  DataTypes: 0
+  Methods: 14
+  References: 191
   ReferenceTypes: 0
-  Files: 54
+  Files: 50
  Nodes:
  - File: Nodes/Dyrima.yaml

@@ -6,9 +6,6 @@ Children:
 - File: Capas/Capas.yaml
 - File: BarChart_Lazos/BarChart_Lazos.yaml
 - File: 'Lazos_man-auto/Lazos_man-auto.yaml'
-- Name: ASSETSET
-  Type: BaseDataVariableType
-  DataType: String
 - Name: report
   Type: BaseObjectType
   Children:

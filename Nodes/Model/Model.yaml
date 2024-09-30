@@ -5,3 +5,164 @@ Children:
 - File: AssetManager/AssetManager.yaml
 - File: Prueba/Prueba.yaml
 - File: Reporte/Reporte.yaml
+- Name: Asset_Types
+  Id: g=1ee0ed295baf049c5c9dc576e39af89b
+  Type: BaseObjectType
+  Children:
+  - Name: Sitio
+    Id: g=7e90b24f405f93e50bfd0278642941e9
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Site"
+  - Name: Area
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Area"
+  - Name: Equipo
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Equipment"
+  - Name: Escenario
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Scenario"
+- Name: Voting_Types
+  Id: g=fa274d89a0effb82467b52f544ae82fc
+  Type: BaseObjectType
+  Children:
+  - Name: 1o1
+    Id: g=efc637313173750d684627bfe43d878f
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1oo1"
+  - Name: 1o2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1oo2"
+  - Name: 2o2
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "2oo2"
+  - Name: 2o3
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "2oo3"
+  - Name: 2o4
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "2oo4"
+- Name: Asset_Model
+  Id: g=5aabcd69fc03fd0d2c5d28a243da9e27
+  Supertype: BaseObjectType
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Description
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Parent
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: AssetType
+    Type: BaseDataVariableType
+    DataType: String
+- Name: Scenario_Details
+  Id: g=36f8bfe508858729223e64e0711bf67f
+  Supertype: BaseObjectType
+  Children:
+  - Name: Details
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: threat
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: consequence
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: limit_event
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: frequency
+    Type: BaseDataVariableType
+    DataType: Int16
+  - Name: severity
+    Type: BaseDataVariableType
+    DataType: Int16
+  - Name: final_risk
+    Type: BaseDataVariableType
+    DataType: Int16
+  - Name: design_pfd
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: actual_pfd
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Op_Windows
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: BPCS
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: SIS
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: Alarms
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: FYG
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: AP
+    Type: BaseDataVariableType
+    DataType: Boolean
+- Name: Layers_Details
+  Id: g=8a701eef4bb0533ac2f36282f91aeef2
+  Supertype: BaseObjectType
+  Children:
+  - Name: B_LoopID
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: B_UCG
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: B_LCG
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: S_SIF_Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: S_SIL
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: S_Transmitter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: S_LogicSolver
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: S_FinalElement
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: S_Imbs
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: S_Imbl
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: S_Imbe
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: B_D
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: B_P
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: B_I
+    Type: BaseDataVariableType
+    DataType: Float

@@ -7885,7 +7885,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Loggers/DataLogger1"
+        Value: {"IdType":2,"Id":"3f2556de6e6c133b7fc8979e3fd2e964","Namespace":7}
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -12711,7 +12711,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Dyrima/Loggers/DataLogger1/VariablesToLog/Sine/LastValue"
+              Value: "/Objects/Dyrima/Loggers/Historic_logger/VariablesToLog/Sine/LastValue"
               Children:
               - Name: Mode
                 Type: BaseVariableType
@@ -12799,7 +12799,7 @@ Children:
         - Name: Model
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/Dyrima/Loggers/DataLogger1"
+          Value: {"IdType":2,"Id":"3f2556de6e6c133b7fc8979e3fd2e964","Namespace":7}
           Children:
           - Name: ItemKind
             Type: PropertyType

@@ -3058,10 +3058,11 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 260.0
+        Value: 262.0
       - Name: Model
         Type: NodePointer
         DataType: NodeId
+        Value: "/Objects/Dyrima/DataStores/MainDatabase"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -3093,6 +3094,24 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         ModellingRule: Optional
+        Value: "SELECT \"LoopID\" FROM BPCS_Layers ORDER BY \"LoopID\""
+      - Name: DisplayValuePath
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"LocaleId":"en-US","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}/LoopID"
+      - Name: SelectedValuePath
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}/LoopID"
     - Name: BorderColor
       Type: BaseDataVariableType
       DataType: Color

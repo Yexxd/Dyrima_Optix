@@ -29,8 +29,8 @@ public class AssetManager : BaseNetLogic
     string[] dbColumns = { "Nombre", "Descripcion", "Assetpadre" };
     public override void Start()
     {
-        myStore = Project.Current.Get<Store>("DataStores/AssetManager");
-        myTable = myStore.Tables.Get<Table>("Assets");
+        //myStore = Project.Current.Get<Store>("DataStores/AssetManager");
+        //myTable = myStore.Tables.Get<Table>("Assets");
         // Insert code to be executed when the user-defined logic is started
     }
 
@@ -38,6 +38,7 @@ public class AssetManager : BaseNetLogic
     {
 
     }
+
     [ExportMethod]
     public void CreateAsset()
     {
