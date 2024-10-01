@@ -1,0 +1,1104 @@
+Name: Datamappings
+Type: FolderType
+Children:
+- Name: Asset_manager1
+  Id: g=02f8fd92fe6d8be3daf7c4bdddede3d7
+  Supertype: Screen
+  ReferenceType: HasComponent
+  Children:
+  - Name: BackgroundColor
+    Type: BaseDataVariableType
+    DataType: Color
+    ModellingRule: Optional
+    Value: "#e1e5f3"
+  - Name: Rectangle2
+    Type: Rectangle
+    Children:
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 260.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 115.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 5.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#dcdddf"
+    - Name: CornerRadius
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: Label1
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Asset Hierarchy"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 170.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 25.0
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        ModellingRule: Optional
+        Value: 700
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 25.0
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Filter Asset:"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 70.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 15.0
+    - Name: TextBox1
+      Type: TextBox
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 115.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 95.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 70.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#000000"
+  - Name: AssetList
+    Type: Rectangle
+    Children:
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 260.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 495.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 5.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#dcdddf"
+    - Name: CornerRadius
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: ListBox1
+      Type: ListBox
+      Children:
+      - Name: Model
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/Dyrima/DataStores/MainDatabase"
+        Children:
+        - Name: ItemKind
+          Type: PropertyType
+          DataType: NodeId
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+      - Name: SelectedValue
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        Value: {"Type":12,"Body":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/SelectedAsset/Name"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: SelectedItem
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+      - Name: UISelectedItem
+        Type: BaseDataVariableType
+        DataType: NodeId
+        AccessLevel: Read
+      - Name: UISelectedValue
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Class: Reference
+        Target: ns=3;i=481
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 259.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 495.0
+      - Name: Item
+        Type: Alias
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -2.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: Query
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "SELECT \"Name\" FROM \"Assets\" WHERE AssetType = \"Scenario\""
+      - Name: DisplayValuePath
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}/Name"
+      - Name: OrderBy
+        Type: BaseDataVariableType
+        DataType: NodePath
+        ModellingRule: Optional
+        Value: "{Item}/Nombre"
+      - Name: DataListStyle
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "DataListStyle2"
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+      - Name: MouseDownEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseDownEvent"
+        - Name: ListenObject
+          Type: NodePointer
+          DataType: NodeId
+          ReferenceType: HasProperty
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: NodeClass
+            Type: PropertyType
+            DataType: NodePointerNodeClass
+            ModellingRule: Optional
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../..@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: MethodsToCall
+          Type: BaseObjectType
+        - Name: EventArguments
+          Type: MouseDownEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: LocalTime
+            Type: PropertyType
+            DataType: TimeZoneDataType
+            ModellingRule: Optional
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+          - Name: ConditionClassId
+            Type: PropertyType
+            DataType: NodeId
+            ModellingRule: Optional
+          - Name: ConditionClassName
+            Type: PropertyType
+            DataType: LocalizedText
+            ModellingRule: Optional
+          - Name: ConditionSubClassId
+            Type: PropertyType
+            DataType: NodeId
+            ModellingRule: Optional
+            ValueRank: OneDimension
+            ArrayDimensions: [0]
+          - Name: ConditionSubClassName
+            Type: PropertyType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            ValueRank: OneDimension
+            ArrayDimensions: [0]
+      - Name: ProjectLoadedEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/ProjectLoadedEvent"
+        - Name: ListenObject
+          Type: NodePointer
+          DataType: NodeId
+          ReferenceType: HasProperty
+          Value: "/Objects/Dyrima"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: NodeClass
+            Type: PropertyType
+            DataType: NodePointerNodeClass
+            ModellingRule: Optional
+        - Name: MethodsToCall
+          Type: BaseObjectType
+        - Name: EventArguments
+          Type: ProjectLoadedEvent
+          Children:
+          - Name: Project
+            Type: BaseVariableType
+            DataType: NodeId
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: LocalTime
+            Type: PropertyType
+            DataType: TimeZoneDataType
+            ModellingRule: Optional
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+          - Name: ConditionClassId
+            Type: PropertyType
+            DataType: NodeId
+            ModellingRule: Optional
+          - Name: ConditionClassName
+            Type: PropertyType
+            DataType: LocalizedText
+            ModellingRule: Optional
+          - Name: ConditionSubClassId
+            Type: PropertyType
+            DataType: NodeId
+            ModellingRule: Optional
+            ValueRank: OneDimension
+            ArrayDimensions: [0]
+          - Name: ConditionSubClassName
+            Type: PropertyType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            ValueRank: OneDimension
+            ArrayDimensions: [0]
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: UserSelectionChangedHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/UserSelectionChanged"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/Dyrima/UI/Screens/Asset Manager/AssetManagement"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "SelectedAsset"
+          - Name: MethodContainer2
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../ScaleLayout1/PanelLoader2@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "ChangePanel"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: NewPanel
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+                Value: {"IdType":2,"Id":"0948735aee80d67b01d0d7154f71b35a","Namespace":7}
+              - Name: AliasNode
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+                ValueRank: ScalarOrOneDimension
+        - Name: EventArguments
+          Type: UserSelectionChanged
+          Children:
+          - Name: SelectedItem
+            Type: BaseDataVariableType
+            DataType: NodeId
+          - Name: SelectedValue
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+      - Name: SelectedValuePath
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}/Name"
+      - Name: MouseUpEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseUpEvent"
+        - Name: ListenObject
+          Type: NodePointer
+          DataType: NodeId
+          ReferenceType: HasProperty
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: NodeClass
+            Type: PropertyType
+            DataType: NodePointerNodeClass
+            ModellingRule: Optional
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../..@NodeId"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: MethodsToCall
+          Type: BaseObjectType
+        - Name: EventArguments
+          Type: MouseUpEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: LocalTime
+            Type: PropertyType
+            DataType: TimeZoneDataType
+            ModellingRule: Optional
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+          - Name: ConditionClassId
+            Type: PropertyType
+            DataType: NodeId
+            ModellingRule: Optional
+          - Name: ConditionClassName
+            Type: PropertyType
+            DataType: LocalizedText
+            ModellingRule: Optional
+          - Name: ConditionSubClassId
+            Type: PropertyType
+            DataType: NodeId
+            ModellingRule: Optional
+            ValueRank: OneDimension
+            ArrayDimensions: [0]
+          - Name: ConditionSubClassName
+            Type: PropertyType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            ValueRank: OneDimension
+            ArrayDimensions: [0]
+  - Name: HitTestVisible
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1116.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 635.0
+  - Name: Button1
+    Type: Button
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 221.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 34.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: ImagePath
+      Type: BaseDataVariableType
+      DataType: ResourceUri
+      ModellingRule: Optional
+      Value: "ns=7;%PROJECTDIR%/load.png"
+    - Name: BackgroundColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#075982"
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../RefreshList@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Invoke"
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+  - Name: RefreshList
+    Type: MethodInvocation
+    Children:
+    - Name: ObjectPointer
+      Type: NodePointer
+      DataType: NodeId
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType"
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../AssetList/ListBox1@NodeId"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Method
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Refresh"
+    - Class: Reference
+      Target: ns=2;i=98
+      Direction: Forward
+  - Name: ScaleLayout1
+    Type: ScaleLayout
+    Children:
+    - Name: OriginalWidth
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 835.0
+    - Name: OriginalHeight
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 615.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 248.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: -2.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 835.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 615.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: BottomMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: FontScaling
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+    - Name: Rectangle6
+      Type: Rectangle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 835.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 115.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#dcdddf"
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: Label1
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/SelectedAsset/Name"
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 15.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 25.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 700
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 245.0
+        - Name: TextHorizontalAlignment
+          Type: BaseVariableType
+          DataType: TextHorizontalAlignment
+          ModellingRule: Optional
+        - Name: TextVerticalAlignment
+          Type: BaseVariableType
+          DataType: TextVerticalAlignment
+          ModellingRule: Optional
+      - Name: Button2
+        Type: Button
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/SelectedAsset/Parent"
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 85.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 35.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 65.0
+        - Name: BackgroundColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#075982"
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#ffffff"
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 15.0
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Description"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 14.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 60.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 700
+      - Name: Label4
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/SelectedAsset/Description"
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 14.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 80.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 300
+      - Name: Label5
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 420.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 80.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 300
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 835.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 491.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 119.0
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#dcdddf"
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: Label5
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 420.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 80.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 300
+- Name: SelectedAsset
+  Type: Asset_Model
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Description
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Parent
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: AssetType
+    Type: BaseDataVariableType
+    DataType: String

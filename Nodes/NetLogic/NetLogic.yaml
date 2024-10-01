@@ -2,7 +2,6 @@ Name: NetLogic
 Type: NetLogicCategoryFolder
 Children:
 - Name: AssetManager
-  Id: g=d16a66c020b1912c376e06080340f573
   Type: NetLogic
   Children:
   - Class: Method

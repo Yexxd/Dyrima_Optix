@@ -18,6 +18,7 @@ using FTOptix.CommunicationDriver;
 using FTOptix.Alarm;
 using FTOptix.WebUI;
 using FTOptix.Report;
+using FTOptix.OPCUAClient;
 #endregion
 
 public class VariablesSimulator : BaseNetLogic

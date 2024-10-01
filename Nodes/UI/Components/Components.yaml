@@ -3040,7 +3040,7 @@ Children:
                     Type: BaseDataVariableType
                     DataType: NodeId
                     Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
-                    Value: "/Objects/Dyrima/UI/Screens/Test_screens/REPORTS"
+                    Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Sources_Manager"
                   - Name: AliasNode
                     Type: BaseDataVariableType
                     DataType: NodeId

@@ -20,6 +20,7 @@ using FTOptix.Core;
 using System.Collections.Generic;
 using System.Linq;
 using FTOptix.Report;
+using FTOptix.OPCUAClient;
 #endregion
 
 public class BPCS_Calculate : BaseNetLogic

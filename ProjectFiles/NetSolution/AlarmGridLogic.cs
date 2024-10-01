@@ -4,6 +4,8 @@ using FTOptix.UI;
 using UAManagedCore;
 using FTOptix.Alarm;
 using FTOptix.Report;
+using FTOptix.OPCUAClient;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class AlarmGridLogic : BaseNetLogic

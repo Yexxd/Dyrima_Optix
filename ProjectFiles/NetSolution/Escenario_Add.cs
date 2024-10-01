@@ -18,6 +18,7 @@ using FTOptix.CommunicationDriver;
 using FTOptix.EventLogger;
 using FTOptix.Alarm;
 using FTOptix.Core;
+using FTOptix.OPCUAClient;
 #endregion
 
 public class Escenario_Add : BaseNetLogic

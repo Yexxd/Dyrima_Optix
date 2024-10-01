@@ -10,3 +10,4 @@ Children:
 - File: Operation_Windows/Operation_Windows.yaml
 - File: Asset_Manager/Asset_Manager.yaml
 - File: Test_screens/Test_screens.yaml
+- File: Sources_Manager/Sources_Manager.yaml

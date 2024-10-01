@@ -87,14 +87,6 @@ Project:
   27:
    Uri: 'c261ccf40c5457d357838aead26a313e#Dyrima'
    ServerUri: c261ccf40c5457d357838aead26a313e
-  30:
-   Uri: 'urn:FTOptix:RAEtherNetIP'
-   Module: FTOptix.RAEtherNetIP
-   Version: 3.0
-  31:
-   Uri: 'urn:FTOptix:RAEtherNetIP:Net'
-   Module: FTOptix.RAEtherNetIP.Net
-   Version: 2.1
   32:
    Uri: 'urn:FTOptix:WebUI'
    Module: FTOptix.WebUI
@@ -120,14 +112,14 @@ Project:
    Module: FTOptix.Report.Net
    Version: 2.0
  Statistics:
-  TotalNodeCount: 23578
-  Objects: 3723
-  ObjectTypes: 65
-  Variables: 19776
+  TotalNodeCount: 24449
+  Objects: 3852
+  ObjectTypes: 69
+  Variables: 20507
   VariableTypes: 0
   DataTypes: 0
-  Methods: 14
-  References: 191
+  Methods: 21
+  References: 199
   ReferenceTypes: 0
   Files: 50
  Nodes:

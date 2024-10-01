@@ -260,6 +260,9 @@ Children:
         - Name: proofTest
           Type: StoreColumn
           DataType: String
+        - Name: Scenario
+          Type: StoreColumn
+          DataType: String
     - Name: AP_Layers
       Type: SQLiteStoreTable
       Children:
@@ -287,7 +290,10 @@ Children:
         - Name: SIL
           Type: StoreColumn
           DataType: Int16
-    - Name: Datasource
+        - Name: Scenario
+          Type: StoreColumn
+          DataType: String
+    - Name: Datasources
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
@@ -317,7 +323,10 @@ Children:
         - Name: Password
           Type: StoreColumn
           DataType: String
-    - Name: Datapoint
+        - Name: Type
+          Type: StoreColumn
+          DataType: String
+    - Name: Datapoints
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
@@ -339,6 +348,9 @@ Children:
           Type: StoreColumn
           DataType: String
         - Name: Type
+          Type: StoreColumn
+          DataType: String
+        - Name: Datasource
           Type: StoreColumn
           DataType: String
     - Name: Datammaping

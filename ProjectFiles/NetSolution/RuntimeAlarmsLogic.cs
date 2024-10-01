@@ -6,6 +6,8 @@ using FTOptix.NetLogic;
 using FTOptix.UI;
 using UAManagedCore;
 using FTOptix.Report;
+using FTOptix.OPCUAClient;
+using FTOptix.CommunicationDriver;
 using OpcUa = UAManagedCore.OpcUa;
 #endregion
 

@@ -2,7 +2,6 @@ Name: Model
 Type: ModelCategoryFolder
 Children:
 - File: Layers_Object/Layers_Object.yaml
-- File: AssetManager/AssetManager.yaml
 - File: Prueba/Prueba.yaml
 - File: Reporte/Reporte.yaml
 - Name: Asset_Types
@@ -166,3 +165,52 @@ Children:
   - Name: B_I
     Type: BaseDataVariableType
     DataType: Float
+- Name: Driver_Types
+  Id: g=156747256ac3d01c1f52bdc8020b7213
+  Type: BaseObjectType
+  Children:
+  - Name: Rockwell Ethernet IP
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Logix"
+  - Name: OPC UA
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Opc"
+- Name: Datasource
+  Id: g=a1040f9f8237b7cb17ea717601729321
+  Supertype: BaseObjectType
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Path
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Type
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: Data_Types
+  Id: g=adb9019e1ae5d2fa0e7181252a2d4a43
+  Type: BaseObjectType
+  Children:
+  - Name: Float
+    Id: g=f6d3018b3aa9080f8ddd38b2100024af
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Float"
+  - Name: Boolean
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Boolean"
+  - Name: Int
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Int"
+  - Name: String
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "String"

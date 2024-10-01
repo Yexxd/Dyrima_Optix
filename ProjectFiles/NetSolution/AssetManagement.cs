@@ -19,6 +19,7 @@ using FTOptix.EventLogger;
 using FTOptix.Alarm;
 using FTOptix.Core;
 using System.Reflection.PortableExecutable;
+using FTOptix.OPCUAClient;
 #endregion
 
 public class AssetManagement : BaseNetLogic
@@ -123,5 +124,17 @@ public class AssetManagement : BaseNetLogic
         selectedAsset.AssetType = ResultSet[0, 3].ToString();
         var panel = Owner.Get<PanelLoader>("Asset_manager/ScaleLayout1/PanelLoader2");
         panel.ChangePanel(Owner.Get("Asset_view"));
+    }
+
+    [ExportMethod]
+    public void DeteleAsset(string asset)
+    {
+        string query = $"DELETE FROM Assets WHERE Name = \"{asset}\"";
+        myStore.Query(query, out string[] Header, out object[,] ResultSet);
+        myStore.Query($"DELETE FROM Scenarios WHERE Name = \"{asset}\"", out Header, out ResultSet);
+        myStore.Query($"DELETE FROM BPCS_Layers WHERE Scenario = \"{asset}\"", out Header, out ResultSet);
+        myStore.Query($"DELETE FROM SIS_Layers WHERE Scenario = \"{asset}\"", out Header, out ResultSet);
+        myStore.Query($"DELETE FROM FYG_Layers WHERE Scenario = \"{asset}\"", out Header, out ResultSet);
+        myStore.Query($"DELETE FROM AP_Layers WHERE Scenario = \"{asset}\"", out Header, out ResultSet);
     }
 }

@@ -19,6 +19,7 @@ using FTOptix.Alarm;
 using FTOptix.Core;
 using System.Data.Common;
 using FTOptix.Report;
+using FTOptix.OPCUAClient;
 #endregion
 
 public class AssetManager : BaseNetLogic

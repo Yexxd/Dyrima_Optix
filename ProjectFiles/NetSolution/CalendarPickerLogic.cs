@@ -3,6 +3,8 @@ using System;
 using System.Globalization;
 using FTOptix.NetLogic;
 using UAManagedCore;
+using FTOptix.OPCUAClient;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class CalendarPickerLogic : BaseNetLogic

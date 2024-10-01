@@ -19,6 +19,7 @@ using FTOptix.Alarm;
 using FTOptix.Core;
 using FTOptix.AuditSigning;
 using FTOptix.Report;
+using FTOptix.OPCUAClient;
 #endregion
 
 public class AssetManger : BaseNetLogic

@@ -4961,8 +4961,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Base"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/Asset Manager/SelectedAsset/AssetType"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -5004,8 +5007,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"ID:1"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/Asset Manager/SelectedAsset/Parent"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -5026,49 +5032,6 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 65.0
-      - Name: BackgroundColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#075982"
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#ffffff"
-      - Name: FontSize
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 15.0
-    - Name: Button3
-      Type: Button
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Colombia"}
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 155.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 35.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 20.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 75.0
       - Name: BackgroundColor
         Type: BaseDataVariableType
         DataType: Color
@@ -5186,7 +5149,7 @@ Children:
             - Name: ns=2;ObjectPointer
               Type: NodePointer
               DataType: NodeId
-              Value: "/Objects/Dyrima/NetLogic/AssetManager"
+              Value: "/Objects/Dyrima/UI/Screens/Asset Manager/AssetManagement"
               Children:
               - Name: Kind
                 Type: PropertyType
@@ -5195,7 +5158,18 @@ Children:
             - Name: ns=2;Method
               Type: BaseDataVariableType
               DataType: String
-              Value: "DeleteAll"
+              Value: "DeteleAsset"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: asset
+                Type: BaseDataVariableType
+                DataType: String
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/Dyrima/UI/Screens/Asset Manager/SelectedAsset/Name"
         - Name: EventArguments
           Type: MouseClickEvent
           Children:
@@ -5301,11 +5275,6 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/AssetManager/Asset_info1/Location"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -5610,6 +5579,16 @@ Children:
     Name: CreateAsset
   - Class: Method
     Name: SelectedAsset
+  - Class: Method
+    Name: DeteleAsset
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"asset","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
 - Name: SelectedAsset
   Type: Asset_Model
   Children:
