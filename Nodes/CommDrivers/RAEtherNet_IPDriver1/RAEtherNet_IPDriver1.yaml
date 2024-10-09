@@ -1,0 +1,8 @@
+Name: RAEtherNet_IPDriver1
+Type: RAEtherNetIPDriver
+Children:
+- File: ControlLogix/ControlLogix.yaml
+- Name: AllowRuntimeTagImport
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true

@@ -1,0 +1,19 @@
+Name: Controller Tags
+Type: FolderType
+Children:
+- Name: Comp2Pumps
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Comp2Pumps"
+- Name: Comp3Pumps
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Comp3Pumps"

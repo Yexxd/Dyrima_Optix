@@ -111,16 +111,40 @@ Project:
    Uri: 'urn:FTOptix:Report:Net'
    Module: FTOptix.Report.Net
    Version: 2.0
+  38:
+   Uri: 'urn:FTOptix:CommunicationDriver'
+   Module: FTOptix.CommunicationDriver
+   Version: 2.1
+  39:
+   Uri: 'urn:FTOptix:CommunicationDriver:Net'
+   Module: FTOptix.CommunicationDriver.Net
+   Version: 2.1
+  40:
+   Uri: 'urn:FTOptix:RAEtherNetIP'
+   Module: FTOptix.RAEtherNetIP
+   Version: 3.0
+  41:
+   Uri: 'urn:FTOptix:RAEtherNetIP:Net'
+   Module: FTOptix.RAEtherNetIP.Net
+   Version: 2.1
+  42:
+   Uri: 'urn:FTOptix:DataLogger'
+   Module: FTOptix.DataLogger
+   Version: 1.0
+  43:
+   Uri: 'urn:FTOptix:DataLogger:Net'
+   Module: FTOptix.DataLogger.Net
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 24449
-  Objects: 3852
-  ObjectTypes: 69
-  Variables: 20507
+  TotalNodeCount: 25071
+  Objects: 3919
+  ObjectTypes: 77
+  Variables: 21047
   VariableTypes: 0
   DataTypes: 0
-  Methods: 21
-  References: 199
+  Methods: 28
+  References: 233
   ReferenceTypes: 0
-  Files: 50
+  Files: 57
  Nodes:
  - File: Nodes/Dyrima.yaml

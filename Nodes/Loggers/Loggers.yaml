@@ -1,2 +1,55 @@
 Name: Loggers
 Type: LoggersCategoryFolder
+Children:
+- Name: DataLogger1
+  Id: g=5e217fb4e7e30a547286fe8c6ba86857
+  Type: DataLogger
+  Children:
+  - Name: SamplingMode
+    Type: PropertyType
+    DataType: SamplingModeEnum
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Dyrima/DataStores/Historics"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: VariablesToLog
+    Type: BaseObjectType
+    Children:
+    - Name: Count
+      Type: VariableToLog
+      DataType: Int16
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+  - Class: Reference
+    Target: ns=42;i=21
+    Direction: Forward
+  - Name: LogLocalTime
+    Type: PropertyType
+    DataType: Boolean
+    Value: true
+  - Name: LogVariableOperationCode
+    Type: PropertyType
+    DataType: Boolean
+  - Name: LogVariableTimestamp
+    Type: PropertyType
+    DataType: Boolean
+  - Name: TableName
+    Type: PropertyType
+    DataType: String
+    Value: "DataLogger1"

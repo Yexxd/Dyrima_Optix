@@ -162,6 +162,17 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         Value: 4.0
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/Alarms_General_Result/top_30_contribution"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Float
@@ -366,6 +377,17 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         Value: 60.0
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/Alarms_General_Result/hours_with_more_30"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Float
@@ -486,6 +508,17 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         Value: 80.0
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/Alarms_General_Result/30min_with_10_alarms"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Float
@@ -605,8 +638,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"4%"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/Alarms_General_Result/top_30_contribution"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -638,8 +674,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"60%"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/Alarms_General_Result/hours_with_more_30"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -671,8 +710,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"80%"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/Alarms_General_Result/30min_with_10_alarms"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -1009,8 +1051,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"0.0h"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/Alarms_General_Result/time_in_flood"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -2614,7 +2659,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables"
+        Value: "/Objects/Dyrima/Model/Results/Alarms_General_Result/AlarmsPerDay"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -2901,7 +2946,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables"
+        Value: "/Objects/Dyrima/Model/Results/Alarms_General_Result/PriorityDistribution"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -2913,6 +2958,11 @@ Children:
       - Name: Label
         Type: BaseDataVariableType
         DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}@BrowseName"
       - Name: Value
         Type: BaseDataVariableType
         DataType: Double
@@ -3157,8 +3207,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"1.0h"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/Alarms_General_Result/time_in_chattering"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4058,8 +4111,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"90"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/Alarms_General_Result/max_10_minutes"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4240,8 +4296,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"537"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/Alarms_General_Result/flood_mean"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4423,8 +4482,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"0"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/Alarms_General_Result/days_less_150"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4606,8 +4668,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"0"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/Alarms_General_Result/days_less_300"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4789,8 +4854,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"96"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/Alarms_General_Result/likely_missed"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4972,13 +5040,16 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"4910"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/Alarms_General_Result/anoounced_count"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 10.0
+        Value: 11.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -5174,65 +5245,6 @@ Children:
       Children:
       - Name: Pens
         Type: BaseObjectType
-        Children:
-        - Name: 1
-          Type: TrendPen
-          DataType: BaseDataType
-          Children:
-          - Name: Thickness
-            Type: BaseDataVariableType
-            DataType: Size
-            Value: -1.0
-          - Name: Enabled
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-          - Name: Thresholds
-            Type: BaseObjectType
-          - Name: Color
-            Type: BaseDataVariableType
-            DataType: Color
-            ModellingRule: Optional
-            Value: "#1b5583"
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../Model/VariablesToLog/1/LastValue"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              ModellingRule: Optional
-              Value: 2
-        - Name: Sine
-          Type: TrendPen
-          DataType: BaseDataType
-          Children:
-          - Name: Thickness
-            Type: BaseDataVariableType
-            DataType: Size
-            Value: -1.0
-          - Name: Enabled
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-          - Name: Thresholds
-            Type: BaseObjectType
-          - Name: Color
-            Type: BaseDataVariableType
-            DataType: Color
-            ModellingRule: Optional
-            Value: "#0fafff"
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../Model/VariablesToLog/Sine/LastValue"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              ModellingRule: Optional
-              Value: 2
       - Class: Reference
         Target: ns=3;i=1129
         Direction: Forward
@@ -5312,17 +5324,6 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 55.0
-      - Name: Model
-        Type: NodePointer
-        DataType: NodeId
-        Value: {"IdType":2,"Id":"3f2556de6e6c133b7fc8979e3fd2e964","Namespace":7}
-        Children:
-        - Name: ItemKind
-          Type: PropertyType
-          DataType: NodeId
-        - Name: Kind
-          Type: PropertyType
-          DataType: NodeId
   - Name: corrective_maintenance
     Type: Rectangle
     Children:
@@ -5936,8 +5937,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"23/06/2024"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/Alarmas/Alarms1/maintenance"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -6012,8 +6016,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"8"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/Alarmas/Alarms1/days2maintenance1"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -6248,11 +6255,6 @@ Children:
     - Name: Label1
       Type: Label
       Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"4"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -6321,6 +6323,14 @@ Children:
         DataType: Color
         ModellingRule: Optional
         Value: "#b3b3b3"
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/Alarmas/Alarms1/Priority"
   - Name: Rectangle7
     Type: Rectangle
     Children:
@@ -6672,8 +6682,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"23/06/2024"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/Alarmas/Alarms1/maintenance"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -6748,8 +6761,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"8"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/Alarmas/Alarms1/days2maintenance1"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -7568,7 +7584,6 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -7794,7 +7809,6 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -8786,3 +8800,12 @@ Children:
   - Name: corrective_maintenance
     Type: BaseDataVariableType
     DataType: Boolean
+  - Name: Priority
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: maintenance
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: days2maintenance1
+    Type: BaseDataVariableType
+    DataType: Int32

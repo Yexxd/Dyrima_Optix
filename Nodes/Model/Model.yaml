@@ -1,6 +1,7 @@
 Name: Model
 Type: ModelCategoryFolder
 Children:
+- File: Results/Results.yaml
 - File: Layers_Object/Layers_Object.yaml
 - File: Prueba/Prueba.yaml
 - File: Reporte/Reporte.yaml
@@ -57,15 +58,18 @@ Children:
   - Name: Name
     Type: BaseDataVariableType
     DataType: String
-  - Name: Description
+  - Name: Details
     Type: BaseDataVariableType
     DataType: String
-  - Name: Parent
+  - Name: ParentAsset
     Type: BaseDataVariableType
     DataType: String
   - Name: AssetType
     Type: BaseDataVariableType
     DataType: String
+  - Name: ImageFilePath
+    Type: BaseDataVariableType
+    DataType: ResourceUri
 - Name: Scenario_Details
   Id: g=36f8bfe508858729223e64e0711bf67f
   Supertype: BaseObjectType
@@ -214,3 +218,43 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "String"
+- Name: Layers_List
+  Id: g=bcad32fcafd672e94ca7fe674e37ab1f
+  Type: BaseObjectType
+  Children:
+  - Name: BPCS
+    Id: g=1ab905cd5f77d9a7621561a47e93e8b6
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "BPCS"
+  - Name: SIS
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SIS"
+  - Name: Fire And Gas
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "FYG"
+  - Name: Active Protection
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "AP"
+- Name: Datamapping
+  Id: g=4304845e61a984d565377ab063ef6fb6
+  Supertype: BaseObjectType
+  Children:
+  - Name: Datasource
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Datapoint
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Variable
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Layer
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Asset
+    Type: BaseDataVariableType
+    DataType: String

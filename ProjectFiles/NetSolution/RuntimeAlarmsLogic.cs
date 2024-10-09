@@ -8,6 +8,8 @@ using UAManagedCore;
 using FTOptix.Report;
 using FTOptix.OPCUAClient;
 using FTOptix.CommunicationDriver;
+using FTOptix.RAEtherNetIP;
+using FTOptix.DataLogger;
 using OpcUa = UAManagedCore.OpcUa;
 #endregion
 

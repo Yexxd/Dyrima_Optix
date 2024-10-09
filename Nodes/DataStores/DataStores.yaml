@@ -47,6 +47,14 @@ Children:
         - Name: image
           Type: StoreColumn
           DataType: String
+        - Name: width
+          Type: StoreColumn
+          DataType: Int16
+          Value: 10
+        - Name: height
+          Type: StoreColumn
+          DataType: Int16
+          Value: 10
     - Name: Scenarios
       Type: SQLiteStoreTable
       Children:
@@ -353,7 +361,7 @@ Children:
         - Name: Datasource
           Type: StoreColumn
           DataType: String
-    - Name: Datammaping
+    - Name: Datamappings
       Type: SQLiteStoreTable
       Children:
       - Class: Reference
@@ -381,6 +389,9 @@ Children:
           Type: StoreColumn
           DataType: String
         - Name: Variable
+          Type: StoreColumn
+          DataType: String
+        - Name: Layer
           Type: StoreColumn
           DataType: String
   - Class: Reference
@@ -445,10 +456,176 @@ Children:
     Type: BaseDataVariableType
     DataType: String
 - Name: Historics
+  Id: g=8a5756b63632d63bdc0297f9cf492957
   Type: SQLiteStore
   Children:
   - Name: Tables
     Type: BaseObjectType
+    Children:
+    - Name: BCPS_Historic
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=22;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ProcessValue
+          Type: StoreColumn
+          DataType: Float
+        - Name: ControlValue
+          Type: StoreColumn
+          DataType: Float
+        - Name: SetPoint
+          Type: StoreColumn
+          DataType: Float
+        - Name: Mode
+          Type: StoreColumn
+          DataType: Boolean
+    - Name: SIS_Historic
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=22;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: isActive
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: isForced
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: isInhibited
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: sensorHealtGood
+          Type: StoreColumn
+          DataType: Boolean
+          Value: true
+        - Name: actuatorHealtGood
+          Type: StoreColumn
+          DataType: Boolean
+          Value: true
+        - Name: setPointValue
+          Type: StoreColumn
+          DataType: Float
+        - Name: processValue
+          Type: StoreColumn
+          DataType: Float
+    - Name: FYG_Historic
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=22;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: processValue
+          Type: StoreColumn
+          DataType: Float
+    - Name: AP_Historic
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=22;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: processValue
+          Type: StoreColumn
+          DataType: Float
+    - Name: BCPS_Count
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=22;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Count
+          Type: StoreColumn
+          DataType: Int16
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+    - Name: DataLogger1
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=22;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=22;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Count
+          Type: StoreColumn
+          DataType: BaseDataType
   - Class: Reference
     Target: ns=24;i=30
     Direction: Forward

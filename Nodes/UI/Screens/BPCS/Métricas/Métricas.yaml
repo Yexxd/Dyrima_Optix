@@ -2,6 +2,4 @@ Name: Métricas
 Type: FolderType
 Children:
 - File: Mensuales/Mensuales.yaml
-- File: Lazos/Lazos.yaml
 - File: Actuales/Actuales.yaml
-- File: Manual_Auto/Manual_Auto.yaml

@@ -19,6 +19,8 @@ using FTOptix.Core;
 using FTOptix.OPCUAClient;
 using FTOptix.OmronEthernetIP;
 using System.Linq;
+using FTOptix.CommunicationDriver;
+using FTOptix.DataLogger;
 #endregion
 
 public class SourcesManagement : BaseNetLogic
@@ -53,10 +55,24 @@ public class SourcesManagement : BaseNetLogic
         values[0, 2] = assetValues.Type;
         assetsTable.Insert(dbColumns, values);
 
-        var newDriver = InformationModel.Make<FTOptix.OPCUAClient.OPCUAClientType>("ua_client1");
-        newDriver.ServerEndpointURL = "opc.tcp://localhost:4842";
-        Project.Current.Get("OPC-UA").Add(newDriver);
-        Log.Info("Created", "Created");
+        //var newDriver = InformationModel.Make<FTOptix.OPCUAClient.OPCUAClientType>("ua_client1");
+        //newDriver.ServerEndpointURL = "opc.tcp://localhost:4842";
+        //Project.Current.Get("OPC-UA").Add(newDriver);
+        //Log.Info("Created", "Created");
+        //if(assetValues.Type == "Logix")
+        //{
+        //    var newDriver = InformationModel.Make<FTOptix.RAEtherNetIP.Station>("station1");
+        //    newDriver.Route = "172.16.0.18\\Backplane\\0";
+        //    Project.Current.Get("CommDrivers/RAEtherNet_IPDriver1").Add(newDriver);
+        //    Log.Info("Created", "Created");
+        //    Struct[] instances;
+        //    Struct[] types;
+        //    newDriver.Browse(out instances, out types);
+        //    foreach (var item in types)
+        //    {
+        //        Log.Info(((PrototypeInfo)item).NodeId.ToString());
+        //    }
+        //}
     }
 
     enum OpcAttributes
@@ -153,10 +169,10 @@ public class SourcesManagement : BaseNetLogic
         myStore.Query(query, out string[] Header, out object[,] ResultSet);
         selectedAsset.Path = ResultSet[0, 1].ToString();
         selectedAsset.Type = ResultSet[0, 4].ToString();
-        var dataGridItem = InformationModel.Get<DataGrid>(dataGrid);
-        var query2 = $"SELECT* FROM Datapoints WHERE Datasource = \"{selectedAsset.Name}\" ORDER BY \"Path\"";
-        dataGridItem.Query = query2;
-        Log.Info("Query ", query2);
+        //var dataGridItem = InformationModel.Get<DataGrid>(dataGrid);
+        //var query2 = $"SELECT* FROM Datapoints WHERE Datasource = \"{selectedAsset.Name}\" ORDER BY \"Path\"";
+        //dataGridItem.Query = query2;
+        //Log.Info("Query ", query2);
     }
 
     [ExportMethod]

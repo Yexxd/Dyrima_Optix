@@ -95,13 +95,16 @@ public class AssetManagement : BaseNetLogic
         }
 
         Table assetsTable = myStore.Tables.Get<Table>("Assets");
-        string[] dbColumns = {"Name","Description","Parent","AssetType"};
+        string[] dbColumns = {"Name","Description","Parent","AssetType", "image" };
 
-        var values = new object[1, 4];
+        var values = new object[1, 5];
         values[0, 0] = assetValues.Name;
-        values[0, 1] = assetValues.Description;
-        values[0, 2] = assetValues.Parent;
+        values[0, 1] = assetValues.Details;
+        values[0, 2] = assetValues.ParentAsset;
         values[0, 3] = assetValues.AssetType;
+        var urivalue = assetValues.ImageFilePath;
+        values[0, 4] = urivalue.Uri;
+        Log.Info("New Asset String", values[0, 4].ToString());
         assetsTable.Insert(dbColumns, values);
     }
 
@@ -114,16 +117,24 @@ public class AssetManagement : BaseNetLogic
         string query = $"SELECT * FROM Assets WHERE Name = \"{selectedAsset.Name}\"";
         Log.Info("query", query);
         myStore.Query(query, out string[] Header, out object[,] ResultSet);
-        foreach(var item in Header)
+        var message = "";
+        for (int i = 0; i < Header.Length; i++)
         {
-            Log.Info("Header", item);
+            message += $"{Header[i]}: {ResultSet[0,i]}, ";
         }
-        Log.Info("listbox Name", ResultSet[0,0].ToString());
-        selectedAsset.Description = ResultSet[0, 1].ToString();
-        selectedAsset.Parent = ResultSet[0, 2].ToString();
+
+        Log.Info("Asset", message);
+        selectedAsset.Details = ResultSet[0, 1].ToString();
+        selectedAsset.ParentAsset = ResultSet[0, 2].ToString();
         selectedAsset.AssetType = ResultSet[0, 3].ToString();
-        var panel = Owner.Get<PanelLoader>("Asset_manager/ScaleLayout1/PanelLoader2");
-        panel.ChangePanel(Owner.Get("Asset_view"));
+        try
+        {
+            selectedAsset.ImageFilePath = ResourceUri.FromUri(ResultSet[0, 6].ToString());
+        }
+        catch (Exception)
+        {
+            selectedAsset.ImageFilePath = ResourceUri.FromUri("");
+        }
     }
 
     [ExportMethod]
@@ -136,5 +147,8 @@ public class AssetManagement : BaseNetLogic
         myStore.Query($"DELETE FROM SIS_Layers WHERE Scenario = \"{asset}\"", out Header, out ResultSet);
         myStore.Query($"DELETE FROM FYG_Layers WHERE Scenario = \"{asset}\"", out Header, out ResultSet);
         myStore.Query($"DELETE FROM AP_Layers WHERE Scenario = \"{asset}\"", out Header, out ResultSet);
+        myStore.Query($"DELETE FROM Datamappings WHERE Asset = \"{asset}\"", out Header, out ResultSet);
+        var panel = Owner.Get<PanelLoader>("Asset_manager/ScaleLayout1/PanelLoader2");
+        panel.ChangePanel("");
     }
 }

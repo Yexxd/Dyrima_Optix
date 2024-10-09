@@ -1,0 +1,66 @@
+Name: InputTypes
+Type: FolderType
+Children:
+- Name: BPCS_Input
+  Id: g=c257ffa5efe8fe12f6b3d06b75274f06
+  Supertype: BaseObjectType
+  Children:
+  - Name: ProcessValue
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: ControlValue
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Setpoint
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Mode
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: LoopId
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: SIS_Input
+  Id: g=87fa802476c40466a6f2a5cb91383124
+  Supertype: BaseObjectType
+  Children:
+  - Name: isActive
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: isForced
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: isInhibited
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: sensorHealtGood
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: actuatorHealtGood
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: setPointValue
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: processValue
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: SISId
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: FYG_Input
+  Id: g=b31d9107a23de39e13daf29667586cfe
+  Supertype: BaseObjectType
+  Children:
+  - Name: processValue
+    Type: BaseDataVariableType
+    DataType: Float
+- Name: AP_Input
+  Id: g=79897b886a46cde6bab857bfae23ee13
+  Supertype: BaseObjectType
+  Children:
+  - Name: processValue
+    Type: BaseDataVariableType
+    DataType: Float

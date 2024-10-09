@@ -1,0 +1,214 @@
+Name: Results
+Type: FolderType
+Children:
+- File: BPCS/BPCS.yaml
+- Name: SIS_General_Result
+  Type: BaseObjectType
+  Children:
+  - Name: percentageinhibited
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: SIL_Distribution
+    Id: g=35c2b681706fec384047d101040ca55a
+    Type: BaseObjectType
+    Children:
+    - Name: SIL1
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: SIL2
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: SIL3
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: SIL4
+      Type: BaseDataVariableType
+      DataType: Int32
+  - Name: percentageforce
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: functionaltesting
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: maintenance
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: timeToNormal
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: ManualHistorics
+    Type: BaseObjectType
+    Children:
+    - Name: Object1
+      Type: BaseObjectType
+      Children:
+      - Name: Timestamp
+        Type: BaseDataVariableType
+        DataType: UtcTime
+        Value: "2024-01-10T00:00:00.0000000"
+      - Name: Count
+        Type: BaseDataVariableType
+        DataType: Int32
+    - Name: Object2
+      Type: BaseObjectType
+      Children:
+      - Name: Timestamp
+        Type: BaseDataVariableType
+        DataType: UtcTime
+        Value: "2024-02-10T00:00:00.0000000"
+      - Name: Count
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 2
+    - Name: Object3
+      Type: BaseObjectType
+      Children:
+      - Name: Timestamp
+        Type: BaseDataVariableType
+        DataType: UtcTime
+        Value: "2024-03-10T00:00:00.0000000"
+      - Name: Count
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 3
+  - Name: transmitter
+    Id: g=d2430c78ed29cefb400b659ef38c76b9
+    Type: BaseObjectType
+    Children:
+    - Name: 1o1
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 1o2
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 2o2
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 2o3
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 2o4
+      Type: BaseDataVariableType
+      DataType: Int32
+  - Name: actuator
+    Id: g=91ff034c4225a31e3ed3af0681401baa
+    Type: BaseObjectType
+    Children:
+    - Name: 1o1
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 1o2
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 2o2
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 2o3
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 2o4
+      Type: BaseDataVariableType
+      DataType: Int32
+  - Name: solver
+    Id: g=2f2a85af37f003fde866e30e869aa1b0
+    Type: BaseObjectType
+    Children:
+    - Name: 1o1
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 1o2
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 2o2
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 2o3
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 2o4
+      Type: BaseDataVariableType
+      DataType: Int32
+  - Name: MostActiveSifs
+    Id: g=189ced755e5a8523e24667863b77539b
+    Type: BaseObjectType
+  - Name: MostActiveSILS
+    Id: g=71cd2e4f8804a48383d35b936c00a1b5
+    Type: BaseObjectType
+    Children:
+    - Name: SIL1
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: SIL2
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: SIL3
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: SIL4
+      Type: BaseDataVariableType
+      DataType: Int32
+- Name: Alarms_General_Result
+  Type: BaseObjectType
+  Children:
+  - Name: max_10_minutes
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: flood_mean
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: days_less_150
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: days_less_300
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: likely_missed
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: anoounced_count
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: top_30_contribution
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: hours_with_more_30
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: 30min_with_10_alarms
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: time_in_flood
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: time_in_chattering
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: PriorityDistribution
+    Id: g=ad946a8d97a15d4341771f20577f8e9b
+    Type: BaseObjectType
+    Children:
+    - Name: 1
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 2
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 3
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 4
+      Type: BaseDataVariableType
+      DataType: Int32
+  - Name: AlarmsPerDay
+    Id: g=2265b6a89d0ffd5de3d34fab5691cefb
+    Type: BaseObjectType
+    Children:
+    - Name: Dia
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Hora
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 10min
+      Type: BaseDataVariableType
+      DataType: Int32

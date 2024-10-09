@@ -27,14 +27,19 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"saturados"}
+          Value: {"LocaleId":"en-US","Text":"Nombre"}
         - Name: DataItemTemplate
           Type: DataGridLabelItemTemplate
           Children:
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"NamespaceIndex":2,"TextId":"Acked"}
+            Value: {"LocaleId":"en-US","Text":"Nombre"}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Item}@BrowseName"
         - Name: Visible
           Type: BaseDataVariableType
           DataType: Boolean
@@ -83,6 +88,7 @@ Children:
     - Name: Model
       Type: NodePointer
       DataType: NodeId
+      Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/saturated_this_month"
       Children:
       - Name: ItemKind
         Type: PropertyType
@@ -199,7 +205,6 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"Resintonizados"}
         - Name: Width
           Type: BaseDataVariableType
           DataType: Size
@@ -330,7 +335,6 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"LocaleId":"en-US","Text":"en manual"}
         - Name: Visible
           Type: BaseDataVariableType
           DataType: Boolean

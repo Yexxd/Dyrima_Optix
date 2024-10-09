@@ -117,6 +117,15 @@ Children:
   - Name: corrective_maintenance
     Type: BaseDataVariableType
     DataType: Boolean
+  - Name: Priority
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: maintenance
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: days2maintenance1
+    Type: BaseDataVariableType
+    DataType: Int32
 - Name: SIS
   Id: g=5f4d8378394efc33f5359d85acfcb825
   Supertype: BaseObjectType
@@ -279,3 +288,67 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.054794520139694214
+- Name: BPCS_InputInstance
+  Id: g=897e5e92db46f23494139517accbc6e9
+  Type: BPCS_Input
+  Children:
+  - Name: ProcessValue
+    Id: g=9de1d203e4b7c96b30113fc3b7291ce7
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: ControlValue
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Setpoint
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Mode
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: LoopId
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: SIS_InputInstance
+  Id: g=6b6f343d2d12c26054ddb552e22f4339
+  Type: SIS_Input
+  Children:
+  - Name: isActive
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: isForced
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: isInhibited
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: sensorHealtGood
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: actuatorHealtGood
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: setPointValue
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: processValue
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: SISId
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: FYG_InputInstance
+  Id: g=71539ea063bdf0d33847a233862fe176
+  Type: FYG_Input
+  Children:
+  - Name: processValue
+    Type: BaseDataVariableType
+    DataType: Float
+- Name: AP_InputInstance
+  Type: AP_Input
+  Children:
+  - Name: processValue
+    Type: BaseDataVariableType
+    DataType: Float
+- File: InputTypes/InputTypes.yaml

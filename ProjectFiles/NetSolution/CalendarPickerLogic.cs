@@ -5,6 +5,8 @@ using FTOptix.NetLogic;
 using UAManagedCore;
 using FTOptix.OPCUAClient;
 using FTOptix.CommunicationDriver;
+using FTOptix.RAEtherNetIP;
+using FTOptix.DataLogger;
 #endregion
 
 public class CalendarPickerLogic : BaseNetLogic

@@ -2043,6 +2043,25 @@ Children:
       - Name: Query
         Type: BaseDataVariableType
         DataType: String
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"SELECT* FROM Datapoints WHERE Datasource =  \"{0}\" ORDER BY \"Path\""}
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Selected_Source/Name"
       - Name: Columns
         Type: BaseObjectType
         Children:

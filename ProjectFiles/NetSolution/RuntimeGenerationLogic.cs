@@ -10,6 +10,8 @@ using FTOptix.Alarm;
 using FTOptix.Report;
 using FTOptix.OPCUAClient;
 using FTOptix.CommunicationDriver;
+using FTOptix.RAEtherNetIP;
+using FTOptix.DataLogger;
 #endregion
 
 public class RuntimeGenerationLogic : BaseNetLogic
@@ -58,6 +60,7 @@ public class RuntimeGenerationLogic : BaseNetLogic
         myControl.Text = textToDisplay;
         Owner.Get("WorkspaceArea/RuntimeGeneratedObjects/VerticalLayout/UI_Controls/UI_ControlsArea").Add(myControl);
     }
+
     [ExportMethod]
     public void GenerateLabel(int topMargin, int leftMargin, string textToDisplay)
     {

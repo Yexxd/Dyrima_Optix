@@ -9,7 +9,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [48,2],
+    "Dimensions": [52,2],
     "Body": [
      "","en-US",
      "Acked","Acked",
@@ -58,6 +58,10 @@ Children:
      "GeneratedWidgets","Generated widgets",
      "ConfirmAll","Confirm All",
      "OffOn","Off/On",
-     "ManAuto","Man/Auto"
+     "ManAuto","Man/Auto",
+     "ApplicationFolder","Application folder",
+     "ProjectFolder","Project folder",
+     "Filename","File name",
+     "Size","Size"
     ]
    }

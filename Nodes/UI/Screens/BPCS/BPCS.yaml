@@ -161,7 +161,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Model/Prueba/BarChart Lazos"
+        Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/top_error"
         Children:
         - Name: Kind
           Type: PropertyType
@@ -251,8 +251,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"4"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/synth_required"
       - Name: TextColor
         Type: BaseDataVariableType
         DataType: Color
@@ -589,8 +592,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"10"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/current_outside_guide_count"
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -794,7 +800,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 40.0
+        Value: 36.0
       - Name: BottomMargin
         Type: BaseVariableType
         DataType: Size
@@ -808,6 +814,17 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         Value: 10.0
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/current_outside_guide_count"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
       - Name: MinorTickCount
         Type: BaseDataVariableType
         DataType: Float
@@ -922,8 +939,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"1"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/retuned_this_month_count"
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
@@ -1103,8 +1123,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"0"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/saturated_this_month_count"
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
@@ -1124,7 +1147,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 10.0
+        Value: 8.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -1348,34 +1371,29 @@ Children:
       - Name: Pens
         Type: BaseObjectType
         Children:
-        - Name: TrendPen1
+        - Name: Count
           Type: TrendPen
           DataType: BaseDataType
           Children:
-          - Name: Thresholds
-            Type: BaseObjectType
-          - Name: Enabled
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
           - Name: Thickness
             Type: BaseDataVariableType
             DataType: Size
             Value: -1.0
-          - Name: Title
+          - Name: Enabled
             Type: BaseDataVariableType
-            DataType: LocalizedText
-            ModellingRule: Optional
-            Value: {"LocaleId":"en-US","Text":"count"}
+            DataType: Boolean
+            Value: true
+          - Name: Thresholds
+            Type: BaseObjectType
           - Name: Color
             Type: BaseDataVariableType
             DataType: Color
             ModellingRule: Optional
-            Value: "#43a8ec"
+            Value: "#1b5583"
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "/Objects/Dyrima/Model/Prueba/ChartTest/VariablesSimulator/Sine"
+            Value: "../../Model/VariablesToLog/Count/LastValue"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -1391,6 +1409,17 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 480.0
+      - Name: Model
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/Dyrima/Loggers/DataLogger1"
+        Children:
+        - Name: ItemKind
+          Type: PropertyType
+          DataType: NodeId
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -1493,7 +1522,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables"
+        Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/Distribution"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -1505,6 +1534,11 @@ Children:
       - Name: Label
         Type: BaseDataVariableType
         DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}@BrowseName"
       - Name: Value
         Type: BaseDataVariableType
         DataType: Double
@@ -1761,7 +1795,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Model/Prueba/BarChart Lazos"
+        Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/top_noise"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -2089,6 +2123,17 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         Value: 100.0
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/current_saturated_count"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
       - Name: BottomMargin
         Type: BaseVariableType
         DataType: Size
@@ -2119,8 +2164,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"100"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/current_saturated_count"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -2322,6 +2370,17 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         Value: 5.0
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/current_manual_count"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
       - Name: MajorTickCount
         Type: BaseDataVariableType
         DataType: Float
@@ -2433,8 +2492,18 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
         Value: {"LocaleId":"en-US","Text":"5"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/current_manual_count"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -2520,8 +2589,11 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"0"}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/manual_this_month_count"
       - Name: TextHorizontalAlignment
         Type: BaseVariableType
         DataType: TextHorizontalAlignment
@@ -2927,7 +2999,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 215.0
+      Value: 213.0
     - Name: CornerRadius
       Type: BaseDataVariableType
       DataType: Size
@@ -3356,7 +3428,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 40.0
+        Value: 39.0
       - Name: LegendVisible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -3373,6 +3445,21 @@ Children:
         Value: 35.0
       - Name: Pens
         Type: BaseObjectType
+        Children:
+        - Name: Valores
+          Type: XYChartArrayLinePen
+          Children:
+          - Name: PointArray
+            Type: BaseDataVariableType
+            DataType: Number
+            ValueRank: 2
+            ArrayDimensions: [0,0]
+            Value: {"Type":11,"Dimensions":[0,0],"Body":[]}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/BPCS/BPCS1/correlation"
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -4314,12 +4401,12 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/UI/Screens/BPCS/Métricas/Manual_Auto"
+        Value: "/Objects/Dyrima/UI/Screens/BPCS/BPCS1/Distribution"
         Children:
         - Name: ItemKind
           Type: PropertyType
           DataType: NodeId
-          Value: "/Objects/Dyrima/UI/Screens/BPCS/Métricas/Manual_Auto/Auto"
+          Value: {"IdType":2,"Id":"b3e23da6b600716748241590f293648b","Namespace":7}
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
@@ -4349,7 +4436,7 @@ Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: "/Objects/Dyrima/UI/Screens/BPCS/Métricas/Manual_Auto/Auto"
+          Value: {"IdType":2,"Id":"b3e23da6b600716748241590f293648b","Namespace":7}
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
@@ -4602,7 +4689,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 40.0
+        Value: 42.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -5097,7 +5184,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Model/Prueba/BarChart Lazos"
+        Value: "/Objects/Dyrima/UI/Screens/BPCS/BPCS1/ControlVariable"
         Children:
         - Name: Kind
           Type: PropertyType
@@ -5752,7 +5839,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 46.0
+        Value: 42.0
       - Name: Label
         Type: BaseDataVariableType
         DataType: LocalizedText
@@ -5777,7 +5864,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Model/Prueba/BarChart Lazos"
+        Value: "/Objects/Dyrima/UI/Screens/BPCS/BPCS1/ProcessVariable"
         Children:
         - Name: Kind
           Type: PropertyType
@@ -6076,34 +6163,27 @@ Children:
   - Name: manual_percent
     Type: BaseDataVariableType
     DataType: Float
-    Value: 0.006296620704233646
   - Name: tuning_required
     Type: BaseDataVariableType
     DataType: Boolean
   - Name: opeator_interventions
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 3
   - Name: times_outside_guide
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 1
   - Name: max_pv
     Type: BaseDataVariableType
     DataType: Float
-    Value: 1820.74560546875
   - Name: min_pv
     Type: BaseDataVariableType
     DataType: Float
-    Value: 1495.5904541015625
   - Name: max_cv
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 67
   - Name: min_cv
     Type: BaseDataVariableType
     DataType: Float
-    Value: 57.71402359008789
   - Name: maint_date
     Type: BaseDataVariableType
     DataType: DateString
@@ -6111,23 +6191,18 @@ Children:
   - Name: days_to_maint
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 3
   - Name: pv_standard_deviation
     Type: BaseDataVariableType
     DataType: Float
-    Value: 18.04379653930664
   - Name: cv_standard_deviation
     Type: BaseDataVariableType
     DataType: Float
-    Value: 0.653176486492157
   - Name: pv_media
     Type: BaseDataVariableType
     DataType: Float
-    Value: 1818.997314453125
   - Name: cv_media
     Type: BaseDataVariableType
     DataType: Float
-    Value: 57.77709197998047
   - Name: timeseries
     Type: BaseDataVariableType
     DataType: Int32
@@ -6136,16 +6211,90 @@ Children:
   - Name: correlation
     Type: BaseDataVariableType
     DataType: Float
-    Value: -0.5385761857032776
   - Name: covariance
     Type: BaseDataVariableType
     DataType: Float
-    Value: -6.351986885070801
   - Name: is_saturated
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: true
   - Name: PFD
     Type: BaseDataVariableType
     DataType: Float
-    Value: 1.0
+  - Name: Distribution
+    Id: g=e3e01f3e913453356186a386c41b362c
+    Type: BaseObjectType
+    Children:
+    - Name: Manual
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 1.0
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}*100"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../manual_percent"
+    - Name: Auto
+      Type: BaseDataVariableType
+      DataType: Float
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "(1-{0})*100"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../manual_percent"
+  - Name: CorrelationChart
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: 2
+    ArrayDimensions: [10,2]
+  - Name: ProcessVariable
+    Id: g=ade993ade230a3f6dbe40dab48e599cc
+    Type: BaseObjectType
+    Children:
+    - Name: Max
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Media
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Min
+      Type: BaseDataVariableType
+      DataType: Float
+  - Name: ControlVariable
+    Id: g=b48897fd15a9dd164cbbb8756731d9fa
+    Type: BaseObjectType
+    Children:
+    - Name: Max
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Media
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: Min
+      Type: BaseDataVariableType
+      DataType: Float

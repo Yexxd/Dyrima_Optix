@@ -6,6 +6,8 @@ using FTOptix.Alarm;
 using FTOptix.Report;
 using FTOptix.OPCUAClient;
 using FTOptix.CommunicationDriver;
+using FTOptix.RAEtherNetIP;
+using FTOptix.DataLogger;
 #endregion
 
 public class AlarmGridLogic : BaseNetLogic

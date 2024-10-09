@@ -161,6 +161,17 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         Value: 4.0
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/percentageinhibited"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Float
@@ -360,6 +371,17 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         Value: 60.0
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/percentageforce"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Float
@@ -480,6 +502,17 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         Value: 80.0
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/functionaltesting"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Float
@@ -599,8 +632,25 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"4%"}
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"{0}%"}
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/percentageinhibited"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -632,8 +682,26 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
         Value: {"LocaleId":"en-US","Text":"60%"}
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"{0}%"}
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/percentageforce"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -665,8 +733,26 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
         Value: {"LocaleId":"en-US","Text":"80%"}
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"{0}%"}
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/functionaltesting"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -699,6 +785,17 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         Value: 80.0
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/maintenance"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Float
@@ -772,7 +869,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 25.0
+        Value: 24.0
       - Name: StartAngle
         Type: BaseDataVariableType
         DataType: Size
@@ -818,8 +915,26 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
         Value: {"LocaleId":"en-US","Text":"80%"}
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"{0}%"}
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/functionaltesting"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -908,7 +1023,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Top 10 alarmas con parloteo"}
+        Value: {"LocaleId":"en-US","Text":"Histórico de activaciones"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -1467,74 +1582,6 @@ Children:
         DataType: TextHorizontalAlignment
         ModellingRule: Optional
         Value: 1
-    - Name: Label1
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables/Día"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 150.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 25.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 20.0
-    - Name: Label3
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables/Hora"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 150.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 60.0
-    - Name: Label4
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables/10Min"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 150.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 100.0
     - Name: Blink
       Type: BaseDataVariableType
       DataType: Boolean
@@ -1545,7 +1592,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables"
+        Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/SIL_Distribution"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -1557,6 +1604,11 @@ Children:
       - Name: Label
         Type: BaseDataVariableType
         DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}@BrowseName"
       - Name: Value
         Type: BaseDataVariableType
         DataType: Double
@@ -1580,22 +1632,22 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 10.0
+        Value: 66.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 110.0
+        Value: 92.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 20.0
+        Value: 22.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 100.0
+        Value: 75.0
       - Name: Style
         Type: BaseDataVariableType
         DataType: String
@@ -1609,117 +1661,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         ModellingRule: Optional
-    - Name: Rectangle1
-      Type: Rectangle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 130.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 30.0
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#1b5583"
-    - Name: Rectangle2
-      Type: Rectangle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 130.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 65.0
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#f3da08"
-    - Name: Rectangle3
-      Type: Rectangle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 130.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 105.0
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#ff7514"
   - Name: Rectangle3
     Type: Rectangle
     Children:
@@ -1791,74 +1732,6 @@ Children:
         DataType: TextHorizontalAlignment
         ModellingRule: Optional
         Value: 1
-    - Name: Label1
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables/Día"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 150.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 25.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 20.0
-    - Name: Label3
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables/Hora"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 150.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 60.0
-    - Name: Label4
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables/10Min"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 150.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 100.0
     - Name: Blink
       Type: BaseDataVariableType
       DataType: Boolean
@@ -1869,7 +1742,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables"
+        Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/transmitter"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -1881,6 +1754,11 @@ Children:
       - Name: Label
         Type: BaseDataVariableType
         DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}@BrowseName"
       - Name: Value
         Type: BaseDataVariableType
         DataType: Double
@@ -1904,22 +1782,22 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 10.0
+        Value: 58.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 110.0
+        Value: 90.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 20.0
+        Value: 19.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 100.0
+        Value: 80.0
       - Name: Style
         Type: BaseDataVariableType
         DataType: String
@@ -1933,117 +1811,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         ModellingRule: Optional
-    - Name: Rectangle1
-      Type: Rectangle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 130.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 30.0
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#1b5583"
-    - Name: Rectangle2
-      Type: Rectangle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 130.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 65.0
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#f3da08"
-    - Name: Rectangle3
-      Type: Rectangle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 130.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 105.0
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#ff7514"
   - Name: Rectangle4
     Type: Rectangle
     Children:
@@ -2115,74 +1882,6 @@ Children:
         DataType: TextHorizontalAlignment
         ModellingRule: Optional
         Value: 1
-    - Name: Label1
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables/Día"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 150.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 25.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 20.0
-    - Name: Label3
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables/Hora"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 150.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 60.0
-    - Name: Label4
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables/10Min"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 150.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 100.0
     - Name: Blink
       Type: BaseDataVariableType
       DataType: Boolean
@@ -2193,7 +1892,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables"
+        Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/solver"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -2205,6 +1904,11 @@ Children:
       - Name: Label
         Type: BaseDataVariableType
         DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}@BrowseName"
       - Name: Value
         Type: BaseDataVariableType
         DataType: Double
@@ -2228,12 +1932,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 10.0
+        Value: 66.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 110.0
+        Value: 90.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -2243,7 +1947,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 100.0
+        Value: 81.0
       - Name: Style
         Type: BaseDataVariableType
         DataType: String
@@ -2257,117 +1961,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         ModellingRule: Optional
-    - Name: Rectangle1
-      Type: Rectangle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 130.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 30.0
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#1b5583"
-    - Name: Rectangle2
-      Type: Rectangle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 130.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 65.0
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#f3da08"
-    - Name: Rectangle3
-      Type: Rectangle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 130.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 105.0
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#ff7514"
   - Name: Rectangle7
     Type: Rectangle
     Children:
@@ -2439,74 +2032,6 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 185.0
-    - Name: Label1
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables/Día"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 150.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 25.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 20.0
-    - Name: Label3
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables/Hora"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 150.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 60.0
-    - Name: Label4
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables/10Min"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 150.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 100.0
     - Name: Blink
       Type: BaseDataVariableType
       DataType: Boolean
@@ -2517,7 +2042,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Model/Prueba/ PieChart Variables"
+        Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/actuator"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -2529,6 +2054,11 @@ Children:
       - Name: Label
         Type: BaseDataVariableType
         DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}@BrowseName"
       - Name: Value
         Type: BaseDataVariableType
         DataType: Double
@@ -2552,22 +2082,22 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 10.0
+        Value: 60.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 110.0
+        Value: 88.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 20.0
+        Value: 25.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 100.0
+        Value: 85.0
       - Name: Style
         Type: BaseDataVariableType
         DataType: String
@@ -2581,117 +2111,6 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         ModellingRule: Optional
-    - Name: Rectangle1
-      Type: Rectangle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 130.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 30.0
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#1b5583"
-    - Name: Rectangle2
-      Type: Rectangle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 130.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 65.0
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#f3da08"
-    - Name: Rectangle3
-      Type: Rectangle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 130.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 105.0
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#ff7514"
   - Name: Rectangle8
     Type: Rectangle
     Children:
@@ -2737,7 +2156,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Top 10 alarmas con parloteo"}
+        Value: {"LocaleId":"en-US","Text":"Historico activaciones espurias"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -3054,7 +2473,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 280.0
+      Value: 279.0
     - Name: BorderColor
       Type: BaseDataVariableType
       DataType: Color
@@ -3098,114 +2517,79 @@ Children:
         DataType: TextHorizontalAlignment
         ModellingRule: Optional
         Value: 1
-    - Name: Trend1
-      Type: Trend
+    - Name: HistogramChart1
+      Type: HistogramChart
       Children:
-      - Name: Pens
-        Type: BaseObjectType
+      - Name: Model
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/MostActiveSifs"
         Children:
-        - Name: TrendPen1
-          Type: TrendPen
-          DataType: BaseDataType
-          Children:
-          - Name: Thickness
-            Type: BaseDataVariableType
-            DataType: Size
-            Value: -1.0
-          - Name: Enabled
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-          - Name: Thresholds
-            Type: BaseObjectType
-          - Name: Color
-            Type: BaseDataVariableType
-            DataType: Color
-            ModellingRule: Optional
-            Value: "#43a8ec"
-          - Name: Title
-            Type: BaseDataVariableType
-            DataType: LocalizedText
-            ModellingRule: Optional
-            Value: {"LocaleId":"en-US","Text":"count"}
-      - Class: Reference
-        Target: ns=3;i=1129
-        Direction: Forward
-      - Name: XAxis
-        Type: DateTimeAxis
-        Children:
-        - Name: Follow
-          Type: BaseDataVariableType
-          DataType: Boolean
-          Value: true
-        - Name: Window
-          Type: BaseDataVariableType
-          DataType: Duration
-          Value: "0:00:00:5.0000000"
-        - Name: Interactive
-          Type: BaseDataVariableType
-          DataType: Boolean
-          Value: true
-        - Name: Time
-          Type: BaseDataVariableType
-          DataType: DateTime
-      - Name: YAxis
-        Type: ValueAxis
-        Children:
-        - Name: Position
-          Type: BaseDataVariableType
-          DataType: HorizontalPositionEnum
-        - Name: MinValue
-          Type: BaseDataVariableType
-          DataType: Size
-        - Name: MaxValue
-          Type: BaseDataVariableType
-          DataType: Size
-          Value: 100.0
-        - Name: AutoScale
-          Type: BaseDataVariableType
-          DataType: Boolean
-        - Name: Interactive
-          Type: BaseDataVariableType
-          DataType: Boolean
-          Value: true
-      - Name: LegendVisible
+        - Name: ItemKind
+          Type: PropertyType
+          DataType: NodeId
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+      - Name: Label
         Type: BaseDataVariableType
-        DataType: Boolean
-        Value: true
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}@BrowseName"
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Double
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}@Value"
       - Class: Reference
-        Target: ns=3;i=1201
+        Target: ns=3;i=1105
         Direction: Forward
-      - Name: TimeRanges
-        Type: BaseObjectType
-      - Class: Reference
-        Target: ns=3;i=1209
-        Direction: Forward
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 360.0
+      - Name: Item
+        Type: Alias
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
       - Name: Height
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 85.0
-      - Name: ReferenceTimeZone
-        Type: BaseDataVariableType
-        DataType: ReferenceTimeZone
-        ModellingRule: Optional
-        Value: 1
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 40.0
+        Value: 100.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 40.0
+        Value: 43.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 276.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 93.0
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Default"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/DefaultStyleSheet/HistogramChartStyles/Default"
+      - Name: Orientation
+        Type: BaseDataVariableType
+        DataType: OrientationEnum
+        ModellingRule: Optional
   - Name: Rectangle11
     Type: Rectangle
     Children:
@@ -3277,114 +2661,79 @@ Children:
         DataType: TextHorizontalAlignment
         ModellingRule: Optional
         Value: 1
-    - Name: Trend1
-      Type: Trend
+    - Name: HistogramChart1
+      Type: HistogramChart
       Children:
-      - Name: Pens
-        Type: BaseObjectType
+      - Name: Model
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/MostActiveSILS"
         Children:
-        - Name: TrendPen1
-          Type: TrendPen
-          DataType: BaseDataType
-          Children:
-          - Name: Thickness
-            Type: BaseDataVariableType
-            DataType: Size
-            Value: -1.0
-          - Name: Enabled
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-          - Name: Thresholds
-            Type: BaseObjectType
-          - Name: Color
-            Type: BaseDataVariableType
-            DataType: Color
-            ModellingRule: Optional
-            Value: "#43a8ec"
-          - Name: Title
-            Type: BaseDataVariableType
-            DataType: LocalizedText
-            ModellingRule: Optional
-            Value: {"LocaleId":"en-US","Text":"count"}
-      - Class: Reference
-        Target: ns=3;i=1129
-        Direction: Forward
-      - Name: XAxis
-        Type: DateTimeAxis
-        Children:
-        - Name: Follow
-          Type: BaseDataVariableType
-          DataType: Boolean
-          Value: true
-        - Name: Window
-          Type: BaseDataVariableType
-          DataType: Duration
-          Value: "0:00:00:5.0000000"
-        - Name: Interactive
-          Type: BaseDataVariableType
-          DataType: Boolean
-          Value: true
-        - Name: Time
-          Type: BaseDataVariableType
-          DataType: DateTime
-      - Name: YAxis
-        Type: ValueAxis
-        Children:
-        - Name: Position
-          Type: BaseDataVariableType
-          DataType: HorizontalPositionEnum
-        - Name: MinValue
-          Type: BaseDataVariableType
-          DataType: Size
-        - Name: MaxValue
-          Type: BaseDataVariableType
-          DataType: Size
-          Value: 100.0
-        - Name: AutoScale
-          Type: BaseDataVariableType
-          DataType: Boolean
-        - Name: Interactive
-          Type: BaseDataVariableType
-          DataType: Boolean
-          Value: true
-      - Name: LegendVisible
+        - Name: ItemKind
+          Type: PropertyType
+          DataType: NodeId
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+      - Name: Label
         Type: BaseDataVariableType
-        DataType: Boolean
-        Value: true
+        DataType: LocalizedText
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}@BrowseName"
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Double
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}@Value"
       - Class: Reference
-        Target: ns=3;i=1201
+        Target: ns=3;i=1105
         Direction: Forward
-      - Name: TimeRanges
-        Type: BaseObjectType
-      - Class: Reference
-        Target: ns=3;i=1209
-        Direction: Forward
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 360.0
+      - Name: Item
+        Type: Alias
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
       - Name: Height
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 85.0
-      - Name: ReferenceTimeZone
-        Type: BaseDataVariableType
-        DataType: ReferenceTimeZone
-        ModellingRule: Optional
-        Value: 1
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 40.0
+        Value: 100.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 40.0
+        Value: 41.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 276.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 99.0
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Default"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/DefaultStyleSheet/HistogramChartStyles/Default"
+      - Name: Orientation
+        Type: BaseDataVariableType
+        DataType: OrientationEnum
+        ModellingRule: Optional
   - Name: Rectangle10
     Type: Rectangle
     Children:
@@ -3466,8 +2815,25 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"13.43min"}
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"{0} Min"}
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/timeToNormal"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -7534,7 +6900,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/maintenancestatus[0,0]"
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/maintenanceDate"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -7613,7 +6979,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/maintenancestatus[0,1]"
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/pastMaintenance"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -7633,7 +6999,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 70.0
+        Value: 64.0
       - Name: TextHorizontalAlignment
         Type: BaseVariableType
         DataType: TextHorizontalAlignment
@@ -8037,7 +7403,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/proofteststatus[0,0]"
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/proofTestDate"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -8116,7 +7482,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/maintenancestatus[0,1]"
+          Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1/pastProoftestDays"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -8643,7 +8009,6 @@ Children:
   - Name: countactivatedyear
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 2
   - Name: countactivatedespuria
     Type: BaseDataVariableType
     DataType: Int32
@@ -8696,15 +8061,12 @@ Children:
   - Name: setpoint
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 1650
   - Name: processvalue
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 1350
   - Name: porcentualgauge
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 23
   - Name: graficPFD
     Type: BaseDataVariableType
     DataType: Int32
@@ -8713,12 +8075,23 @@ Children:
   - Name: actualPFD
     Type: BaseDataVariableType
     DataType: Float
-    Value: 0.2199999988079071
   - Name: pfdmax
     Type: BaseDataVariableType
     DataType: Float
-    Value: 0.4000000059604645
   - Name: pfdavg
     Type: BaseDataVariableType
     DataType: Float
-    Value: 0.25
+  - Name: maintenanceDate
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "09/10/2024"
+  - Name: pastMaintenance
+    Type: BaseDataVariableType
+    DataType: Int16
+  - Name: proofTestDate
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "09/10/2024"
+  - Name: pastProoftestDays
+    Type: BaseDataVariableType
+    DataType: Int16
