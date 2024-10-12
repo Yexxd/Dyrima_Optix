@@ -10,6 +10,7 @@ using FTOptix.OPCUAClient;
 using FTOptix.CommunicationDriver;
 using FTOptix.RAEtherNetIP;
 using FTOptix.DataLogger;
+using FTOptix.ODBCStore;
 using OpcUa = UAManagedCore.OpcUa;
 #endregion
 

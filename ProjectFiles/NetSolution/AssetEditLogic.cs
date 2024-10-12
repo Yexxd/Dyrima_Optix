@@ -18,6 +18,7 @@ using FTOptix.EventLogger;
 using FTOptix.Alarm;
 using FTOptix.Core;
 using FTOptix.DataLogger;
+using FTOptix.ODBCStore;
 #endregion
 
 public class AssetEditLogic : BaseNetLogic

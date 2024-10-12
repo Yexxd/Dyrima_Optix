@@ -2,7 +2,7 @@ Name: Datamappings
 Type: FolderType
 Children:
 - Name: DataMappings
-  Id: g=02f8fd92fe6d8be3daf7c4bdddede3d7
+  Id: g=77fc8dd52df380bc1050f273593b537b
   Supertype: Screen
   ReferenceType: HasComponent
   Children:
@@ -182,6 +182,9 @@ Children:
     - Name: ListBox1
       Type: ListBox
       Children:
+      - Class: Reference
+        Target: ns=3;i=481
+        Direction: Forward
       - Name: Model
         Type: NodePointer
         DataType: NodeId
@@ -211,7 +214,7 @@ Children:
       - Name: SelectedItem
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/SelectedAsset"
+        Value: {"IdType":2,"Id":"9b8ca1b67ea1959e636a264a40916f0d","Namespace":7}
         Children:
         - Name: Kind
           Type: PropertyType
@@ -229,9 +232,6 @@ Children:
         Type: BaseDataVariableType
         DataType: BaseDataType
         AccessLevel: Read
-      - Class: Reference
-        Target: ns=3;i=481
-        Direction: Forward
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -562,7 +562,7 @@ Children:
             - Name: ns=2;ObjectPointer
               Type: NodePointer
               DataType: NodeId
-              Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/DatamappingsManager"
+              Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/DatamappingManager"
               Children:
               - Name: Kind
                 Type: PropertyType
@@ -719,6 +719,528 @@ Children:
         - Name: Severity
           Type: PropertyType
           DataType: UInt16
+  - Name: ScaleLayout2
+    Type: ScaleLayout
+    Children:
+    - Name: OriginalWidth
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 835.0
+    - Name: OriginalHeight
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 615.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 248.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: -2.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 835.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 615.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: BottomMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+    - Name: FontScaling
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}==\"\""
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/SelectedAsset/Name"
+    - Name: Rectangle6
+      Type: Rectangle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 835.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 115.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -2.0
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#dcdddf"
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: Label1
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"Alarms DB Configuration"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 15.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: -2.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 25.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 700
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 245.0
+        - Name: TextHorizontalAlignment
+          Type: BaseVariableType
+          DataType: TextHorizontalAlignment
+          ModellingRule: Optional
+        - Name: TextVerticalAlignment
+          Type: BaseVariableType
+          DataType: TextVerticalAlignment
+          ModellingRule: Optional
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 835.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 497.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 113.0
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#dcdddf"
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 10.0
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Server"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 35.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 18.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 90.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 15.0
+      - Name: TextBox2
+        Type: TextBox
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Dyrima/Model/AlarmsDBConfig/Server"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 247.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 158.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 11.0
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#000000"
+        - Name: Style
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "Default"
+      - Name: Label1
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Database"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 34.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 60.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 90.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 15.0
+      - Name: TextBox1
+        Type: TextBox
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Dyrima/Model/AlarmsDBConfig/Database"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 247.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 157.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 53.0
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#000000"
+        - Name: Style
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "Default"
+      - Name: Label3
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"User"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 36.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 90.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 15.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 98.0
+      - Name: TextBox3
+        Type: TextBox
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Dyrima/Model/AlarmsDBConfig/User"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 247.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 159.0
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#000000"
+        - Name: Style
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "Default"
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 91.0
+      - Name: Label4
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Password"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 37.0
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 90.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 15.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 136.0
+      - Name: TextBox4
+        Type: TextBox
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Dyrima/Model/AlarmsDBConfig/Password"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 247.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 160.0
+        - Name: BorderColor
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#000000"
+        - Name: Style
+          Type: BaseDataVariableType
+          DataType: String
+          ModellingRule: Optional
+          Value: "Default"
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 129.0
+        - Name: ContentType
+          Type: BaseVariableType
+          DataType: InputTypeEnum
+          ModellingRule: Optional
+          Value: 1
+    - Name: Button1
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Save"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 238.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 280.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 31.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 113.0
+      - Name: BackgroundColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#06b82cfb"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#ffffff"
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 15.0
   - Name: ScaleLayout1
     Type: ScaleLayout
     Children:
@@ -826,7 +1348,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 15.0
+          Value: 16.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -1064,7 +1586,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 71.0
+          Value: 66.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -1083,6 +1605,9 @@ Children:
       - Name: DatapointCB
         Type: ComboBox
         Children:
+        - Class: Reference
+          Target: ns=3;i=480
+          Direction: Forward
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -1126,9 +1651,6 @@ Children:
           Type: BaseDataVariableType
           DataType: BaseDataType
           AccessLevel: Read
-        - Class: Reference
-          Target: ns=3;i=480
-          Direction: Forward
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -1145,7 +1667,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 198.0
+          Value: 200.0
         - Name: Query
           Type: BaseDataVariableType
           DataType: String
@@ -1202,6 +1724,9 @@ Children:
       - Name: DatasourceCB
         Type: ComboBox
         Children:
+        - Class: Reference
+          Target: ns=3;i=480
+          Direction: Forward
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -1245,9 +1770,6 @@ Children:
           Type: BaseDataVariableType
           DataType: BaseDataType
           AccessLevel: Read
-        - Class: Reference
-          Target: ns=3;i=480
-          Direction: Forward
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -1264,7 +1786,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 197.0
+          Value: 199.0
         - Name: Query
           Type: BaseDataVariableType
           DataType: String
@@ -1303,6 +1825,9 @@ Children:
       - Name: LayerCB
         Type: ComboBox
         Children:
+        - Class: Reference
+          Target: ns=3;i=480
+          Direction: Forward
         - Name: Text
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -1348,9 +1873,6 @@ Children:
           Type: BaseDataVariableType
           DataType: BaseDataType
           AccessLevel: Read
-        - Class: Reference
-          Target: ns=3;i=480
-          Direction: Forward
         - Name: Width
           Type: BaseVariableType
           DataType: Size
@@ -1368,7 +1890,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 197.0
+          Value: 199.0
         - Name: DisplayValuePath
           Type: BaseDataVariableType
           DataType: LocalizedText
@@ -1442,7 +1964,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 67.0
+          Value: 66.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -1469,7 +1991,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 71.0
+          Value: 66.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -1529,7 +2051,7 @@ Children:
               - Name: ns=2;ObjectPointer
                 Type: NodePointer
                 DataType: NodeId
-                Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/DatamappingsManager"
+                Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/DatamappingManager"
                 Children:
                 - Name: Kind
                   Type: PropertyType
@@ -1592,6 +2114,9 @@ Children:
         - Name: BPCS_Variables
           Type: ComboBox
           Children:
+          - Class: Reference
+            Target: ns=3;i=480
+            Direction: Forward
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
@@ -1637,9 +2162,6 @@ Children:
             Type: BaseDataVariableType
             DataType: BaseDataType
             AccessLevel: Read
-          - Class: Reference
-            Target: ns=3;i=480
-            Direction: Forward
           - Name: Width
             Type: BaseVariableType
             DataType: Size
@@ -1749,7 +2271,7 @@ Children:
                 - Name: ns=2;ObjectPointer
                   Type: NodePointer
                   DataType: NodeId
-                  Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/DatamappingsManager"
+                  Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/DatamappingManager"
                   Children:
                   - Name: Kind
                     Type: PropertyType
@@ -1762,15 +2284,7 @@ Children:
                 - Name: InputArguments
                   Type: BaseObjectType
                   Children:
-                  - Name: layer
-                    Type: BaseDataVariableType
-                    DataType: String
-                    Children:
-                    - Name: DynamicLink
-                      Type: DynamicLink
-                      DataType: NodePath
-                      Value: "../../../../../../../LayerCB/UISelectedValue"
-                  - Name: variable
+                  - Name: selectedVariable
                     Type: BaseDataVariableType
                     DataType: String
                     Children:
@@ -1778,14 +2292,6 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "../../../../../UISelectedValue"
-                  - Name: asset
-                    Type: BaseDataVariableType
-                    DataType: String
-                    Children:
-                    - Name: DynamicLink
-                      Type: DynamicLink
-                      DataType: NodePath
-                      Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/SelectedAsset/Name"
             - Name: EventArguments
               Type: UserSelectionChanged
               Children:
@@ -1822,6 +2328,9 @@ Children:
         - Name: SIS_Variables
           Type: ComboBox
           Children:
+          - Class: Reference
+            Target: ns=3;i=480
+            Direction: Forward
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
@@ -1867,9 +2376,6 @@ Children:
             Type: BaseDataVariableType
             DataType: BaseDataType
             AccessLevel: Read
-          - Class: Reference
-            Target: ns=3;i=480
-            Direction: Forward
           - Name: Width
             Type: BaseVariableType
             DataType: Size
@@ -1979,7 +2485,7 @@ Children:
                 - Name: ns=2;ObjectPointer
                   Type: NodePointer
                   DataType: NodeId
-                  Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/DatamappingsManager"
+                  Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/DatamappingManager"
                   Children:
                   - Name: Kind
                     Type: PropertyType
@@ -1992,15 +2498,7 @@ Children:
                 - Name: InputArguments
                   Type: BaseObjectType
                   Children:
-                  - Name: layer
-                    Type: BaseDataVariableType
-                    DataType: String
-                    Children:
-                    - Name: DynamicLink
-                      Type: DynamicLink
-                      DataType: NodePath
-                      Value: "../../../../../../../LayerCB/UISelectedValue"
-                  - Name: variable
+                  - Name: selectedVariable
                     Type: BaseDataVariableType
                     DataType: String
                     Children:
@@ -2008,14 +2506,6 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "../../../../../UISelectedValue"
-                  - Name: asset
-                    Type: BaseDataVariableType
-                    DataType: String
-                    Children:
-                    - Name: DynamicLink
-                      Type: DynamicLink
-                      DataType: NodePath
-                      Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/SelectedAsset/Name"
             - Name: EventArguments
               Type: UserSelectionChanged
               Children:
@@ -2052,6 +2542,9 @@ Children:
         - Name: FYG_Variables
           Type: ComboBox
           Children:
+          - Class: Reference
+            Target: ns=3;i=480
+            Direction: Forward
           - Name: Text
             Type: BaseDataVariableType
             DataType: LocalizedText
@@ -2097,9 +2590,6 @@ Children:
             Type: BaseDataVariableType
             DataType: BaseDataType
             AccessLevel: Read
-          - Class: Reference
-            Target: ns=3;i=480
-            Direction: Forward
           - Name: Width
             Type: BaseVariableType
             DataType: Size
@@ -2209,7 +2699,7 @@ Children:
                 - Name: ns=2;ObjectPointer
                   Type: NodePointer
                   DataType: NodeId
-                  Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/DatamappingsManager"
+                  Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/DatamappingManager"
                   Children:
                   - Name: Kind
                     Type: PropertyType
@@ -2222,15 +2712,7 @@ Children:
                 - Name: InputArguments
                   Type: BaseObjectType
                   Children:
-                  - Name: layer
-                    Type: BaseDataVariableType
-                    DataType: String
-                    Children:
-                    - Name: DynamicLink
-                      Type: DynamicLink
-                      DataType: NodePath
-                      Value: "../../../../../../../LayerCB/UISelectedValue"
-                  - Name: variable
+                  - Name: selectedVariable
                     Type: BaseDataVariableType
                     DataType: String
                     Children:
@@ -2238,14 +2720,220 @@ Children:
                       Type: DynamicLink
                       DataType: NodePath
                       Value: "../../../../../UISelectedValue"
-                  - Name: asset
+            - Name: EventArguments
+              Type: UserSelectionChanged
+              Children:
+              - Name: SelectedItem
+                Type: BaseDataVariableType
+                DataType: NodeId
+              - Name: SelectedValue
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+              - Name: EventId
+                Type: PropertyType
+                DataType: ByteString
+              - Name: EventType
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceNode
+                Type: PropertyType
+                DataType: NodeId
+              - Name: SourceName
+                Type: PropertyType
+                DataType: String
+              - Name: Time
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: ReceiveTime
+                Type: PropertyType
+                DataType: UtcTime
+              - Name: Message
+                Type: PropertyType
+                DataType: LocalizedText
+              - Name: Severity
+                Type: PropertyType
+                DataType: UInt16
+        - Name: AP_Variables
+          Type: ComboBox
+          Children:
+          - Class: Reference
+            Target: ns=3;i=480
+            Direction: Forward
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+          - Name: Model
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Dyrima/Model/Layers_Object/AP_InputInstance"
+            Children:
+            - Name: ItemKind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Objects/Dyrima/Model/Layers_Object/BPCS_InputInstance/ProcessValue"
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+          - Name: SelectedValue
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/Actual_Mapping/Variable"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: SelectedItem
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Objects/Dyrima/Model/Layers_Object/BPCS_InputInstance/ProcessValue"
+          - Name: UISelectedItem
+            Type: BaseDataVariableType
+            DataType: NodeId
+            AccessLevel: Read
+          - Name: UISelectedValue
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            AccessLevel: Read
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 197.0
+          - Name: Item
+            Type: Alias
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Objects/Dyrima/Model/Layers_Object/BPCS_InputInstance/ProcessValue"
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: DisplayValuePath
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Item}@BrowseName"
+          - Name: SelectedValuePath
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Item}@BrowseName"
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: BottomMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+            Children:
+            - Name: ExpressionEvaluator1
+              Type: ExpressionEvaluator
+              Children:
+              - Name: Expression
+                Type: BaseDataVariableType
+                DataType: String
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: "{0}==\"AP\""
+              - Name: ns=2;Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../LayerCB/UISelectedValue"
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+            Children:
+            - Name: ExpressionEvaluator1
+              Type: ExpressionEvaluator
+              Children:
+              - Name: Expression
+                Type: BaseDataVariableType
+                DataType: String
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: "{0}==\"AP\""
+              - Name: ns=2;Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../LayerCB/UISelectedValue"
+          - Name: UserSelectionChangedHandler1
+            Type: EventHandler
+            Children:
+            - Name: ListenEventType
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/EventTypes/BaseEventType/UserSelectionChanged"
+            - Name: MethodsToCall
+              Type: BaseObjectType
+              Children:
+              - Name: MethodContainer1
+                Type: BaseObjectType
+                Children:
+                - Name: ns=2;ObjectPointer
+                  Type: NodePointer
+                  DataType: NodeId
+                  Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/DatamappingManager"
+                  Children:
+                  - Name: Kind
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: ns=2;Method
+                  Type: BaseDataVariableType
+                  DataType: String
+                  Value: "SelectedVariable"
+                - Name: InputArguments
+                  Type: BaseObjectType
+                  Children:
+                  - Name: selectedVariable
                     Type: BaseDataVariableType
                     DataType: String
                     Children:
                     - Name: DynamicLink
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/SelectedAsset/Name"
+                      Value: "../../../../../UISelectedValue"
             - Name: EventArguments
               Type: UserSelectionChanged
               Children:
@@ -2302,52 +2990,35 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/SelectedAsset/Name"
-  - Name: Actual_Mapping
-    Type: Datamapping
-    Children:
-    - Name: Datasource
-      Type: BaseDataVariableType
-      DataType: String
-    - Name: Datapoint
-      Type: BaseDataVariableType
-      DataType: String
-    - Name: Variable
-      Type: BaseDataVariableType
-      DataType: String
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/Actual_Mapping/Variable"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Layer
-      Type: BaseDataVariableType
-      DataType: String
-    - Name: Asset
-      Type: BaseDataVariableType
-      DataType: String
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/SelectedAsset/Name"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-- Name: DatamappingsManager
-  Id: g=b26d5b34bc128abec25015b83bc87ddb
+- Name: SelectedAsset
+  Type: Asset_Model
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Description
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Parent
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: AssetType
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: ParentAsset
+    Type: BaseDataVariableType
+    DataType: String
+  - Name: Details
+    Type: BaseDataVariableType
+    DataType: String
+- Name: DatamappingManager
+  Id: g=9db24deb93db4381a3e43c914c46e182
   Type: NetLogic
   Children:
   - Class: Method
     Name: SelectedAsset
+  - Class: Method
+    Name: SaveDatamapping
   - Class: Method
     Name: SelectedVariable
     Children:
@@ -2357,29 +3028,13 @@ Children:
       ReferenceType: HasProperty
       ValueRank: OneDimension
       ArrayDimensions: [0]
-      Value: [{"TypeId":{"Id":296},"Body":{"Name":"layer","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"variable","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"asset","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
-  - Class: Method
-    Name: SaveDatamapping
-- Name: SelectedAsset
-  Id: g=9b8ca1b67ea1959e636a264a40916f0d
-  Type: Asset_Model
-  Children:
-  - Name: Name
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"selectedVariable","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: MappingInstance
     Type: BaseDataVariableType
-    DataType: String
-  - Name: Details
-    Type: BaseDataVariableType
-    DataType: String
-  - Name: ParentAsset
-    Type: BaseDataVariableType
-    DataType: String
-  - Name: AssetType
-    Type: BaseDataVariableType
-    DataType: String
-  - Name: ImageFilePath
-    Type: BaseDataVariableType
-    DataType: ResourceUri
+    DataType: NodeId
+    Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Datamappings/Actual_Mapping"
 - Name: Actual_Mapping
+  Id: g=000dcf10d03a4e733d3243f1fd8323c2
   Type: Datamapping
   Children:
   - Name: Datasource
@@ -2397,13 +3052,3 @@ Children:
   - Name: Asset
     Type: BaseDataVariableType
     DataType: String
-    Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../SelectedAsset/Name"
-      Children:
-      - Name: Mode
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        Value: 2

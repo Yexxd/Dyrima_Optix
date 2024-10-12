@@ -2,13 +2,12 @@
 using System;
 using UAManagedCore;
 using OpcUa = UAManagedCore.OpcUa;
+using FTOptix.SQLiteStore;
 using FTOptix.HMIProject;
 using FTOptix.NetLogic;
 using FTOptix.UI;
-using FTOptix.DataLogger;
 using FTOptix.NativeUI;
 using FTOptix.WebUI;
-using FTOptix.SQLiteStore;
 using FTOptix.Store;
 using FTOptix.Report;
 using FTOptix.RAEtherNetIP;
@@ -18,11 +17,10 @@ using FTOptix.CommunicationDriver;
 using FTOptix.EventLogger;
 using FTOptix.Alarm;
 using FTOptix.Core;
-using FTOptix.OPCUAClient;
 using FTOptix.ODBCStore;
 #endregion
 
-public class Escenario_Add : BaseNetLogic
+public class RuntimeNetLogic1 : BaseNetLogic
 {
     public override void Start()
     {

@@ -2,7 +2,7 @@ Name: Sources Manager
 Type: FolderType
 Children:
 - Name: Sources_Manager
-  Id: g=a5a3c0f020f95402c474c819c42f7420
+  Id: g=ac2d594c7de1bc93de2d10d77de203ec
   Supertype: Screen
   ReferenceType: HasComponent
   Children:
@@ -188,87 +188,6 @@ Children:
           - Name: Severity
             Type: PropertyType
             DataType: UInt16
-    - Name: Button2
-      Type: Button
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"+ Create"}
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 62.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 80.0
-      - Name: BackgroundColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#075982"
-      - Name: TextColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#ffffff"
-      - Name: MouseClickEventHandler1
-        Type: EventHandler
-        Children:
-        - Name: ListenEventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-        - Name: MethodsToCall
-          Type: BaseObjectType
-          Children:
-          - Name: MethodContainer1
-            Type: BaseObjectType
-            Children:
-            - Name: ns=2;ObjectPointer
-              Type: NodePointer
-              DataType: NodeId
-              Value: "/Objects/Dyrima/UI/Screens/Sources Manager/SourcesManagement"
-              Children:
-              - Name: Kind
-                Type: PropertyType
-                DataType: NodeId
-                Value: "/Types/ObjectTypes/BaseObjectType"
-            - Name: ns=2;Method
-              Type: BaseDataVariableType
-              DataType: String
-              Value: "ReadArbitraryValueFromRemoteOpcUaServer"
-        - Name: EventArguments
-          Type: MouseClickEvent
-          Children:
-          - Name: EventId
-            Type: PropertyType
-            DataType: ByteString
-          - Name: EventType
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceNode
-            Type: PropertyType
-            DataType: NodeId
-          - Name: SourceName
-            Type: PropertyType
-            DataType: String
-          - Name: Time
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: ReceiveTime
-            Type: PropertyType
-            DataType: UtcTime
-          - Name: Message
-            Type: PropertyType
-            DataType: LocalizedText
-          - Name: Severity
-            Type: PropertyType
-            DataType: UInt16
   - Name: AssetList
     Type: Rectangle
     Children:
@@ -310,6 +229,9 @@ Children:
     - Name: ListBox1
       Type: ListBox
       Children:
+      - Class: Reference
+        Target: ns=3;i=481
+        Direction: Forward
       - Name: Model
         Type: NodePointer
         DataType: NodeId
@@ -351,9 +273,6 @@ Children:
         Type: BaseDataVariableType
         DataType: BaseDataType
         AccessLevel: Read
-      - Class: Reference
-        Target: ns=3;i=481
-        Direction: Forward
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -618,12 +537,10 @@ Children:
               - Name: NewPanel
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
                 Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Sources_View"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
                 ValueRank: ScalarOrOneDimension
           - Name: MethodContainer1
             Type: BaseObjectType
@@ -631,7 +548,7 @@ Children:
             - Name: ns=2;ObjectPointer
               Type: NodePointer
               DataType: NodeId
-              Value: "/Objects/Dyrima/UI/Screens/Sources Manager/SourcesManagement"
+              Value: {"IdType":2,"Id":"d91135f589bcca17cc1773e83498b929","Namespace":7}
               Children:
               - Name: Kind
                 Type: PropertyType
@@ -647,7 +564,7 @@ Children:
               - Name: dataGrid
                 Type: BaseDataVariableType
                 DataType: NodeId
-                Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Sources_View/Rectangle1/DataGrid1"
+                Value: {"IdType":2,"Id":"56e5052ba6f92c9ba6cbfeaf18aefc8d","Namespace":7}
         - Name: EventArguments
           Type: UserSelectionChanged
           Children:
@@ -832,6 +749,44 @@ Children:
           Type: PropertyType
           DataType: NodeId
           Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+        - Name: ConditionalConverter1
+          Type: ConditionalConverter
+          Children:
+          - Name: Condition
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ReferenceType: HasSource
+            Children:
+            - Name: ExpressionEvaluator1
+              Type: ExpressionEvaluator
+              Children:
+              - Name: Expression
+                Type: BaseDataVariableType
+                DataType: String
+                ReferenceType: HasParameter
+                Value: "{0}!=\"\""
+              - Name: ns=2;Source0
+                Type: BaseDataVariableType
+                DataType: BaseDataType
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Selected_Source/Name"
+          - Name: TrueValue
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasParameter
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Sources_View"
+          - Name: FalseValue
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasParameter
       - Name: CurrentPanel
         Type: NodePointer
         DataType: NodeId
@@ -987,6 +942,9 @@ Children:
   - Name: RefreshList
     Type: MethodInvocation
     Children:
+    - Class: Reference
+      Target: ns=2;i=98
+      Direction: Forward
     - Name: ObjectPointer
       Type: NodePointer
       DataType: NodeId
@@ -1009,11 +967,8 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Refresh"
-    - Class: Reference
-      Target: ns=2;i=98
-      Direction: Forward
 - Name: Sources_Create
-  Id: g=a353cc4338e51c8446ea6807fbeceb01
+  Id: g=77bac26872838d36fd9c4c8e9df61ce0
   Supertype: Screen
   ReferenceType: HasComponent
   Children:
@@ -1296,7 +1251,7 @@ Children:
             - Name: ns=2;ObjectPointer
               Type: NodePointer
               DataType: NodeId
-              Value: "/Objects/Dyrima/UI/Screens/Sources Manager/SourcesManagement"
+              Value: {"IdType":2,"Id":"d91135f589bcca17cc1773e83498b929","Namespace":7}
               Children:
               - Name: Kind
                 Type: PropertyType
@@ -1509,7 +1464,7 @@ Children:
         ModellingRule: Optional
         Value: "Default"
 - Name: Sources_View
-  Id: g=1ef54ad67dbb973a81603e2425e12f8b
+  Id: g=4cd9c0ecd22fcc82d32bbdf221f6767c
   Supertype: Screen
   ReferenceType: HasComponent
   Children:
@@ -1662,7 +1617,7 @@ Children:
             - Name: ns=2;ObjectPointer
               Type: NodePointer
               DataType: NodeId
-              Value: "/Objects/Dyrima/UI/Screens/Sources Manager/SourcesManagement"
+              Value: {"IdType":2,"Id":"d91135f589bcca17cc1773e83498b929","Namespace":7}
               Children:
               - Name: Kind
                 Type: PropertyType
@@ -1856,7 +1811,7 @@ Children:
             - Name: ns=2;ObjectPointer
               Type: NodePointer
               DataType: NodeId
-              Value: "/Objects/Dyrima/UI/Screens/Sources Manager/SourcesManagement"
+              Value: {"IdType":2,"Id":"d91135f589bcca17cc1773e83498b929","Namespace":7}
               Children:
               - Name: Kind
                 Type: PropertyType
@@ -1963,7 +1918,7 @@ Children:
             - Name: ns=2;ObjectPointer
               Type: NodePointer
               DataType: NodeId
-              Value: "/Objects/Dyrima/UI/Screens/Sources Manager/SourcesManagement"
+              Value: {"IdType":2,"Id":"d91135f589bcca17cc1773e83498b929","Namespace":7}
               Children:
               - Name: Kind
                 Type: PropertyType
@@ -2026,9 +1981,11 @@ Children:
             Type: PropertyType
             DataType: UInt16
     - Name: DataGrid1
-      Id: g=56e5052ba6f92c9ba6cbfeaf18aefc8d
       Type: DataGrid
       Children:
+      - Class: Reference
+        Target: ns=3;i=504
+        Direction: Forward
       - Name: Model
         Type: NodePointer
         DataType: NodeId
@@ -2181,9 +2138,6 @@ Children:
         Type: BaseDataVariableType
         DataType: NodeId
         AccessLevel: Read
-      - Class: Reference
-        Target: ns=3;i=504
-        Direction: Forward
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -2317,6 +2271,9 @@ Children:
     - Name: ComboBox1
       Type: ComboBox
       Children:
+      - Class: Reference
+        Target: ns=3;i=480
+        Direction: Forward
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
@@ -2362,9 +2319,6 @@ Children:
         Type: BaseDataVariableType
         DataType: BaseDataType
         AccessLevel: Read
-      - Class: Reference
-        Target: ns=3;i=480
-        Direction: Forward
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -2404,37 +2358,6 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "{Item}@Value"
-    - Name: Label3
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../DataGrid1/Query"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 427.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 60.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 90.0
-      - Name: FontSize
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 15.0
 - Name: Selected_Source
   Type: Datasource
   Children:
@@ -2451,7 +2374,6 @@ Children:
     DataType: String
     Value: "0"
 - Name: SourcesManagement
-  Id: g=d91135f589bcca17cc1773e83498b929
   Type: NetLogic
   Children:
   - Class: Method

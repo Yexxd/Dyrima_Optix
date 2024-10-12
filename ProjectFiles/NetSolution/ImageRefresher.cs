@@ -19,6 +19,7 @@ using FTOptix.Core;
 using FTOptix.WebUI;
 using FTOptix.Report;
 using FTOptix.OPCUAClient;
+using FTOptix.ODBCStore;
 #endregion
 
 public class ImageRefresher : BaseNetLogic

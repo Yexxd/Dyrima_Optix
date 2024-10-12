@@ -20,6 +20,7 @@ using FTOptix.Core;
 using FTOptix.AuditSigning;
 using FTOptix.Report;
 using FTOptix.OPCUAClient;
+using FTOptix.ODBCStore;
 #endregion
 
 public class AssetManger : BaseNetLogic

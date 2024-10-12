@@ -11,6 +11,7 @@ using System.Diagnostics;
 using FilesystemBrowserHelper;
 using FTOptix.UI;
 using FTOptix.DataLogger;
+using FTOptix.ODBCStore;
 
 #endregion
 

@@ -7,6 +7,7 @@ using FTOptix.OPCUAClient;
 using FTOptix.CommunicationDriver;
 using FTOptix.RAEtherNetIP;
 using FTOptix.DataLogger;
+using FTOptix.ODBCStore;
 #endregion
 
 public class CalendarPickerLogic : BaseNetLogic

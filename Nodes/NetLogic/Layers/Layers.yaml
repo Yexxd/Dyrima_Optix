@@ -1,0 +1,52 @@
+Name: Layers
+Type: FolderType
+Children:
+- Name: BPCS_Calculation
+  Id: g=5b0a5b5ee89ab60fe16923384e21c084
+  Type: NetLogic
+  Children:
+  - Name: TrendRange
+    Type: BaseDataVariableType
+    DataType: UInt16
+  - Name: Trend
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/Dyrima/UI/Screens/BPCS/BPCS_General/Histórico de lazos en manual/Trend1"
+  - Class: Method
+    Name: Calculate
+  - Class: Method
+    Name: SelectedAsset
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"LoopId","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: ResultObject
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/Dyrima/UI/Screens/BPCS/BPCS1"
+- Name: SIS_Calculation
+  Id: g=59eadfad0d2eb59a518c483d7097491f
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: Calculate
+  - Class: Method
+    Name: SelectedAsset
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"assetId","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: ResultObject
+    Type: BaseDataVariableType
+    DataType: NodeId
+    Value: "/Objects/Dyrima/UI/Screens/SIS/SIS1"
+- Name: Alarms_Calculation
+  Type: NetLogic

@@ -3769,3 +3769,5 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 225.0
+- Name: OPWIN_Result
+  Type: BaseObjectType

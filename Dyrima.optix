@@ -128,23 +128,23 @@ Project:
    Module: FTOptix.RAEtherNetIP.Net
    Version: 2.1
   42:
-   Uri: 'urn:FTOptix:DataLogger'
-   Module: FTOptix.DataLogger
+   Uri: 'urn:FTOptix:ODBCStore'
+   Module: FTOptix.ODBCStore
    Version: 1.0
   43:
-   Uri: 'urn:FTOptix:DataLogger:Net'
-   Module: FTOptix.DataLogger.Net
+   Uri: 'urn:FTOptix:ODBCStore:Net'
+   Module: FTOptix.ODBCStore.Net
    Version: 1.0
  Statistics:
-  TotalNodeCount: 25071
-  Objects: 3919
-  ObjectTypes: 77
-  Variables: 21047
-  VariableTypes: 0
-  DataTypes: 0
-  Methods: 28
-  References: 233
+  TotalNodeCount: 51754
+  Objects: 3876
+  ObjectTypes: 83
+  Variables: 47728
+  VariableTypes: 17
+  DataTypes: 17
+  Methods: 33
+  References: 272
   ReferenceTypes: 0
-  Files: 57
+  Files: 58
  Nodes:
  - File: Nodes/Dyrima.yaml

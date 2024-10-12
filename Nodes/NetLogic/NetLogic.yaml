@@ -1,14 +1,10 @@
 Name: NetLogic
 Type: NetLogicCategoryFolder
 Children:
-- Name: AssetManager
-  Type: NetLogic
-  Children:
-  - Class: Method
-    Name: CreateAsset
-  - Class: Method
-    Name: DeleteAll
 - Name: Escenario_Add
   Type: NetLogic
 - Name: MainCalculation
+  Type: NetLogic
+- File: Layers/Layers.yaml
+- Name: RuntimeNetLogic1
   Type: NetLogic

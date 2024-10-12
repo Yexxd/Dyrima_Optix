@@ -12689,9 +12689,9 @@ Children:
         - Name: Pens
           Type: BaseObjectType
           Children:
-          - Name: Sine
+          - Name: PFD
             Type: TrendPen
-            DataType: BaseDataType
+            DataType: Float
             Children:
             - Name: Thickness
               Type: BaseDataVariableType
@@ -12708,16 +12708,11 @@ Children:
               DataType: Color
               ModellingRule: Optional
               Value: "#0fafff"
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "/Objects/Dyrima/Loggers/Historic_logger/VariablesToLog/Sine/LastValue"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
+            - Name: Title
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              ModellingRule: Optional
+              Value: {"LocaleId":"en-US","Text":"PFD"}
         - Class: Reference
           Target: ns=3;i=1129
           Direction: Forward
@@ -12799,7 +12794,8 @@ Children:
         - Name: Model
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":2,"Id":"3f2556de6e6c133b7fc8979e3fd2e964","Namespace":7}
+          ModellingRule: Optional
+          Value: "/Objects/Dyrima/DataStores/Historics"
           Children:
           - Name: ItemKind
             Type: PropertyType

@@ -88,7 +88,7 @@ Children:
     - Name: Model
       Type: NodePointer
       DataType: NodeId
-      Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/saturated_this_month"
+      Value: "/Objects/Dyrima/Model/Results/BCPS_General_Result/saturated_this_month"
       Children:
       - Name: ItemKind
         Type: PropertyType

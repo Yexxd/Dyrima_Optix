@@ -20,6 +20,7 @@ using FTOptix.Alarm;
 using FTOptix.Core;
 using System.Reflection.PortableExecutable;
 using FTOptix.OPCUAClient;
+using FTOptix.ODBCStore;
 #endregion
 
 public class AssetManagement : BaseNetLogic
@@ -45,8 +46,8 @@ public class AssetManagement : BaseNetLogic
             var scenarioValues = Owner.Get<Scenario_Details>("Scenario_DetailsInstance");
             Table scenariosTable = myStore.Tables.Get<Table>("Scenarios");
             string[] scColumns = { "Name", "threat", "consequence", "limit_event", "frequency",
-                "severity", "final_risk", "design_pfd", "actual_pfd"};
-            var scValues = new object[1, 9];
+                "severity", "final_risk", "design_pfd", "actual_pfd", "Area"};
+            var scValues = new object[1, 10];
             scValues[0, 0] = assetValues.Name;
             scValues[0, 1] = scenarioValues.threat;
             scValues[0, 2] = scenarioValues.consequence;
@@ -56,6 +57,19 @@ public class AssetManagement : BaseNetLogic
             scValues[0, 6] = scenarioValues.final_risk;
             scValues[0, 7] = scenarioValues.design_pfd;
             scValues[0, 8] = 0;
+            scValues[0, 9] = assetValues.ParentAsset;
+            var msg = "Inserting";
+            for (int i = 0; i < 10; i++)
+            {
+                try
+                {
+                    msg += $"{scColumns[i]}: {scValues[0, i]}, ";
+                }
+                catch (Exception)
+                {
+                }
+            }
+            Log.Info("Inserting", msg);
             scenariosTable.Insert(scColumns, scValues);
 
 
@@ -102,9 +116,15 @@ public class AssetManagement : BaseNetLogic
         values[0, 1] = assetValues.Details;
         values[0, 2] = assetValues.ParentAsset;
         values[0, 3] = assetValues.AssetType;
-        var urivalue = assetValues.ImageFilePath;
-        values[0, 4] = urivalue.Uri;
-        Log.Info("New Asset String", values[0, 4].ToString());
+        if(assetValues.AssetType != "Scenario")
+        {
+            var urivalue = assetValues.ImageFilePath;
+            values[0, 4] = urivalue.Uri;
+            Log.Info("New Asset String", values[0, 4].ToString());
+        }
+        else
+            values[0, 4] = "";
+
         assetsTable.Insert(dbColumns, values);
     }
 

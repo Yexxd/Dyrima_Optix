@@ -1,82 +1,9 @@
-Name: Results
+Name: Classes
 Type: FolderType
 Children:
-- Name: Alarms_General_Result
-  Type: Alarms_General_Result
-  Children:
-  - Name: max_10_minutes
-    Type: BaseDataVariableType
-    DataType: Int32
-  - Name: flood_mean
-    Type: BaseDataVariableType
-    DataType: Int32
-  - Name: days_less_150
-    Type: BaseDataVariableType
-    DataType: Int32
-  - Name: days_less_300
-    Type: BaseDataVariableType
-    DataType: Int32
-  - Name: likely_missed
-    Type: BaseDataVariableType
-    DataType: Int32
-  - Name: anoounced_count
-    Type: BaseDataVariableType
-    DataType: Int32
-  - Name: top_30_contribution
-    Type: BaseDataVariableType
-    DataType: Int32
-  - Name: hours_with_more_30
-    Type: BaseDataVariableType
-    DataType: Int32
-  - Name: half_hour_with_10_alarms
-    Type: BaseDataVariableType
-    DataType: Int32
-  - Name: time_in_flood
-    Type: BaseDataVariableType
-    DataType: Float
-  - Name: time_in_chattering
-    Type: BaseDataVariableType
-    DataType: Float
-  - Name: PriorityDistribution
-    Id: g=ad946a8d97a15d4341771f20577f8e9b
-    Type: BaseObjectType
-    Children:
-    - Name: 1
-      Type: BaseDataVariableType
-      DataType: Int32
-    - Name: 2
-      Type: BaseDataVariableType
-      DataType: Int32
-    - Name: 3
-      Type: BaseDataVariableType
-      DataType: Int32
-    - Name: 4
-      Type: BaseDataVariableType
-      DataType: Int32
-  - Name: AlarmsPerDay
-    Id: g=2265b6a89d0ffd5de3d34fab5691cefb
-    Type: BaseObjectType
-    Children:
-    - Name: Dia
-      Type: BaseDataVariableType
-      DataType: Int32
-    - Name: Hora
-      Type: BaseDataVariableType
-      DataType: Int32
-    - Name: 10min
-      Type: BaseDataVariableType
-      DataType: Int32
-  - Name: Top10Frequent
-    Id: g=c4c6c12f8a5c0db5e2139b19ee7ed23f
-    Type: BaseObjectType
-  - Name: Top10Chattering
-    Id: g=e00fffab2f93d55ff540e9e50461338e
-    Type: BaseObjectType
-  - Name: Top10Permanent
-    Id: g=806b576fd0b6aebd034bf5cbf53db861
-    Type: BaseObjectType
 - Name: BCPS_General_Result
-  Type: BCPS_General_Result
+  Id: g=9d73f92af8ef6d282dcd8e99f302f382
+  Supertype: BaseObjectType
   Children:
   - Name: manual_percentage
     Type: BaseDataVariableType
@@ -90,7 +17,6 @@ Children:
   - Name: manual_this_month
     Type: BaseObjectType
   - Name: saturated_this_month
-    Id: g=160133f94ddc479bd34f60e532261825
     Type: BaseObjectType
     Children:
     - Name: Loop_001
@@ -103,10 +29,8 @@ Children:
   - Name: retuning_required1
     Type: BaseObjectType
   - Name: top_error
-    Id: g=03fe5e8c42c06e3d26d1a37e716044b9
     Type: BaseObjectType
   - Name: top_noise
-    Id: g=d09f8ce2c054db16740ee6e35c86d1dc
     Type: BaseObjectType
   - Name: current_manual_count
     Type: BaseDataVariableType
@@ -127,7 +51,6 @@ Children:
     Type: BaseDataVariableType
     DataType: Int16
   - Name: Distribution
-    Id: g=baf7b5a6fb82acfc1ea8bb10abb674a8
     Type: BaseObjectType
     Children:
     - Name: Manual
@@ -141,13 +64,13 @@ Children:
     Type: BaseDataVariableType
     DataType: Int32
 - Name: SIS_General_Result
-  Type: SIS_General_Result
+  Id: g=e7ab4878a60481b723c8ade3c429fc83
+  Supertype: BaseObjectType
   Children:
   - Name: percentageinhibited
     Type: BaseDataVariableType
     DataType: Float
   - Name: SIL_Distribution
-    Id: g=35c2b681706fec384047d101040ca55a
     Type: BaseObjectType
     Children:
     - Name: SIL1
@@ -210,7 +133,6 @@ Children:
         DataType: Int32
         Value: 3
   - Name: transmitter
-    Id: g=d2430c78ed29cefb400b659ef38c76b9
     Type: BaseObjectType
     Children:
     - Name: 1oo1
@@ -229,7 +151,6 @@ Children:
       Type: BaseDataVariableType
       DataType: Int32
   - Name: actuator
-    Id: g=91ff034c4225a31e3ed3af0681401baa
     Type: BaseObjectType
     Children:
     - Name: 1oo1
@@ -248,7 +169,6 @@ Children:
       Type: BaseDataVariableType
       DataType: Int32
   - Name: solver
-    Id: g=2f2a85af37f003fde866e30e869aa1b0
     Type: BaseObjectType
     Children:
     - Name: 1oo1
@@ -267,10 +187,8 @@ Children:
       Type: BaseDataVariableType
       DataType: Int32
   - Name: MostActiveSifs
-    Id: g=189ced755e5a8523e24667863b77539b
     Type: BaseObjectType
   - Name: MostActiveSILS
-    Id: g=71cd2e4f8804a48383d35b936c00a1b5
     Type: BaseObjectType
     Children:
     - Name: SIL1
@@ -289,4 +207,73 @@ Children:
     Type: BaseDataVariableType
     DataType: Int32
     Value: 10
-- File: Classes/Classes.yaml
+- Name: Alarms_General_Result
+  Id: g=c037649989085850a9d58294a86b3d85
+  Supertype: BaseObjectType
+  Children:
+  - Name: max_10_minutes
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: flood_mean
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: days_less_150
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: days_less_300
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: likely_missed
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: anoounced_count
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: top_30_contribution
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: hours_with_more_30
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: half_hour_with_10_alarms
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: time_in_flood
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: time_in_chattering
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: PriorityDistribution
+    Type: BaseObjectType
+    Children:
+    - Name: 1
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 2
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 3
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 4
+      Type: BaseDataVariableType
+      DataType: Int32
+  - Name: AlarmsPerDay
+    Type: BaseObjectType
+    Children:
+    - Name: Dia
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: Hora
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Name: 10min
+      Type: BaseDataVariableType
+      DataType: Int32
+  - Name: Top10Frequent
+    Type: BaseObjectType
+  - Name: Top10Chattering
+    Type: BaseObjectType
+  - Name: Top10Permanent
+    Type: BaseObjectType

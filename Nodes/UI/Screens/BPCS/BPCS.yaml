@@ -161,7 +161,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/top_error"
+        Value: "/Objects/Dyrima/Model/Results/BCPS_General_Result/top_error"
         Children:
         - Name: Kind
           Type: PropertyType
@@ -255,7 +255,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/synth_required"
+          Value: "/Objects/Dyrima/Model/Results/BCPS_General_Result/synth_required"
       - Name: TextColor
         Type: BaseDataVariableType
         DataType: Color
@@ -596,7 +596,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/current_outside_guide_count"
+          Value: "/Objects/Dyrima/Model/Results/BCPS_General_Result/current_outside_guide_count"
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -818,7 +818,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/current_outside_guide_count"
+          Value: "/Objects/Dyrima/Model/Results/BCPS_General_Result/current_outside_guide_count"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -943,7 +943,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/retuned_this_month_count"
+          Value: "/Objects/Dyrima/Model/Results/BCPS_General_Result/retuned_this_month_count"
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
@@ -1127,7 +1127,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/saturated_this_month_count"
+          Value: "/Objects/Dyrima/Model/Results/BCPS_General_Result/saturated_this_month_count"
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
@@ -1297,6 +1297,7 @@ Children:
         ModellingRule: Optional
         Value: 15.0
     - Name: Trend1
+      Id: g=ed2e14f26e8191e73ba84127db63f581
       Type: Trend
       Children:
       - Class: Reference
@@ -1367,18 +1368,18 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 50.0
+        Value: 48.0
       - Name: Pens
         Type: BaseObjectType
         Children:
         - Name: Count
           Type: TrendPen
-          DataType: BaseDataType
+          DataType: Int16
           Children:
           - Name: Thickness
             Type: BaseDataVariableType
             DataType: Size
-            Value: -1.0
+            Value: 3.0
           - Name: Enabled
             Type: BaseDataVariableType
             DataType: Boolean
@@ -1390,16 +1391,11 @@ Children:
             DataType: Color
             ModellingRule: Optional
             Value: "#1b5583"
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../Model/VariablesToLog/Count/LastValue"
-            Children:
-            - Name: Mode
-              Type: BaseVariableType
-              DataType: DynamicLinkMode
-              ModellingRule: Optional
-              Value: 2
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"Total"}
       - Name: LegendVisible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -1412,7 +1408,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Loggers/DataLogger1"
+        Value: "/Objects/Dyrima/DataStores/ResultsDB"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -1420,6 +1416,16 @@ Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
+      - Name: RefreshTime
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: Optional
+        Value: 2000
+      - Name: Query
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "SELECT * FROM \"BPCS G Historic\""
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -1522,7 +1528,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/Distribution"
+        Value: "/Objects/Dyrima/Model/Results/BCPS_General_Result/Distribution"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -1795,7 +1801,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/top_noise"
+        Value: "/Objects/Dyrima/Model/Results/BCPS_General_Result/top_noise"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -2127,7 +2133,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/current_saturated_count"
+          Value: "/Objects/Dyrima/Model/Results/BCPS_General_Result/current_saturated_count"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -2168,7 +2174,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/current_saturated_count"
+          Value: "/Objects/Dyrima/Model/Results/BCPS_General_Result/current_saturated_count"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -2374,7 +2380,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/current_manual_count"
+          Value: "/Objects/Dyrima/Model/Results/BCPS_General_Result/current_manual_count"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -2497,7 +2503,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/current_manual_count"
+          Value: "/Objects/Dyrima/Model/Results/BCPS_General_Result/current_manual_count"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -2593,7 +2599,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Results/BPCS/General_Result/manual_this_month_count"
+          Value: "/Objects/Dyrima/Model/Results/BCPS_General_Result/manual_this_month_count"
       - Name: TextHorizontalAlignment
         Type: BaseVariableType
         DataType: TextHorizontalAlignment
@@ -3100,6 +3106,17 @@ Children:
       - Name: SelectedValue
         Type: BaseDataVariableType
         DataType: BaseDataType
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/Dyrima/UI/Screens/BPCS/BPCS1/SelectedLoop"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -3130,7 +3147,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 262.0
+        Value: 260.0
       - Name: Model
         Type: NodePointer
         DataType: NodeId
@@ -3184,6 +3201,140 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "{Item}/LoopID"
+      - Name: UserSelectionChangedHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/UserSelectionChanged"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/Dyrima/NetLogic/Layers/BPCS_Calculation"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "SelectedAsset"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: LoopId
+                Type: BaseDataVariableType
+                DataType: String
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../UISelectedValue"
+          - Name: MethodContainer2
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../Variable de control/Trend1@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Refresh"
+          - Name: MethodContainer3
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../Variable de proceso/Trend1@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Refresh"
+        - Name: EventArguments
+          Type: UserSelectionChanged
+          Children:
+          - Name: SelectedItem
+            Type: BaseDataVariableType
+            DataType: NodeId
+          - Name: SelectedValue
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+      - Name: SelectedValuePathChanged
+        Type: VariableChangedEventDispatcher
+        Children:
+        - Name: VariableNodePath
+          Type: BaseVariableType
+          DataType: NodePath
+          Value: "../SelectedValuePath"
+      - Name: SelectedValueChanged
+        Type: VariableChangedEventDispatcher
+        Children:
+        - Name: VariableNodePath
+          Type: BaseVariableType
+          DataType: NodePath
+          Value: "../SelectedValue"
     - Name: BorderColor
       Type: BaseDataVariableType
       DataType: Color
@@ -3428,7 +3579,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 39.0
+        Value: 47.0
       - Name: LegendVisible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -3446,7 +3597,7 @@ Children:
       - Name: Pens
         Type: BaseObjectType
         Children:
-        - Name: Valores
+        - Name: ArrayLinePen1
           Type: XYChartArrayLinePen
           Children:
           - Name: PointArray
@@ -3459,12 +3610,27 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Dyrima/UI/Screens/BPCS/BPCS1/correlation"
+              Value: "/Objects/Dyrima/UI/Screens/BPCS/BPCS1/Scatter"
       - Name: Width
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 360.0
+      - Name: CenterX
+        Type: BaseDataVariableType
+        DataType: Double
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: CenterY
+        Type: BaseDataVariableType
+        DataType: Double
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Zoom
+        Type: BaseDataVariableType
+        DataType: Double
+        ModellingRule: Optional
+        Value: 0.05
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -4036,7 +4202,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 20.0
+        Value: 18.0
       - Name: TextHorizontalAlignment
         Type: BaseVariableType
         DataType: TextHorizontalAlignment
@@ -4079,7 +4245,7 @@ Children:
         Type: BaseDataVariableType
         DataType: FontWeightEnum
         ModellingRule: Optional
-        Value: 800
+        Value: 700
       - Name: TextColor
         Type: BaseDataVariableType
         DataType: Color
@@ -4100,12 +4266,12 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 144.0
+        Value: 146.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 80.0
+        Value: 78.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -4115,7 +4281,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 70.0
+        Value: 48.0
       - Name: TextHorizontalAlignment
         Type: BaseVariableType
         DataType: TextHorizontalAlignment
@@ -4249,152 +4415,6 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-    - Name: Rectangle1
-      Type: Rectangle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 70.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 275.0
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#1b5583"
-    - Name: Rectangle2
-      Type: Rectangle
-      Children:
-      - Name: BorderThickness
-        Type: BaseDataVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 1.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 150.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 275.0
-      - Name: BorderColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-      - Name: FillColor
-        Type: BaseDataVariableType
-        DataType: Color
-        ModellingRule: Optional
-        Value: "#f3da08"
-    - Name: Label1
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/UI/Screens/BPCS/Métricas/Manual_Auto/Auto"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 90.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 275.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: TextHorizontalAlignment
-        Type: BaseVariableType
-        DataType: TextHorizontalAlignment
-        ModellingRule: Optional
-        Value: 1
-      - Name: TextVerticalAlignment
-        Type: BaseVariableType
-        DataType: TextVerticalAlignment
-        ModellingRule: Optional
-        Value: 1
-    - Name: Label4
-      Type: Label
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/UI/Screens/BPCS/Métricas/Manual_Auto/Man"
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 170.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 275.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 10.0
-      - Name: TextHorizontalAlignment
-        Type: BaseVariableType
-        DataType: TextHorizontalAlignment
-        ModellingRule: Optional
-        Value: 1
-      - Name: TextVerticalAlignment
-        Type: BaseVariableType
-        DataType: TextVerticalAlignment
-        ModellingRule: Optional
-        Value: 1
     - Name: PieChart
       Type: PieChart
       Children:
@@ -4446,7 +4466,6 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 45.0
       - Name: VerticalAlignment
         Type: BaseVariableType
         DataType: VerticalAlignment
@@ -4456,27 +4475,25 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 40.0
       - Name: BottomMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 60.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 65.0
+        Value: 8.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 135.0
+        Value: 103.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 275.0
+        Value: 219.0
   - Name: Variable de control
     Type: Rectangle
     Children:
@@ -4590,7 +4607,7 @@ Children:
         - Name: Window
           Type: BaseDataVariableType
           DataType: Duration
-          Value: "0:00:00:5.0000000"
+          Value: "0:00:30:0.0000000"
         - Name: Follow
           Type: BaseDataVariableType
           DataType: Boolean
@@ -4604,6 +4621,26 @@ Children:
           DataType: DateTime
       - Name: Pens
         Type: BaseObjectType
+        Children:
+        - Name: ControlValue
+          Type: TrendPen
+          DataType: Float
+          Children:
+          - Name: Thickness
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Thresholds
+            Type: BaseObjectType
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"ControlValue"}
       - Name: ReferenceTimeZone
         Type: BaseDataVariableType
         DataType: ReferenceTimeZone
@@ -4623,10 +4660,11 @@ Children:
         - Name: AutoScale
           Type: BaseDataVariableType
           DataType: Boolean
+          Value: true
         - Name: MaxValue
           Type: BaseDataVariableType
           DataType: Size
-          Value: 100.0
+          Value: 1000.0
         - Name: MinValue
           Type: BaseDataVariableType
           DataType: Size
@@ -4645,6 +4683,146 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         Value: true
+      - Name: Model
+        Type: NodePointer
+        DataType: NodeId
+        ModellingRule: Optional
+        Value: "/Objects/Dyrima/DataStores/Historics"
+        Children:
+        - Name: ItemKind
+          Type: PropertyType
+          DataType: NodeId
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+      - Name: RefreshTime
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: Optional
+        Value: 5000
+      - Name: QueryChanged
+        Type: VariableChangedEventDispatcher
+        Children:
+        - Name: VariableNodePath
+          Type: BaseVariableType
+          DataType: NodePath
+          Value: "../Query"
+        - Name: VariableValueChangedEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/VariableConditionEvent/VariableValueChangedEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../..@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "Refresh"
+          - Name: EventArguments
+            Type: VariableValueChangedEvent
+            Children:
+            - Name: VariableNodeId
+              Type: BaseVariableType
+              DataType: NodeId
+            - Name: NewValue
+              Type: BaseVariableType
+              DataType: BaseDataType
+            - Name: OldValue
+              Type: BaseVariableType
+              DataType: BaseDataType
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+      - Name: Query
+        Type: BaseDataVariableType
+        DataType: String
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"SELECT Timestamp, LocalTimestamp, ControlValue FROM BPCS_Historics WHERE Asset = \"{0}\""}
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/BPCS/BPCS1/SelectedLoop"
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{0}!=\"\""
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/BPCS/BPCS1/SelectedLoop"
   - Name: Variable de proceso
     Type: Rectangle
     Children:
@@ -4701,7 +4879,7 @@ Children:
         - Name: Window
           Type: BaseDataVariableType
           DataType: Duration
-          Value: "0:00:00:5.0000000"
+          Value: "0:00:30:0.0000000"
         - Name: Follow
           Type: BaseDataVariableType
           DataType: Boolean
@@ -4713,8 +4891,33 @@ Children:
         - Name: Time
           Type: BaseDataVariableType
           DataType: DateTime
+        - Name: SnapPosition
+          Type: BaseDataVariableType
+          DataType: SnapPositionEnum
+          ModellingRule: Optional
+          Value: 2
       - Name: Pens
         Type: BaseObjectType
+        Children:
+        - Name: ProcessValue
+          Type: TrendPen
+          DataType: Float
+          Children:
+          - Name: Thickness
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -1.0
+          - Name: Enabled
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Thresholds
+            Type: BaseObjectType
+          - Name: Title
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"ProcessValue"}
       - Name: ReferenceTimeZone
         Type: BaseDataVariableType
         DataType: ReferenceTimeZone
@@ -4734,10 +4937,11 @@ Children:
         - Name: AutoScale
           Type: BaseDataVariableType
           DataType: Boolean
+          Value: true
         - Name: MaxValue
           Type: BaseDataVariableType
           DataType: Size
-          Value: 100.0
+          Value: 1000.0
         - Name: MinValue
           Type: BaseDataVariableType
           DataType: Size
@@ -4759,6 +4963,7 @@ Children:
       - Name: Model
         Type: NodePointer
         DataType: NodeId
+        Value: "/Objects/Dyrima/DataStores/Historics"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -4766,6 +4971,56 @@ Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
+      - Name: Query
+        Type: BaseDataVariableType
+        DataType: String
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"SELECT Timestamp, LocalTimestamp, ProcessValue FROM BPCS_Historics WHERE Asset = \"{0}\""}
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/BPCS/BPCS1/SelectedLoop"
+      - Name: ButtonStyle
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "Default"
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{0}!=\"\""
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/Dyrima/UI/Screens/BPCS/BPCS1/SelectedLoop"
     - Name: Label2
       Type: Label
       Children:
@@ -6158,6 +6413,7 @@ Children:
       Value: 10.0
 - File: Métricas/Métricas.yaml
 - Name: BPCS1
+  Id: g=6bfe7b8407d96cf50f9eaca1576d3b99
   Type: BPCS
   Children:
   - Name: manual_percent
@@ -6180,7 +6436,7 @@ Children:
     DataType: Float
   - Name: max_cv
     Type: BaseDataVariableType
-    DataType: Int32
+    DataType: Float
   - Name: min_cv
     Type: BaseDataVariableType
     DataType: Float
@@ -6203,11 +6459,6 @@ Children:
   - Name: cv_media
     Type: BaseDataVariableType
     DataType: Float
-  - Name: timeseries
-    Type: BaseDataVariableType
-    DataType: Int32
-    ValueRank: 2
-    ArrayDimensions: [2,10]
   - Name: correlation
     Type: BaseDataVariableType
     DataType: Float
@@ -6236,7 +6487,7 @@ Children:
           Type: BaseDataVariableType
           DataType: String
           ReferenceType: HasParameter
-          Value: "{0}*100"
+          Value: "{0}"
         - Name: ns=2;Source0
           Type: BaseDataVariableType
           DataType: BaseDataType
@@ -6257,7 +6508,7 @@ Children:
           Type: BaseDataVariableType
           DataType: String
           ReferenceType: HasParameter
-          Value: "(1-{0})*100"
+          Value: "100-{0}"
         - Name: ns=2;Source0
           Type: BaseDataVariableType
           DataType: BaseDataType
@@ -6267,11 +6518,6 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "../../../../manual_percent"
-  - Name: CorrelationChart
-    Type: BaseDataVariableType
-    DataType: Float
-    ValueRank: 2
-    ArrayDimensions: [10,2]
   - Name: ProcessVariable
     Id: g=ade993ade230a3f6dbe40dab48e599cc
     Type: BaseObjectType
@@ -6279,12 +6525,29 @@ Children:
     - Name: Max
       Type: BaseDataVariableType
       DataType: Float
-    - Name: Media
-      Type: BaseDataVariableType
-      DataType: Float
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../max_pv"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
     - Name: Min
       Type: BaseDataVariableType
       DataType: Float
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../min_pv"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
   - Name: ControlVariable
     Id: g=b48897fd15a9dd164cbbb8756731d9fa
     Type: BaseObjectType
@@ -6292,9 +6555,34 @@ Children:
     - Name: Max
       Type: BaseDataVariableType
       DataType: Float
-    - Name: Media
-      Type: BaseDataVariableType
-      DataType: Float
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../max_cv"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
     - Name: Min
       Type: BaseDataVariableType
       DataType: Float
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../min_cv"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+  - Name: Scatter
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: 2
+    ArrayDimensions: [2,100]
+  - Name: SelectedLoop
+    Type: BaseDataVariableType
+    DataType: String

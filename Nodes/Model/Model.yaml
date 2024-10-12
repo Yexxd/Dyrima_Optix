@@ -258,3 +258,22 @@ Children:
   - Name: Asset
     Type: BaseDataVariableType
     DataType: String
+- Name: AlarmsDBConfig
+  Type: BaseObjectType
+  Children:
+  - Name: Server
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "DESKTOP-L7KOLMU\\\\WINCC"
+  - Name: Database
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Alarms and Events"
+  - Name: User
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "West"
+  - Name: Password
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "West1"

@@ -274,7 +274,11 @@ Children:
       - Name: TextColor
         Type: BaseDataVariableType
         DataType: Color
-        Value: "#18f547fb"
+        Value: "#002307fb"
+      - Name: FontWeight
+        Type: BaseDataVariableType
+        DataType: FontWeightEnum
+        Value: 500
   - Name: HistogramChartStyles
     Type: BaseObjectType
     Children:
@@ -476,6 +480,10 @@ Children:
         Type: BaseVariableType
         DataType: Boolean
         AccessLevel: Read
+  - Name: MaxNumberOfConnections
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 5
 - Name: MainWindow
   Id: g=01a7e8933afd7c95fe894b0859308138
   Supertype: Window
@@ -506,7 +514,6 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     ModellingRule: Optional
-    Value: true
   - Name: ScaleLayout1
     Type: ScaleLayout
     Children:
