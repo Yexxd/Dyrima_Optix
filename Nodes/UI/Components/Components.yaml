@@ -3040,7 +3040,7 @@ Children:
                     Type: BaseDataVariableType
                     DataType: NodeId
                     Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
-                    Value: {"IdType":2,"Id":"a5a3c0f020f95402c474c819c42f7420","Namespace":7}
+                    Value: "/Objects/Dyrima/UI/Screens/Sources Manager/Sources_Manager"
                   - Name: AliasNode
                     Type: BaseDataVariableType
                     DataType: NodeId

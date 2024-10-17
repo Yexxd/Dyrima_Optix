@@ -1025,7 +1025,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Asset Create"}
+        Value: {"LocaleId":"en-US","Text":"Sources Create"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -1035,7 +1035,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 20.0
+        Value: 18.0
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
@@ -1251,7 +1251,7 @@ Children:
             - Name: ns=2;ObjectPointer
               Type: NodePointer
               DataType: NodeId
-              Value: {"IdType":2,"Id":"d91135f589bcca17cc1773e83498b929","Namespace":7}
+              Value: "/Objects/Dyrima/UI/Screens/Sources Manager/SourcesManagement"
               Children:
               - Name: Kind
                 Type: PropertyType
@@ -2374,6 +2374,7 @@ Children:
     DataType: String
     Value: "0"
 - Name: SourcesManagement
+  Id: g=4d111be4d0fe87d22f07d8498de49b28
   Type: NetLogic
   Children:
   - Class: Method
