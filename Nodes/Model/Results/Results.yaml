@@ -133,10 +133,11 @@ Children:
     - Name: Manual
       Type: BaseDataVariableType
       DataType: Float
-      Value: 1.0
+      Value: 50.0
     - Name: Auto
       Type: BaseDataVariableType
       DataType: Float
+      Value: 50.0
   - Name: saturated_this_month_count
     Type: BaseDataVariableType
     DataType: Int32
@@ -153,15 +154,19 @@ Children:
     - Name: SIL1
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
     - Name: SIL2
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
     - Name: SIL3
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
     - Name: SIL4
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
   - Name: percentageforce
     Type: BaseDataVariableType
     DataType: Float
@@ -216,18 +221,23 @@ Children:
     - Name: 1oo1
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
     - Name: 1oo2
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
     - Name: 2oo2
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
     - Name: 2oo3
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
     - Name: 2oo4
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
   - Name: actuator
     Id: g=91ff034c4225a31e3ed3af0681401baa
     Type: BaseObjectType
@@ -235,18 +245,23 @@ Children:
     - Name: 1oo1
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
     - Name: 1oo2
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
     - Name: 2oo2
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
     - Name: 2oo3
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
     - Name: 2oo4
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
   - Name: solver
     Id: g=2f2a85af37f003fde866e30e869aa1b0
     Type: BaseObjectType
@@ -254,18 +269,23 @@ Children:
     - Name: 1oo1
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
     - Name: 1oo2
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
     - Name: 2oo2
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
     - Name: 2oo3
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
     - Name: 2oo4
       Type: BaseDataVariableType
       DataType: Int32
+      Value: 1
   - Name: MostActiveSifs
     Id: g=189ced755e5a8523e24667863b77539b
     Type: BaseObjectType

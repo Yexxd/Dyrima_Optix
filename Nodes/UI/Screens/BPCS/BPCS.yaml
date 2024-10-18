@@ -1476,7 +1476,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 10.0
+        Value: 5.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -1491,7 +1491,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 140.0
+        Value: -5.0
       - Name: TextVerticalAlignment
         Type: BaseVariableType
         DataType: TextVerticalAlignment
@@ -1525,6 +1525,9 @@ Children:
     - Name: PieChart1
       Type: PieChart
       Children:
+      - Class: Reference
+        Target: ns=3;i=1104
+        Direction: Forward
       - Name: Model
         Type: NodePointer
         DataType: NodeId
@@ -1553,9 +1556,6 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "{Item}@Value"
-      - Class: Reference
-        Target: ns=3;i=1104
-        Direction: Forward
       - Name: Item
         Type: Alias
         DataType: NodeId
@@ -1568,7 +1568,6 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 10.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -1578,7 +1577,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 20.0
+        Value: 25.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -1597,6 +1596,55 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         ModellingRule: Optional
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+    - Name: MonthDis
+      Type: WebBrowser
+      Children:
+      - Name: URL
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/echarts/pieBPCS.html"
+      - Class: Reference
+        Target: ns=3;i=354
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=356
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=358
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 260.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 160.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 35.0
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 100.0
+    - Name: ChangeValues
+      Type: NetLogic
+      Children:
+      - Class: Method
+        Name: RefreshWeB
   - Name: Metricas actuales1
     Type: Rectangle
     Children:
@@ -3288,6 +3336,31 @@ Children:
               Type: BaseDataVariableType
               DataType: String
               Value: "Refresh"
+          - Name: MethodContainer4
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../manual_percent/ChangeValuesIn@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "RefreshWeB2"
         - Name: EventArguments
           Type: UserSelectionChanged
           Children:
@@ -4494,6 +4567,51 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 219.0
+    - Name: MonthDis
+      Type: WebBrowser
+      Children:
+      - Name: URL
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/echarts/pieBPCS.html"
+      - Class: Reference
+        Target: ns=3;i=354
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=356
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=358
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 280.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 250.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 45.0
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 100.0
+    - Name: ChangeValuesIn
+      Type: NetLogic
+      Children:
+      - Class: Method
+        Name: RefreshWeB2
   - Name: Variable de control
     Type: Rectangle
     Children:
@@ -6477,47 +6595,12 @@ Children:
     Children:
     - Name: Manual
       Type: BaseDataVariableType
-      DataType: Float
-      Value: 1.0
-      Children:
-      - Name: ExpressionEvaluator1
-        Type: ExpressionEvaluator
-        Children:
-        - Name: Expression
-          Type: BaseDataVariableType
-          DataType: String
-          ReferenceType: HasParameter
-          Value: "{0}"
-        - Name: ns=2;Source0
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../manual_percent"
+      DataType: Int32
+      Value: 50
     - Name: Auto
       Type: BaseDataVariableType
-      DataType: Float
-      Children:
-      - Name: ExpressionEvaluator1
-        Type: ExpressionEvaluator
-        Children:
-        - Name: Expression
-          Type: BaseDataVariableType
-          DataType: String
-          ReferenceType: HasParameter
-          Value: "100-{0}"
-        - Name: ns=2;Source0
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../manual_percent"
+      DataType: Int32
+      Value: 50
   - Name: ProcessVariable
     Id: g=ade993ade230a3f6dbe40dab48e599cc
     Type: BaseObjectType

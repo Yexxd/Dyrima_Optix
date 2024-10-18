@@ -1639,6 +1639,53 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         ModellingRule: Optional
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+    - Name: SIS
+      Type: WebBrowser
+      Children:
+      - Name: URL
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/echarts/pieSIS.html"
+      - Class: Reference
+        Target: ns=3;i=354
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=356
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=358
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 185.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 110.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 100.0
+    - Name: DistributionSIS
+      Type: NetLogic
   - Name: Rectangle3
     Type: Rectangle
     Children:
@@ -1789,6 +1836,53 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         ModellingRule: Optional
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+    - Name: SIS1
+      Type: WebBrowser
+      Children:
+      - Name: URL
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/echarts/pieSIS1.html"
+      - Class: Reference
+        Target: ns=3;i=354
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=356
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=358
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 185.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 110.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 100.0
+    - Name: Transmisor
+      Type: NetLogic
   - Name: Rectangle4
     Type: Rectangle
     Children:
@@ -1939,6 +2033,53 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         ModellingRule: Optional
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+    - Name: SIS2
+      Type: WebBrowser
+      Children:
+      - Name: URL
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/echarts/pieSIS2.html"
+      - Class: Reference
+        Target: ns=3;i=354
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=356
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=358
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 185.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 110.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 100.0
+    - Name: LogicSolver
+      Type: NetLogic
   - Name: Rectangle7
     Type: Rectangle
     Children:
@@ -2089,6 +2230,53 @@ Children:
         Type: BaseDataVariableType
         DataType: String
         ModellingRule: Optional
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+    - Name: SIS3
+      Type: WebBrowser
+      Children:
+      - Name: URL
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/echarts/pieSIS3.html"
+      - Class: Reference
+        Target: ns=3;i=354
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=356
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=358
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 185.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 110.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 100.0
+    - Name: FinalElement
+      Type: NetLogic
   - Name: Rectangle8
     Type: Rectangle
     Children:

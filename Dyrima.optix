@@ -136,14 +136,14 @@ Project:
    Module: FTOptix.ODBCStore.Net
    Version: 1.0
  Statistics:
-  TotalNodeCount: 51754
-  Objects: 3876
+  TotalNodeCount: 51817
+  Objects: 3889
   ObjectTypes: 83
-  Variables: 47728
+  Variables: 47775
   VariableTypes: 17
   DataTypes: 17
-  Methods: 33
-  References: 272
+  Methods: 36
+  References: 293
   ReferenceTypes: 0
   Files: 58
  Nodes:
