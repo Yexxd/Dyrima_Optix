@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             top: '88%',
             
         },
-        color: ['#0f2d57', '#1c3e7a', '#29509d', '#3a6ab3', '#5a8fd0'],
+        color: ['#1f263e', '#052377', '#04bfda', '#80edfd', '#5a8fd0'],
         series: [
             {
                 

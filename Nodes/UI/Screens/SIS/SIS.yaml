@@ -179,11 +179,6 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         Value: 100.0
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/totalSifs"
       - Name: WarningZones
         Type: BaseObjectType
         Children:
@@ -394,11 +389,6 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         Value: 100.0
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/totalSifs"
       - Name: WarningZones
         Type: BaseObjectType
         Children:
@@ -530,11 +520,6 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         Value: 100.0
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/totalSifs"
       - Name: WarningZones
         Type: BaseObjectType
         Children:
@@ -774,11 +759,6 @@ Children:
         Type: BaseDataVariableType
         DataType: Float
         Value: 100.0
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "/Objects/Dyrima/Model/Results/SIS_General_Result/totalSifs"
       - Name: WarningZones
         Type: BaseObjectType
         Children:
